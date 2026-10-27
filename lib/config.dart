@@ -8,7 +8,7 @@ class AppConfig {
   /// Your deployed Cloudflare Worker URL, e.g.
   /// `https://processpk-ask.YOUR-SUBDOMAIN.workers.dev`
   /// Leave empty to hide "Ask ProcessPK".
-  static const aiEndpoint = '';
+  static const aiEndpoint = 'https://processpk-ask.processpk.workers.dev';
 
   /// Free questions per day on each phone.
   static const aiDailyLimit = 5;
