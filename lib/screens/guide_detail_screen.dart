@@ -110,6 +110,63 @@ class GuideDetailScreen extends StatelessWidget {
               ),
             ),
           ],
+          if (t.problems.isNotEmpty) ...[
+            SectionTitle(s.problemsAndFixes),
+            for (final pr in t.problems)
+              Card(
+                margin: const EdgeInsets.only(bottom: 8),
+                clipBehavior: Clip.antiAlias,
+                child: ExpansionTile(
+                  shape: const Border(),
+                  leading: const Icon(
+                    Icons.help_outline,
+                    color: AppColors.primary,
+                  ),
+                  title: Text(
+                    pr.problem,
+                    style: const TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 14),
+                  expandedCrossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Icon(
+                          Icons.lightbulb_outline,
+                          size: 18,
+                          color: AppColors.primary,
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            pr.solution,
+                            style: TextStyle(
+                              fontSize: 15,
+                              height: bodyLineHeight(context),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+          ],
+          if (guide.contacts.isNotEmpty) ...[
+            SectionTitle(s.contactsAndHelp),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: Text(
+                s.contactsNote,
+                style: const TextStyle(fontSize: 13, color: AppColors.muted),
+              ),
+            ),
+            for (final c in guide.contacts) ContactTile(contact: c),
+          ],
           SectionTitle(s.officialSources),
           for (final src in guide.sources)
             ListTile(

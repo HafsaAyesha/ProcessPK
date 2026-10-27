@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'app_state.dart';
+import 'links.dart';
 import 'models.dart';
 import 'screens/guide_detail_screen.dart';
 import 'theme.dart';
@@ -118,4 +119,73 @@ class SectionTitle extends StatelessWidget {
       style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
     ),
   );
+}
+
+/// One official contact with tap-to-call, email or website actions.
+class ContactTile extends StatelessWidget {
+  final GuideContact contact;
+
+  const ContactTile({super.key, required this.contact});
+
+  @override
+  Widget build(BuildContext context) {
+    final state = AppScope.of(context);
+    final s = state.s;
+    final note = contact.noteFor(state.lang);
+    final detail = contact.phone ?? contact.email ?? note;
+    return Card(
+      margin: const EdgeInsets.only(bottom: 8),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(14, 10, 6, 10),
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    contact.label(state.lang),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  if (detail != null)
+                    Text(
+                      detail,
+                      textDirection:
+                          contact.phone != null || contact.email != null
+                          ? TextDirection.ltr
+                          : null,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        color: AppColors.muted,
+                      ),
+                    ),
+                ],
+              ),
+            ),
+            if (contact.phone != null)
+              IconButton(
+                tooltip: s.call,
+                icon: const Icon(Icons.call_outlined, color: AppColors.primary),
+                onPressed: () => openLink(
+                  context,
+                  'tel:${contact.phone!.replaceAll(RegExp(r'[^0-9+]'), '')}',
+                ),
+              ),
+            if (contact.email != null)
+              IconButton(
+                tooltip: s.email,
+                icon: const Icon(Icons.mail_outline, color: AppColors.primary),
+                onPressed: () => openLink(context, 'mailto:${contact.email}'),
+              ),
+            if (contact.url != null)
+              IconButton(
+                tooltip: s.website,
+                icon: const Icon(Icons.open_in_new, color: AppColors.primary),
+                onPressed: () => openLink(context, contact.url!),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
 }

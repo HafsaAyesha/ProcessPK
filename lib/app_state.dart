@@ -102,7 +102,22 @@ class AppState extends ChangeNotifier {
     p.documents.contains(index)
         ? p.documents.remove(index)
         : p.documents.add(index);
-    progress[guideId] = GuideProgress(documents: p.documents, steps: p.steps);
+    progress[guideId] = GuideProgress(
+      documents: p.documents,
+      steps: p.steps,
+      notes: p.notes,
+    );
+    await _saveProgress();
+  }
+
+  Future<void> setNotes(String guideId, String notes) async {
+    final p = progress[guideId];
+    if (p == null) return;
+    progress[guideId] = GuideProgress(
+      documents: p.documents,
+      steps: p.steps,
+      notes: notes,
+    );
     await _saveProgress();
   }
 
@@ -110,7 +125,11 @@ class AppState extends ChangeNotifier {
     final p = progress[guideId];
     if (p == null) return;
     p.steps.contains(index) ? p.steps.remove(index) : p.steps.add(index);
-    progress[guideId] = GuideProgress(documents: p.documents, steps: p.steps);
+    progress[guideId] = GuideProgress(
+      documents: p.documents,
+      steps: p.steps,
+      notes: p.notes,
+    );
     await _saveProgress();
   }
 

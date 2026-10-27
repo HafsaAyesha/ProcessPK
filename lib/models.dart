@@ -10,6 +10,65 @@ class GuideSource {
   Map<String, dynamic> toJson() => {'name': name, 'url': url};
 }
 
+/// An official helpline, email, website or office to contact.
+class GuideContact {
+  final String name;
+  final String nameUr;
+  final String? phone;
+  final String? email;
+  final String? url;
+  final String? note;
+  final String? noteUr;
+
+  const GuideContact({
+    required this.name,
+    required this.nameUr,
+    this.phone,
+    this.email,
+    this.url,
+    this.note,
+    this.noteUr,
+  });
+
+  String label(String lang) => lang == 'ur' ? nameUr : name;
+  String? noteFor(String lang) => lang == 'ur' ? (noteUr ?? note) : note;
+
+  factory GuideContact.fromJson(Map<String, dynamic> json) => GuideContact(
+    name: json['name'] as String,
+    nameUr: json['nameUr'] as String? ?? json['name'] as String,
+    phone: json['phone'] as String?,
+    email: json['email'] as String?,
+    url: json['url'] as String?,
+    note: json['note'] as String?,
+    noteUr: json['noteUr'] as String?,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'name': name,
+    'nameUr': nameUr,
+    if (phone != null) 'phone': phone,
+    if (email != null) 'email': email,
+    if (url != null) 'url': url,
+    if (note != null) 'note': note,
+    if (noteUr != null) 'noteUr': noteUr,
+  };
+}
+
+/// A problem people commonly run into, and how to get past it.
+class GuideProblem {
+  final String problem;
+  final String solution;
+
+  const GuideProblem({required this.problem, required this.solution});
+
+  factory GuideProblem.fromJson(Map<String, dynamic> json) => GuideProblem(
+    problem: json['problem'] as String,
+    solution: json['solution'] as String,
+  );
+
+  Map<String, dynamic> toJson() => {'problem': problem, 'solution': solution};
+}
+
 /// The text of a guide in one language.
 class GuideText {
   final String title;
@@ -21,6 +80,7 @@ class GuideText {
   final String time;
   final List<String> steps;
   final List<String> mistakes;
+  final List<GuideProblem> problems;
 
   const GuideText({
     required this.title,
@@ -32,6 +92,7 @@ class GuideText {
     required this.time,
     required this.steps,
     required this.mistakes,
+    this.problems = const [],
   });
 
   factory GuideText.fromJson(Map<String, dynamic> json) {
@@ -47,6 +108,9 @@ class GuideText {
       time: json['time'] as String? ?? '',
       steps: list('steps'),
       mistakes: list('mistakes'),
+      problems: (json['problems'] as List? ?? const [])
+          .map((e) => GuideProblem.fromJson(Map<String, dynamic>.from(e)))
+          .toList(),
     );
   }
 
@@ -60,6 +124,7 @@ class GuideText {
     'time': time,
     'steps': steps,
     'mistakes': mistakes,
+    'problems': problems.map((p) => p.toJson()).toList(),
   };
 }
 
@@ -73,6 +138,7 @@ class Guide {
   /// sources, or null if it has not been verified yet.
   final String? lastVerified;
   final List<GuideSource> sources;
+  final List<GuideContact> contacts;
   final GuideText en;
   final GuideText ur;
 
@@ -83,6 +149,7 @@ class Guide {
     required this.keywords,
     required this.lastVerified,
     required this.sources,
+    this.contacts = const [],
     required this.en,
     required this.ur,
   });
@@ -100,6 +167,9 @@ class Guide {
     sources: (json['sources'] as List? ?? const [])
         .map((e) => GuideSource.fromJson(Map<String, dynamic>.from(e)))
         .toList(),
+    contacts: (json['contacts'] as List? ?? const [])
+        .map((e) => GuideContact.fromJson(Map<String, dynamic>.from(e)))
+        .toList(),
     en: GuideText.fromJson(Map<String, dynamic>.from(json['en'])),
     ur: GuideText.fromJson(Map<String, dynamic>.from(json['ur'])),
   );
@@ -111,6 +181,7 @@ class Guide {
     'keywords': keywords,
     'lastVerified': lastVerified,
     'sources': sources.map((s) => s.toJson()).toList(),
+    'contacts': contacts.map((c) => c.toJson()).toList(),
     'en': en.toJson(),
     'ur': ur.toJson(),
   };
@@ -126,6 +197,8 @@ class Guide {
       ur.title,
       ur.summary,
       ...keywords,
+      ...en.problems.map((p) => p.problem),
+      ...ur.problems.map((p) => p.problem),
     ].join(' ').toLowerCase();
     return q.split(RegExp(r'\s+')).every(haystack.contains);
   }
@@ -135,12 +208,19 @@ class Guide {
 class GuideProgress {
   final Set<int> documents;
   final Set<int> steps;
+
+  /// The user's own notes, e.g. tracking number or appointment date.
+  final String notes;
   final DateTime updatedAt;
 
-  GuideProgress({Set<int>? documents, Set<int>? steps, DateTime? updatedAt})
-    : documents = documents ?? <int>{},
-      steps = steps ?? <int>{},
-      updatedAt = updatedAt ?? DateTime.now();
+  GuideProgress({
+    Set<int>? documents,
+    Set<int>? steps,
+    this.notes = '',
+    DateTime? updatedAt,
+  }) : documents = documents ?? <int>{},
+       steps = steps ?? <int>{},
+       updatedAt = updatedAt ?? DateTime.now();
 
   double fraction(Guide guide) {
     final total = guide.en.documents.length + guide.en.steps.length;
@@ -151,12 +231,14 @@ class GuideProgress {
   factory GuideProgress.fromJson(Map<String, dynamic> json) => GuideProgress(
     documents: (json['documents'] as List).cast<int>().toSet(),
     steps: (json['steps'] as List).cast<int>().toSet(),
+    notes: json['notes'] as String? ?? '',
     updatedAt: DateTime.parse(json['updatedAt'] as String),
   );
 
   Map<String, dynamic> toJson() => {
     'documents': documents.toList(),
     'steps': steps.toList(),
+    'notes': notes,
     'updatedAt': updatedAt.toIso8601String(),
   };
 }

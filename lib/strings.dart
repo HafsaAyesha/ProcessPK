@@ -56,6 +56,24 @@ class S {
   String get processingTime => _t('Estimated time', 'متوقع وقت');
   String get steps => _t('Step-by-step', 'مرحلہ وار طریقہ');
   String get commonMistakes => _t('Common mistakes', 'عام غلطیاں');
+  String get problemsAndFixes => _t(
+    'Problems people face and fixes',
+    'لوگوں کو پیش آنے والے مسائل اور حل',
+  );
+  String get contactsAndHelp => _t('Contacts and help', 'رابطہ اور مدد');
+  String get contactsNote => _t(
+    'Official helplines and offices. Numbers can change, so check the website if a call fails.',
+    'سرکاری ہیلپ لائنز اور دفاتر۔ نمبر بدل سکتے ہیں، کال نہ ملے تو ویب سائٹ دیکھیں۔',
+  );
+  String get call => _t('Call', 'کال کریں');
+  String get email => _t('Email', 'ای میل');
+  String get website => _t('Website', 'ویب سائٹ');
+  String get myNotes => _t('My notes', 'میرے نوٹس');
+  String get notesHint => _t(
+    'Tracking number, appointment date, office address...',
+    'ٹریکنگ نمبر، اپائنٹمنٹ کی تاریخ، دفتر کا پتہ...',
+  );
+  String get helplines => _t('Helplines', 'ہیلپ لائنز');
   String get officialSources => _t('Official sources', 'سرکاری ذرائع');
   String get startChecklist => _t('Start checklist', 'چیک لسٹ شروع کریں');
   String get openChecklist => _t('Open my checklist', 'میری چیک لسٹ کھولیں');

@@ -34,6 +34,12 @@ void main() {
       expect(g.ur.steps.length, g.en.steps.length, reason: g.id);
       expect(g.ur.mistakes.length, g.en.mistakes.length, reason: g.id);
       expect(g.sources, isNotEmpty, reason: g.id);
+      expect(g.en.problems, isNotEmpty, reason: g.id);
+      expect(g.ur.problems.length, g.en.problems.length, reason: g.id);
+      expect(g.contacts, isNotEmpty, reason: g.id);
+      for (final c in g.contacts) {
+        expect(c.phone ?? c.email ?? c.url ?? c.note, isNotNull, reason: g.id);
+      }
     }
   });
 
@@ -56,12 +62,14 @@ void main() {
     await state.startChecklist('first-cnic');
     await state.toggleDocument('first-cnic', 0);
     await state.toggleStep('first-cnic', 1);
+    await state.setNotes('first-cnic', 'Tracking 1234');
     final saved = state.prefs.getString('progress_v1')!;
 
     final restored = await makeState({'progress_v1': saved});
     final p = restored.progress['first-cnic']!;
     expect(p.documents, {0});
     expect(p.steps, {1});
+    expect(p.notes, 'Tracking 1234');
     expect(restored.activeChecklists.single.key.id, 'first-cnic');
   });
 
@@ -91,6 +99,12 @@ void main() {
     await tester.pumpAndSettle();
     expect(state.progress['first-cnic']!.documents, {0});
     expect(find.textContaining('% done'), findsOneWidget);
+    await tester.scrollUntilVisible(
+      find.text('My notes'),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
+    expect(find.text('My notes'), findsOneWidget);
   });
 
   testWidgets('Urdu switches text and layout direction', (tester) async {

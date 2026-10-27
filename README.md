@@ -9,12 +9,23 @@ and young people. English and Urdu, works offline, no login.
 - Home: search (English, Urdu, Roman Urdu), 4 categories, popular guides,
   "Continue where you left off"
 - Guide detail: what it is, who needs it, documents, fees, time, steps,
-  common mistakes, official sources, last verified date, share, report an error
-- My Progress: tick documents and steps, progress saved on the phone
-- About: disclaimer (not affiliated with the government), privacy, sources
+  common mistakes, problems people face and how to fix them, official
+  contacts (tap to call, email, website), official sources, last verified
+  date, share, report an error
+- My Progress: tick documents and steps, keep notes (tracking number,
+  appointment date), all saved on the phone
+- About: disclaimer (not affiliated with the government), all helplines,
+  privacy, sources
 - 9 student guides in both languages (`assets/guides.json`)
 - AdMob test banners on Home and guide lists (never on checklists)
 - Firebase ready: guides load from Firestore once you connect a project
+
+## Build the APK without installing anything (GitHub)
+
+1. Create an empty GitHub repository and push this folder to its `main` branch.
+2. GitHub runs `.github/workflows/build-apk.yml` automatically (about 10 minutes).
+3. Open the repository's Actions tab, click the latest "Build APK" run and
+   download `processpk-apk` from Artifacts. Unzip it to get the APK.
 
 ## Build the Android APK (on your laptop)
 
@@ -49,6 +60,8 @@ The app works without Firebase using the bundled guides.
 
 ## Before publishing on Google Play
 
+- Helplines and emails were taken from official pages (DGIP, HEC, PM&DC, FBR)
+  and a NADRA office guide on 27 Oct 2026. Re-check them before release.
 - Fill in every `lastVerified` date in the guides after checking each fact
   on the official website.
 - Replace the AdMob test IDs: app ID in

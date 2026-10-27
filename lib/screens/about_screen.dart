@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../app_state.dart';
 import '../config.dart';
 import '../links.dart';
+import '../models.dart';
 import '../theme.dart';
 import '../widgets.dart';
 
@@ -17,6 +18,12 @@ class AboutScreen extends StatelessWidget {
     final sources = {
       for (final g in state.guides)
         for (final src in g.sources) src.url: src.name,
+    };
+    // Every helpline across all guides, once each.
+    final helplines = <String, GuideContact>{
+      for (final g in state.guides)
+        for (final c in g.contacts)
+          if (c.phone != null) c.phone!: c,
     };
     return SafeArea(
       child: ListView(
@@ -65,6 +72,8 @@ class AboutScreen extends StatelessWidget {
             label: Text(s.privacyPolicy),
             onPressed: () => openLink(context, AppConfig.privacyPolicyUrl),
           ),
+          SectionTitle(s.helplines),
+          for (final c in helplines.values) ContactTile(contact: c),
           SectionTitle(s.officialSources),
           for (final entry in sources.entries)
             ListTile(

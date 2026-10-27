@@ -80,6 +80,21 @@ class ChecklistScreen extends StatelessWidget {
               title: Text('${i + 1}. ${t.steps[i]}'),
               onChanged: (_) => state.toggleStep(guideId, i),
             ),
+          SectionTitle(s.myNotes),
+          TextFormField(
+            initialValue: progress.notes,
+            minLines: 3,
+            maxLines: 6,
+            decoration: InputDecoration(
+              hintText: s.notesHint,
+              filled: true,
+              fillColor: Colors.white,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(14),
+              ),
+            ),
+            onChanged: (v) => state.setNotes(guideId, v),
+          ),
           const SizedBox(height: 16),
           OutlinedButton(
             onPressed: () => openGuide(context, guide),

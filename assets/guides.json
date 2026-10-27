@@ -5,11 +5,24 @@
       "id": "first-cnic",
       "category": "documents",
       "popular": true,
-      "keywords": ["cnic", "id card", "shanakhti card", "nadra", "18", "شناختی کارڈ"],
+      "keywords": [
+        "cnic",
+        "id card",
+        "shanakhti card",
+        "nadra",
+        "18",
+        "شناختی کارڈ"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "NADRA", "url": "https://www.nadra.gov.pk"},
-        {"name": "Pak-ID (NADRA online)", "url": "https://id.nadra.gov.pk"}
+        {
+          "name": "NADRA",
+          "url": "https://www.nadra.gov.pk"
+        },
+        {
+          "name": "Pak-ID (NADRA online)",
+          "url": "https://id.nadra.gov.pk"
+        }
       ],
       "en": {
         "title": "Get your first CNIC",
@@ -37,6 +50,20 @@
           "Name spelling different from your Matric certificate. Fix it now, because changing it later is harder.",
           "Going without a parent or blood relative for verification.",
           "Signing the form without reading the printed details."
+        ],
+        "problems": [
+          {
+            "problem": "My fingerprints are not being accepted.",
+            "solution": "This is common with dry or worn fingers. Wash and moisturise your hands, try other fingers, and ask the operator to use photo-based verification if prints keep failing."
+          },
+          {
+            "problem": "NADRA says my B-Form record is not found.",
+            "solution": "Your parent should visit NADRA with their CNIC to register you as a family member first. Then apply for the CNIC."
+          },
+          {
+            "problem": "My card was printed with a wrong spelling or date.",
+            "solution": "Apply for a modification at a NADRA centre or on Pak-ID with proof such as your Matric certificate. Do this before using the card for a passport or degree."
+          }
         ]
       },
       "ur": {
@@ -65,18 +92,67 @@
           "نام کے ہجے میٹرک کی سند سے مختلف ہونا۔ ابھی درست کروائیں، بعد میں تبدیلی مشکل ہوتی ہے۔",
           "تصدیق کے لیے والدین یا رشتہ دار کے بغیر جانا۔",
           "پرنٹ شدہ تفصیلات پڑھے بغیر فارم پر دستخط کرنا۔"
+        ],
+        "problems": [
+          {
+            "problem": "میرے انگلیوں کے نشان قبول نہیں ہو رہے۔",
+            "solution": "خشک یا گھسی انگلیوں کے ساتھ یہ عام ہے۔ ہاتھ دھو کر نم کریں، دوسری انگلیاں آزمائیں، اور بار بار ناکامی پر آپریٹر سے متبادل تصدیق کا کہیں۔"
+          },
+          {
+            "problem": "نادرا کہتا ہے میرا ب فارم ریکارڈ نہیں ملا۔",
+            "solution": "والدین اپنے شناختی کارڈ کے ساتھ نادرا جا کر پہلے آپ کو خاندان کے فرد کے طور پر رجسٹر کروائیں، پھر شناختی کارڈ کے لیے درخواست دیں۔"
+          },
+          {
+            "problem": "کارڈ پر نام یا تاریخ غلط چھپ گئی۔",
+            "solution": "میٹرک کی سند جیسے ثبوت کے ساتھ نادرا سینٹر یا Pak-ID پر ترمیم کی درخواست دیں۔ پاسپورٹ یا ڈگری میں استعمال سے پہلے یہ کر لیں۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "NADRA helpline (from mobile)",
+          "nameUr": "نادرا ہیلپ لائن (موبائل سے)",
+          "phone": "7000"
+        },
+        {
+          "name": "NADRA helpline (landline / overseas)",
+          "nameUr": "نادرا ہیلپ لائن (لینڈ لائن / بیرون ملک)",
+          "phone": "051-111-786-100"
+        },
+        {
+          "name": "Find a NADRA centre",
+          "nameUr": "نادرا سینٹر تلاش کریں",
+          "url": "https://www.nadra.gov.pk"
+        },
+        {
+          "name": "Pakistan Citizen Portal (complaints)",
+          "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
+          "url": "https://citizenportal.gov.pk"
+        }
+      ]
     },
     {
       "id": "b-form",
       "category": "documents",
       "popular": false,
-      "keywords": ["b form", "b-form", "crc", "child registration", "nadra", "ب فارم"],
+      "keywords": [
+        "b form",
+        "b-form",
+        "crc",
+        "child registration",
+        "nadra",
+        "ب فارم"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "NADRA", "url": "https://www.nadra.gov.pk"},
-        {"name": "Pak-ID (NADRA online)", "url": "https://id.nadra.gov.pk"}
+        {
+          "name": "NADRA",
+          "url": "https://www.nadra.gov.pk"
+        },
+        {
+          "name": "Pak-ID (NADRA online)",
+          "url": "https://id.nadra.gov.pk"
+        }
       ],
       "en": {
         "title": "Get a B-Form (Child Registration Certificate)",
@@ -101,6 +177,20 @@
           "Name spelling different from the school or birth certificate.",
           "Waiting until Matric registration week, when NADRA centres are crowded.",
           "Parent's own CNIC expired, which blocks the application."
+        ],
+        "problems": [
+          {
+            "problem": "The Union Council birth certificate is not computerised.",
+            "solution": "Ask the Union Council to enter the birth in the NADRA CRMS system and issue a computerised certificate. NADRA will not accept handwritten ones."
+          },
+          {
+            "problem": "The school spelling differs from the B-Form.",
+            "solution": "Decide on one spelling now and correct the other record before Matric registration, because the board certificate will follow the B-Form."
+          },
+          {
+            "problem": "A parent is abroad or has passed away.",
+            "solution": "The other parent or a legal guardian can apply. Bring the death certificate or guardianship documents if relevant."
+          }
         ]
       },
       "ur": {
@@ -126,18 +216,66 @@
           "نام کے ہجے اسکول یا پیدائشی سرٹیفکیٹ سے مختلف ہونا۔",
           "میٹرک رجسٹریشن کے ہفتے تک انتظار کرنا جب نادرا سینٹرز پر رش ہوتا ہے۔",
           "والدین کا اپنا شناختی کارڈ زائد المیعاد ہونا، جس سے درخواست رک جاتی ہے۔"
+        ],
+        "problems": [
+          {
+            "problem": "یونین کونسل کا پیدائشی سرٹیفکیٹ کمپیوٹرائزڈ نہیں ہے۔",
+            "solution": "یونین کونسل سے کہیں کہ پیدائش نادرا کے نظام میں درج کر کے کمپیوٹرائزڈ سرٹیفکیٹ دے۔ ہاتھ سے لکھا سرٹیفکیٹ قبول نہیں ہوتا۔"
+          },
+          {
+            "problem": "اسکول کے ریکارڈ میں ہجے ب فارم سے مختلف ہیں۔",
+            "solution": "ابھی ایک ہجے طے کریں اور میٹرک رجسٹریشن سے پہلے دوسرا ریکارڈ درست کروائیں، کیونکہ بورڈ کی سند ب فارم کے مطابق بنتی ہے۔"
+          },
+          {
+            "problem": "والد یا والدہ بیرون ملک ہیں یا وفات پا چکے ہیں۔",
+            "solution": "دوسرے والد یا والدہ یا قانونی سرپرست درخواست دے سکتے ہیں۔ ضرورت ہو تو ڈیتھ سرٹیفکیٹ یا سرپرستی کے کاغذات ساتھ لائیں۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "NADRA helpline (from mobile)",
+          "nameUr": "نادرا ہیلپ لائن (موبائل سے)",
+          "phone": "7000"
+        },
+        {
+          "name": "NADRA helpline (landline / overseas)",
+          "nameUr": "نادرا ہیلپ لائن (لینڈ لائن / بیرون ملک)",
+          "phone": "051-111-786-100"
+        },
+        {
+          "name": "Find a NADRA centre",
+          "nameUr": "نادرا سینٹر تلاش کریں",
+          "url": "https://www.nadra.gov.pk"
+        },
+        {
+          "name": "Pakistan Citizen Portal (complaints)",
+          "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
+          "url": "https://citizenportal.gov.pk"
+        }
+      ]
     },
     {
       "id": "first-passport",
       "category": "travel",
       "popular": true,
-      "keywords": ["passport", "dgip", "travel", "study abroad", "پاسپورٹ"],
+      "keywords": [
+        "passport",
+        "dgip",
+        "travel",
+        "study abroad",
+        "پاسپورٹ"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "Directorate General of Immigration & Passports", "url": "https://dgip.gov.pk"},
-        {"name": "Online passport application", "url": "https://onlinemrp.dgip.gov.pk"}
+        {
+          "name": "Directorate General of Immigration & Passports",
+          "url": "https://dgip.gov.pk"
+        },
+        {
+          "name": "Online passport application",
+          "url": "https://onlinemrp.dgip.gov.pk"
+        }
       ],
       "en": {
         "title": "Apply for your first passport",
@@ -165,6 +303,20 @@
           "Name spelling differs from your CNIC or degree, which causes visa trouble later.",
           "Paying for the wrong fee category.",
           "Leaving it until a few weeks before an admission or visa deadline."
+        ],
+        "problems": [
+          {
+            "problem": "My passport is delayed past the expected date.",
+            "solution": "Track it on the DGIP website with your tracking ID. If it is stuck, call the passport helpline or email opts@dgip.gov.pk with your tracking number."
+          },
+          {
+            "problem": "Very long queues at the passport office.",
+            "solution": "Arrive early, or use the online application where available so you only visit for biometrics. Avoid the weeks before Hajj and admission seasons."
+          },
+          {
+            "problem": "Someone offers to get my passport faster for extra money.",
+            "solution": "Do not pay agents. Use only the official fee categories. Report fraud on the Pakistan Citizen Portal."
+          }
         ]
       },
       "ur": {
@@ -193,18 +345,71 @@
           "نام کے ہجے شناختی کارڈ یا ڈگری سے مختلف ہونا، جس سے بعد میں ویزا میں مسئلہ ہوتا ہے۔",
           "غلط کیٹیگری کی فیس ادا کرنا۔",
           "داخلے یا ویزا کی آخری تاریخ سے چند ہفتے پہلے تک انتظار کرنا۔"
+        ],
+        "problems": [
+          {
+            "problem": "پاسپورٹ متوقع تاریخ سے لیٹ ہو گیا ہے۔",
+            "solution": "DGIP ویب سائٹ پر ٹریکنگ آئی ڈی سے چیک کریں۔ رکا ہوا ہو تو پاسپورٹ ہیلپ لائن پر کال کریں یا ٹریکنگ نمبر کے ساتھ opts@dgip.gov.pk پر ای میل کریں۔"
+          },
+          {
+            "problem": "پاسپورٹ آفس میں بہت لمبی قطاریں۔",
+            "solution": "جلدی پہنچیں یا جہاں ممکن ہو آن لائن درخواست دیں تاکہ صرف بائیومیٹرک کے لیے جانا پڑے۔ حج اور داخلوں کے موسم سے پہلے کے ہفتوں سے بچیں۔"
+          },
+          {
+            "problem": "کوئی اضافی پیسوں میں جلد پاسپورٹ دلوانے کی پیشکش کرتا ہے۔",
+            "solution": "ایجنٹوں کو پیسے نہ دیں۔ صرف سرکاری فیس کیٹیگری استعمال کریں۔ دھوکے کی اطلاع پاکستان سٹیزن پورٹل پر دیں۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "Passport helpline",
+          "nameUr": "پاسپورٹ ہیلپ لائن",
+          "phone": "051-111-344-777"
+        },
+        {
+          "name": "General queries",
+          "nameUr": "عمومی سوالات",
+          "email": "info@dgip.gov.pk"
+        },
+        {
+          "name": "Online passport issues",
+          "nameUr": "آن لائن پاسپورٹ کے مسائل",
+          "email": "mrponline@dgip.gov.pk"
+        },
+        {
+          "name": "Application tracking",
+          "nameUr": "درخواست کی ٹریکنگ",
+          "email": "opts@dgip.gov.pk"
+        },
+        {
+          "name": "Pakistan Citizen Portal (complaints)",
+          "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
+          "url": "https://citizenportal.gov.pk"
+        }
+      ]
     },
     {
       "id": "hec-degree-attestation",
       "category": "education",
       "popular": true,
-      "keywords": ["hec", "degree attestation", "transcript", "verification", "ڈگری تصدیق"],
+      "keywords": [
+        "hec",
+        "degree attestation",
+        "transcript",
+        "verification",
+        "ڈگری تصدیق"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "Higher Education Commission", "url": "https://www.hec.gov.pk"},
-        {"name": "HEC e-Services portal", "url": "https://eservices.hec.gov.pk"}
+        {
+          "name": "Higher Education Commission",
+          "url": "https://www.hec.gov.pk"
+        },
+        {
+          "name": "HEC e-Services portal",
+          "url": "https://eservices.hec.gov.pk"
+        }
       ],
       "en": {
         "title": "Attest your degree from HEC",
@@ -232,6 +437,20 @@
           "Profile details not matching the degree, which leads to rejection.",
           "Applying before the university has issued the final degree.",
           "Forgetting original documents on the appointment day."
+        ],
+        "problems": [
+          {
+            "problem": "My application was returned as 'deficient'.",
+            "solution": "Read the reason on the portal, fix the profile or upload the missing document, and resubmit. You usually do not need to pay again."
+          },
+          {
+            "problem": "My university has not verified my degree yet.",
+            "solution": "HEC checks with your university. Contact your university's examination or verification office and ask them to respond to HEC."
+          },
+          {
+            "problem": "No walk-in slots are available.",
+            "solution": "Check the portal again early in the morning when new slots open, or choose the courier option."
+          }
         ]
       },
       "ur": {
@@ -260,17 +479,75 @@
           "پروفائل کی تفصیلات ڈگری سے مختلف ہونا، جس سے درخواست مسترد ہوتی ہے۔",
           "یونیورسٹی سے فائنل ڈگری ملنے سے پہلے درخواست دینا۔",
           "اپائنٹمنٹ کے دن اصل دستاویزات بھول جانا۔"
+        ],
+        "problems": [
+          {
+            "problem": "میری درخواست 'نامکمل' کہہ کر واپس کر دی گئی۔",
+            "solution": "پورٹل پر وجہ پڑھیں، پروفائل درست کریں یا گمشدہ دستاویز اپلوڈ کریں اور دوبارہ جمع کروائیں۔ عام طور پر دوبارہ فیس نہیں دینی پڑتی۔"
+          },
+          {
+            "problem": "میری یونیورسٹی نے ابھی ڈگری کی تصدیق نہیں کی۔",
+            "solution": "ایچ ای سی آپ کی یونیورسٹی سے تصدیق کرتا ہے۔ یونیورسٹی کے امتحانی یا تصدیقی دفتر سے رابطہ کر کے ایچ ای سی کو جواب دینے کا کہیں۔"
+          },
+          {
+            "problem": "واک اِن کے لیے کوئی وقت دستیاب نہیں۔",
+            "solution": "صبح سویرے پورٹل دوبارہ دیکھیں جب نئے وقت کھلتے ہیں، یا کوریئر کا طریقہ چنیں۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "HEC helpline (UAN)",
+          "nameUr": "ایچ ای سی ہیلپ لائن (UAN)",
+          "phone": "051-111-119-432"
+        },
+        {
+          "name": "HEC helpline (mobile)",
+          "nameUr": "ایچ ای سی ہیلپ لائن (موبائل)",
+          "phone": "0334-1119432"
+        },
+        {
+          "name": "HEC online help portal",
+          "nameUr": "ایچ ای سی آن لائن ہیلپ پورٹل",
+          "url": "https://onlinehelp.hec.gov.pk"
+        },
+        {
+          "name": "HEC Lahore office",
+          "nameUr": "ایچ ای سی لاہور دفتر",
+          "email": "info.lhr@hec.gov.pk"
+        },
+        {
+          "name": "HEC Karachi office",
+          "nameUr": "ایچ ای سی کراچی دفتر",
+          "email": "info_khi@hec.gov.pk"
+        },
+        {
+          "name": "Pakistan Citizen Portal (complaints)",
+          "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
+          "url": "https://citizenportal.gov.pk"
+        }
+      ]
     },
     {
       "id": "ibcc-equivalence",
       "category": "education",
       "popular": false,
-      "keywords": ["ibcc", "equivalence", "o level", "a level", "attestation", "matric", "inter", "مساوی سند"],
+      "keywords": [
+        "ibcc",
+        "equivalence",
+        "o level",
+        "a level",
+        "attestation",
+        "matric",
+        "inter",
+        "مساوی سند"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "Inter Board Committee of Chairmen (IBCC)", "url": "https://www.ibcc.edu.pk"}
+        {
+          "name": "Inter Board Committee of Chairmen (IBCC)",
+          "url": "https://www.ibcc.edu.pk"
+        }
       ],
       "en": {
         "title": "Get IBCC equivalence or attestation",
@@ -297,6 +574,20 @@
           "Applying for university admission without equivalence, which delays enrolment.",
           "Choosing attestation when you need equivalence, or the other way round.",
           "Missing subjects that universities require (e.g. Pre-Medical combinations)."
+        ],
+        "problems": [
+          {
+            "problem": "My university needs equivalence but my final A Level results are not out.",
+            "solution": "Many universities accept a provisional equivalence based on O Level and A Level results so far. Ask your university which they accept and apply early."
+          },
+          {
+            "problem": "My marks converted lower than expected.",
+            "solution": "IBCC uses fixed grade-to-marks rules. Check the official conversion table on the IBCC website before planning merit calculations."
+          },
+          {
+            "problem": "I'm not sure whether I need equivalence or attestation.",
+            "solution": "Equivalence converts O/A Level or foreign results into Matric/Inter. Attestation stamps Pakistani board certificates for use abroad."
+          }
         ]
       },
       "ur": {
@@ -324,17 +615,53 @@
           "مساوی سند کے بغیر یونیورسٹی داخلے کی درخواست دینا، جس سے داخلہ رک جاتا ہے۔",
           "مساوی سند کی بجائے تصدیق یا تصدیق کی بجائے مساوی سند کے لیے درخواست دینا۔",
           "یونیورسٹی کے مطلوبہ مضامین (جیسے پری میڈیکل) کا نہ ہونا۔"
+        ],
+        "problems": [
+          {
+            "problem": "یونیورسٹی کو مساوی سند چاہیے مگر اے لیول کا حتمی نتیجہ نہیں آیا۔",
+            "solution": "کئی یونیورسٹیاں او لیول اور اب تک کے اے لیول نتائج پر عارضی مساوی سند قبول کرتی ہیں۔ یونیورسٹی سے پوچھیں اور جلد درخواست دیں۔"
+          },
+          {
+            "problem": "میرے نمبر توقع سے کم بنے۔",
+            "solution": "آئی بی سی سی گریڈ سے نمبر بنانے کے مقررہ اصول استعمال کرتا ہے۔ میرٹ کا حساب لگانے سے پہلے ویب سائٹ پر سرکاری جدول دیکھیں۔"
+          },
+          {
+            "problem": "سمجھ نہیں آ رہا مساوی سند چاہیے یا تصدیق۔",
+            "solution": "مساوی سند او/اے لیول یا غیر ملکی نتائج کو میٹرک/انٹر کے برابر کرتی ہے۔ تصدیق پاکستانی بورڈ کی اسناد کو بیرون ملک استعمال کے لیے مہر لگاتی ہے۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "IBCC website and online portal",
+          "nameUr": "آئی بی سی سی ویب سائٹ اور آن لائن پورٹل",
+          "url": "https://www.ibcc.edu.pk"
+        },
+        {
+          "name": "Pakistan Citizen Portal (complaints)",
+          "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
+          "url": "https://citizenportal.gov.pk"
+        }
+      ]
     },
     {
       "id": "mdcat-registration",
       "category": "education",
       "popular": true,
-      "keywords": ["mdcat", "pmdc", "medical", "mbbs", "entry test", "ایم ڈی کیٹ"],
+      "keywords": [
+        "mdcat",
+        "pmdc",
+        "medical",
+        "mbbs",
+        "entry test",
+        "ایم ڈی کیٹ"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "Pakistan Medical & Dental Council (PM&DC)", "url": "https://pmdc.pk"}
+        {
+          "name": "Pakistan Medical & Dental Council (PM&DC)",
+          "url": "https://pmdc.pk"
+        }
       ],
       "en": {
         "title": "Register for MDCAT",
@@ -363,6 +690,20 @@
           "Registering on fake or unofficial websites. Use only the portal linked in the official notice.",
           "Missing the registration deadline because you waited for FSc results.",
           "Not getting IBCC equivalence on time if you are an A Level student."
+        ],
+        "problems": [
+          {
+            "problem": "The registration portal is slow or crashing near the deadline.",
+            "solution": "Register in the first few days. Try early morning or late night, and keep your photo and documents ready as small files."
+          },
+          {
+            "problem": "I made a mistake in my form after submitting.",
+            "solution": "Check the notice for a correction window. If there is none, contact the conducting university quickly with your application number."
+          },
+          {
+            "problem": "I saw a 'leaked paper' or a site selling registration.",
+            "solution": "These are scams. PM&DC has issued public warnings about fraudulent exams. Only use the portal named in the official notice."
+          }
         ]
       },
       "ur": {
@@ -392,17 +733,60 @@
           "جعلی یا غیر سرکاری ویب سائٹس پر رجسٹریشن۔ صرف سرکاری نوٹس والا پورٹل استعمال کریں۔",
           "ایف ایس سی نتیجے کے انتظار میں رجسٹریشن کی آخری تاریخ نکل جانا۔",
           "اے لیول طلبہ کا وقت پر آئی بی سی سی مساوی سند نہ لینا۔"
+        ],
+        "problems": [
+          {
+            "problem": "آخری دنوں میں پورٹل سست ہے یا بند ہو جاتا ہے۔",
+            "solution": "پہلے چند دنوں میں رجسٹر ہوں۔ صبح سویرے یا رات دیر سے کوشش کریں اور تصویر اور دستاویزات چھوٹی فائلوں میں تیار رکھیں۔"
+          },
+          {
+            "problem": "جمع کروانے کے بعد فارم میں غلطی نظر آئی۔",
+            "solution": "نوٹس میں درستگی کی مدت دیکھیں۔ نہ ہو تو درخواست نمبر کے ساتھ فوراً ٹیسٹ لینے والی یونیورسٹی سے رابطہ کریں۔"
+          },
+          {
+            "problem": "میں نے 'لیک پیپر' یا رجسٹریشن بیچنے والی سائٹ دیکھی۔",
+            "solution": "یہ دھوکہ ہے۔ PM&DC نے جعلی امتحانات کے بارے میں عوامی انتباہ جاری کیا ہے۔ صرف سرکاری نوٹس والا پورٹل استعمال کریں۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "PM&DC helpline (ext. 302 for MDCAT)",
+          "nameUr": "PM&DC ہیلپ لائن (ایم ڈی کیٹ کے لیے ایکسٹینشن 302)",
+          "phone": "051-9190000"
+        },
+        {
+          "name": "PM&DC website (official notices)",
+          "nameUr": "PM&DC ویب سائٹ (سرکاری نوٹس)",
+          "url": "https://pmdc.pk"
+        },
+        {
+          "name": "Your provincial conducting university",
+          "nameUr": "آپ کے صوبے کی ٹیسٹ لینے والی یونیورسٹی",
+          "note": "Named in the official MDCAT notice",
+          "noteUr": "سرکاری ایم ڈی کیٹ نوٹس میں درج"
+        }
+      ]
     },
     {
       "id": "hec-need-based-scholarship",
       "category": "education",
       "popular": true,
-      "keywords": ["scholarship", "need based", "hec", "financial aid", "fee", "وظیفہ", "اسکالرشپ"],
+      "keywords": [
+        "scholarship",
+        "need based",
+        "hec",
+        "financial aid",
+        "fee",
+        "وظیفہ",
+        "اسکالرشپ"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "HEC Scholarships", "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx"}
+        {
+          "name": "HEC Scholarships",
+          "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx"
+        }
       ],
       "en": {
         "title": "Apply for an HEC need-based scholarship",
@@ -430,6 +814,20 @@
           "Missing the university's internal deadline, which is earlier than people expect.",
           "Income details that do not match the documents.",
           "Not checking other options too, such as provincial endowment funds and university scholarships."
+        ],
+        "problems": [
+          {
+            "problem": "My family has no salary slip because income is informal.",
+            "solution": "Most universities accept an income affidavit on stamp paper, attested by an oath commissioner. Ask the financial aid office for their format."
+          },
+          {
+            "problem": "I missed the deadline.",
+            "solution": "Ask about the next round, and apply for other options in the meantime: university fee waivers, provincial endowment funds and Ehsaas/BISP-linked scholarships."
+          },
+          {
+            "problem": "I'm nervous about the interview.",
+            "solution": "Bring originals of everything you submitted and answer simply and honestly. The panel checks that your documents match your situation."
+          }
         ]
       },
       "ur": {
@@ -458,18 +856,70 @@
           "یونیورسٹی کی اندرونی آخری تاریخ نکل جانا جو توقع سے پہلے ہوتی ہے۔",
           "آمدنی کی تفصیلات کا دستاویزات سے مختلف ہونا۔",
           "صوبائی انڈوومنٹ فنڈ اور یونیورسٹی اسکالرشپس جیسے دوسرے مواقع نہ دیکھنا۔"
+        ],
+        "problems": [
+          {
+            "problem": "خاندان کی آمدنی غیر رسمی ہے، تنخواہ کی سلپ نہیں۔",
+            "solution": "زیادہ تر یونیورسٹیاں اوتھ کمشنر سے تصدیق شدہ اسٹامپ پیپر پر آمدنی کا حلف نامہ قبول کرتی ہیں۔ فنانشل ایڈ آفس سے فارمیٹ پوچھیں۔"
+          },
+          {
+            "problem": "آخری تاریخ نکل گئی۔",
+            "solution": "اگلے مرحلے کا پوچھیں اور اس دوران دوسرے مواقع پر درخواست دیں: یونیورسٹی فیس معافی، صوبائی انڈوومنٹ فنڈ اور احساس/بی آئی ایس پی سے منسلک اسکالرشپس۔"
+          },
+          {
+            "problem": "انٹرویو سے گھبراہٹ ہو رہی ہے۔",
+            "solution": "جمع کروائی گئی ہر چیز کی اصل ساتھ لائیں اور سادگی اور سچائی سے جواب دیں۔ پینل دیکھتا ہے کہ دستاویزات آپ کے حالات سے میل کھاتی ہیں۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "HEC helpline (UAN)",
+          "nameUr": "ایچ ای سی ہیلپ لائن (UAN)",
+          "phone": "051-111-119-432"
+        },
+        {
+          "name": "HEC helpline (mobile)",
+          "nameUr": "ایچ ای سی ہیلپ لائن (موبائل)",
+          "phone": "0334-1119432"
+        },
+        {
+          "name": "HEC online help portal",
+          "nameUr": "ایچ ای سی آن لائن ہیلپ پورٹل",
+          "url": "https://onlinehelp.hec.gov.pk"
+        },
+        {
+          "name": "Your university's financial aid office",
+          "nameUr": "آپ کی یونیورسٹی کا فنانشل ایڈ آفس",
+          "note": "First point of contact for this scholarship",
+          "noteUr": "اس اسکالرشپ کے لیے پہلا رابطہ"
+        }
+      ]
     },
     {
       "id": "ntn-freelancer",
       "category": "government",
       "popular": false,
-      "keywords": ["ntn", "fbr", "tax", "freelancer", "iris", "filer", "ٹیکس", "فری لانسر"],
+      "keywords": [
+        "ntn",
+        "fbr",
+        "tax",
+        "freelancer",
+        "iris",
+        "filer",
+        "ٹیکس",
+        "فری لانسر"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "FBR IRIS portal", "url": "https://iris.fbr.gov.pk"},
-        {"name": "Federal Board of Revenue", "url": "https://www.fbr.gov.pk"}
+        {
+          "name": "FBR IRIS portal",
+          "url": "https://iris.fbr.gov.pk"
+        },
+        {
+          "name": "Federal Board of Revenue",
+          "url": "https://www.fbr.gov.pk"
+        }
       ],
       "en": {
         "title": "Register for an NTN as a freelancer",
@@ -496,6 +946,20 @@
           "Using a SIM registered in a parent's name.",
           "Registering but never filing a return, so you never become an active taxpayer.",
           "Paying agents for a free online process."
+        ],
+        "problems": [
+          {
+            "problem": "The verification code is not arriving on my phone.",
+            "solution": "The SIM must be registered on your own CNIC. Check by sending your CNIC number to 668. Wait a few minutes and use 'resend'."
+          },
+          {
+            "problem": "I don't know which income category to choose for freelancing.",
+            "solution": "Freelancers usually register income from 'export of IT services' or 'business'. If unsure, call the FBR helpline before filing."
+          },
+          {
+            "problem": "I registered but I am still not on the Active Taxpayer List.",
+            "solution": "Registration alone is not enough. You must file your annual return. The list updates after the filing deadline."
+          }
         ]
       },
       "ur": {
@@ -523,18 +987,56 @@
           "والدین کے نام پر رجسٹرڈ سم استعمال کرنا۔",
           "رجسٹریشن کے بعد کبھی گوشوارہ جمع نہ کرانا، جس سے آپ فعال ٹیکس دہندہ نہیں بنتے۔",
           "مفت آن لائن عمل کے لیے ایجنٹوں کو پیسے دینا۔"
+        ],
+        "problems": [
+          {
+            "problem": "تصدیقی کوڈ فون پر نہیں آ رہا۔",
+            "solution": "سم آپ کے اپنے شناختی کارڈ پر رجسٹرڈ ہونی چاہیے۔ 668 پر اپنا شناختی کارڈ نمبر بھیج کر چیک کریں۔ چند منٹ انتظار کر کے دوبارہ بھیجیں دبائیں۔"
+          },
+          {
+            "problem": "سمجھ نہیں آ رہا فری لانسنگ کے لیے آمدنی کی کون سی کیٹیگری چنوں۔",
+            "solution": "فری لانسرز عموماً 'آئی ٹی سروسز کی برآمد' یا 'کاروبار' چنتے ہیں۔ یقین نہ ہو تو فائلنگ سے پہلے ایف بی آر ہیلپ لائن پر کال کریں۔"
+          },
+          {
+            "problem": "رجسٹریشن کے باوجود فعال ٹیکس دہندگان کی فہرست میں نام نہیں۔",
+            "solution": "صرف رجسٹریشن کافی نہیں۔ سالانہ گوشوارہ جمع کروانا ضروری ہے۔ فہرست فائلنگ کی آخری تاریخ کے بعد اپڈیٹ ہوتی ہے۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "FBR helpline",
+          "nameUr": "ایف بی آر ہیلپ لائن",
+          "phone": "051-111-772-772"
+        },
+        {
+          "name": "FBR IRIS portal",
+          "nameUr": "ایف بی آر IRIS پورٹل",
+          "url": "https://iris.fbr.gov.pk"
+        }
+      ]
     },
     {
       "id": "police-character-certificate",
       "category": "government",
       "popular": false,
-      "keywords": ["police", "character certificate", "clearance", "pcc", "پولیس کریکٹر سرٹیفکیٹ"],
+      "keywords": [
+        "police",
+        "character certificate",
+        "clearance",
+        "pcc",
+        "پولیس کریکٹر سرٹیفکیٹ"
+      ],
       "lastVerified": null,
       "sources": [
-        {"name": "Punjab Police (Khidmat Markaz)", "url": "https://punjabpolice.gov.pk"},
-        {"name": "Sindh Police", "url": "https://www.sindhpolice.gov.pk"}
+        {
+          "name": "Punjab Police (Khidmat Markaz)",
+          "url": "https://punjabpolice.gov.pk"
+        },
+        {
+          "name": "Sindh Police",
+          "url": "https://www.sindhpolice.gov.pk"
+        }
       ],
       "en": {
         "title": "Get a police character certificate",
@@ -560,6 +1062,20 @@
           "Applying in the wrong district or province for your permanent address.",
           "Not checking how recent the certificate must be for your visa (often within 6 months).",
           "Name differences between CNIC and passport."
+        ],
+        "problems": [
+          {
+            "problem": "The local police station verification is taking too long.",
+            "solution": "Ask the office for the name of the station handling it and follow up there with your tracking number."
+          },
+          {
+            "problem": "I live in a different city from my CNIC address.",
+            "solution": "Most provinces issue the certificate based on your CNIC address. Check if your province lets you apply online to avoid travelling."
+          },
+          {
+            "problem": "The embassy says my certificate is too old.",
+            "solution": "Most embassies want it issued within the last 6 months. Apply close to your visa submission date."
+          }
         ]
       },
       "ur": {
@@ -586,8 +1102,39 @@
           "اپنے مستقل پتے کے بجائے غلط ضلع یا صوبے میں درخواست دینا۔",
           "یہ چیک نہ کرنا کہ ویزا کے لیے سرٹیفکیٹ کتنا نیا ہونا چاہیے (اکثر 6 ماہ کے اندر)۔",
           "شناختی کارڈ اور پاسپورٹ میں نام کا فرق۔"
+        ],
+        "problems": [
+          {
+            "problem": "مقامی تھانے سے تصدیق میں بہت وقت لگ رہا ہے۔",
+            "solution": "دفتر سے متعلقہ تھانے کا نام پوچھیں اور ٹریکنگ نمبر کے ساتھ وہاں رابطہ کریں۔"
+          },
+          {
+            "problem": "میں شناختی کارڈ کے پتے سے مختلف شہر میں رہتا/رہتی ہوں۔",
+            "solution": "زیادہ تر صوبے شناختی کارڈ کے پتے کی بنیاد پر سرٹیفکیٹ دیتے ہیں۔ دیکھیں کہ کیا آپ کا صوبہ آن لائن درخواست کی سہولت دیتا ہے۔"
+          },
+          {
+            "problem": "سفارت خانہ کہتا ہے سرٹیفکیٹ پرانا ہے۔",
+            "solution": "زیادہ تر سفارت خانے پچھلے 6 ماہ کے اندر جاری سرٹیفکیٹ مانگتے ہیں۔ ویزا جمع کروانے کی تاریخ کے قریب درخواست دیں۔"
+          }
         ]
-      }
+      },
+      "contacts": [
+        {
+          "name": "Punjab Police",
+          "nameUr": "پنجاب پولیس",
+          "url": "https://punjabpolice.gov.pk"
+        },
+        {
+          "name": "Sindh Police",
+          "nameUr": "سندھ پولیس",
+          "url": "https://www.sindhpolice.gov.pk"
+        },
+        {
+          "name": "Pakistan Citizen Portal (complaints)",
+          "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
+          "url": "https://citizenportal.gov.pk"
+        }
+      ]
     }
   ]
 }
