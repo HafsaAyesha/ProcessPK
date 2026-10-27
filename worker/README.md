@@ -6,7 +6,7 @@ secret, never in the app.
 
 ## Deploy (about 10 minutes)
 
-Needs Node.js 18 or newer.
+Needs Node.js 20 or newer (wrangler is pinned to 4.86.0, the last version tested on Node 20).
 
 ```
 cd worker
