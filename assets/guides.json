@@ -1,0 +1,593 @@
+{
+  "version": 1,
+  "guides": [
+    {
+      "id": "first-cnic",
+      "category": "documents",
+      "popular": true,
+      "keywords": ["cnic", "id card", "shanakhti card", "nadra", "18", "شناختی کارڈ"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "NADRA", "url": "https://www.nadra.gov.pk"},
+        {"name": "Pak-ID (NADRA online)", "url": "https://id.nadra.gov.pk"}
+      ],
+      "en": {
+        "title": "Get your first CNIC",
+        "summary": "Apply for your Computerised National Identity Card when you turn 18.",
+        "what": "The CNIC is your national identity card. You need it to open a bank account, get a passport, sit many exams, get a SIM in your name and apply for jobs.",
+        "who": "Pakistani citizens aged 18 or above who do not have a CNIC yet.",
+        "documents": [
+          "Your B-Form (Child Registration Certificate)",
+          "Original CNIC of your father or mother",
+          "A blood relative with a CNIC to verify you at the centre, if your parent cannot come",
+          "Matric certificate (helpful as proof of date of birth)"
+        ],
+        "fees": "The first normal CNIC has usually been free. Urgent and executive options cost extra. Check the current NADRA fee table before you go.",
+        "time": "Normal delivery usually takes around 2 to 4 weeks. Urgent and executive are faster.",
+        "steps": [
+          "Check that your B-Form is on the NADRA record. Your parent can confirm this at any NADRA centre.",
+          "Choose how to apply: at a NADRA Registration Centre, or online through the Pak-ID app or website.",
+          "At the centre, take a token and give your fingerprints, photo and signature.",
+          "Your parent or a blood relative verifies your identity with their CNIC and fingerprints.",
+          "Check every detail on the form (name spelling, date of birth, address) before you sign it.",
+          "Keep your tracking slip and track the application by SMS or on Pak-ID.",
+          "Collect the card from the same centre, or receive it by post if you applied online."
+        ],
+        "mistakes": [
+          "Name spelling different from your Matric certificate. Fix it now, because changing it later is harder.",
+          "Going without a parent or blood relative for verification.",
+          "Signing the form without reading the printed details."
+        ]
+      },
+      "ur": {
+        "title": "اپنا پہلا شناختی کارڈ بنوائیں",
+        "summary": "18 سال کی عمر ہونے پر قومی شناختی کارڈ (CNIC) کے لیے درخواست دیں۔",
+        "what": "شناختی کارڈ آپ کی قومی شناخت ہے۔ بینک اکاؤنٹ، پاسپورٹ، کئی امتحانات، اپنے نام پر سم اور نوکری کی درخواست کے لیے یہ ضروری ہے۔",
+        "who": "18 سال یا اس سے زیادہ عمر کے پاکستانی شہری جن کا شناختی کارڈ ابھی نہیں بنا۔",
+        "documents": [
+          "آپ کا ب فارم (چائلڈ رجسٹریشن سرٹیفکیٹ)",
+          "والد یا والدہ کا اصل شناختی کارڈ",
+          "اگر والدین نہ آ سکیں تو تصدیق کے لیے کوئی خونی رشتہ دار جس کا شناختی کارڈ ہو",
+          "میٹرک کی سند (تاریخ پیدائش کے ثبوت کے لیے مددگار)"
+        ],
+        "fees": "پہلا نارمل شناختی کارڈ عام طور پر مفت رہا ہے۔ ارجنٹ اور ایگزیکٹو کی فیس الگ ہے۔ جانے سے پہلے نادرا کی موجودہ فیس دیکھ لیں۔",
+        "time": "نارمل کارڈ عموماً 2 سے 4 ہفتوں میں ملتا ہے۔ ارجنٹ اور ایگزیکٹو جلدی ملتے ہیں۔",
+        "steps": [
+          "تسلی کر لیں کہ آپ کا ب فارم نادرا کے ریکارڈ میں موجود ہے۔ والدین کسی بھی نادرا سینٹر سے یہ معلوم کر سکتے ہیں۔",
+          "درخواست کا طریقہ چنیں: نادرا رجسٹریشن سینٹر یا Pak-ID ایپ/ویب سائٹ کے ذریعے آن لائن۔",
+          "سینٹر میں ٹوکن لیں، پھر انگلیوں کے نشان، تصویر اور دستخط دیں۔",
+          "والد، والدہ یا خونی رشتہ دار اپنے شناختی کارڈ اور انگوٹھے سے آپ کی تصدیق کریں۔",
+          "دستخط سے پہلے فارم کی ہر تفصیل (نام کے ہجے، تاریخ پیدائش، پتہ) چیک کریں۔",
+          "ٹریکنگ سلپ سنبھال کر رکھیں اور SMS یا Pak-ID سے درخواست کی صورتحال دیکھیں۔",
+          "کارڈ اسی سینٹر سے وصول کریں، یا آن لائن درخواست کی صورت میں ڈاک سے حاصل کریں۔"
+        ],
+        "mistakes": [
+          "نام کے ہجے میٹرک کی سند سے مختلف ہونا۔ ابھی درست کروائیں، بعد میں تبدیلی مشکل ہوتی ہے۔",
+          "تصدیق کے لیے والدین یا رشتہ دار کے بغیر جانا۔",
+          "پرنٹ شدہ تفصیلات پڑھے بغیر فارم پر دستخط کرنا۔"
+        ]
+      }
+    },
+    {
+      "id": "b-form",
+      "category": "documents",
+      "popular": false,
+      "keywords": ["b form", "b-form", "crc", "child registration", "nadra", "ب فارم"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "NADRA", "url": "https://www.nadra.gov.pk"},
+        {"name": "Pak-ID (NADRA online)", "url": "https://id.nadra.gov.pk"}
+      ],
+      "en": {
+        "title": "Get a B-Form (Child Registration Certificate)",
+        "summary": "Register a child under 18 with NADRA. Needed for board exams and passports.",
+        "what": "The B-Form, now called the Child Registration Certificate (CRC), is the NADRA record for anyone under 18. Boards ask for it at Matric registration, and it is needed for a child's passport and later for the first CNIC.",
+        "who": "Pakistani children under 18. A parent or legal guardian applies on their behalf.",
+        "documents": [
+          "Birth certificate from the Union Council (computerised)",
+          "Original CNIC of the parent who applies",
+          "For children aged 10 to 18: the child must come for photo and fingerprints"
+        ],
+        "fees": "Normal processing has a small fee. Urgent and executive cost more. Check the NADRA fee table.",
+        "time": "Normal processing usually takes a few weeks.",
+        "steps": [
+          "Get the child's computerised birth certificate from your Union Council if you do not have one.",
+          "Visit a NADRA centre with the parent's CNIC, or apply through Pak-ID.",
+          "Give the child's details. Children aged 10 or older give a photo and fingerprints.",
+          "Check the printed form carefully, especially the spelling of the child's name.",
+          "Pay the fee, keep the tracking slip and collect the CRC when it is ready."
+        ],
+        "mistakes": [
+          "Name spelling different from the school or birth certificate.",
+          "Waiting until Matric registration week, when NADRA centres are crowded.",
+          "Parent's own CNIC expired, which blocks the application."
+        ]
+      },
+      "ur": {
+        "title": "ب فارم (چائلڈ رجسٹریشن سرٹیفکیٹ) بنوائیں",
+        "summary": "18 سال سے کم عمر بچے کی نادرا رجسٹریشن۔ بورڈ امتحانات اور پاسپورٹ کے لیے ضروری۔",
+        "what": "ب فارم، جسے اب چائلڈ رجسٹریشن سرٹیفکیٹ (CRC) کہا جاتا ہے، 18 سال سے کم عمر افراد کا نادرا ریکارڈ ہے۔ میٹرک رجسٹریشن، بچے کے پاسپورٹ اور بعد میں پہلے شناختی کارڈ کے لیے یہ ضروری ہے۔",
+        "who": "18 سال سے کم عمر پاکستانی بچے۔ درخواست والدین یا قانونی سرپرست دیتے ہیں۔",
+        "documents": [
+          "یونین کونسل سے کمپیوٹرائزڈ پیدائشی سرٹیفکیٹ",
+          "درخواست دینے والے والد یا والدہ کا اصل شناختی کارڈ",
+          "10 سے 18 سال کے بچوں کو تصویر اور انگلیوں کے نشان کے لیے ساتھ آنا ہوگا"
+        ],
+        "fees": "نارمل کی معمولی فیس ہے۔ ارجنٹ اور ایگزیکٹو کی فیس زیادہ ہے۔ نادرا کی فیس لسٹ دیکھیں۔",
+        "time": "نارمل درخواست عموماً چند ہفتوں میں مکمل ہوتی ہے۔",
+        "steps": [
+          "اگر پیدائشی سرٹیفکیٹ نہیں ہے تو یونین کونسل سے کمپیوٹرائزڈ سرٹیفکیٹ بنوائیں۔",
+          "والدین کے شناختی کارڈ کے ساتھ نادرا سینٹر جائیں یا Pak-ID سے درخواست دیں۔",
+          "بچے کی تفصیلات دیں۔ 10 سال یا زیادہ عمر کے بچے تصویر اور انگلیوں کے نشان دیں۔",
+          "پرنٹ شدہ فارم، خاص طور پر بچے کے نام کے ہجے، غور سے چیک کریں۔",
+          "فیس ادا کریں، ٹریکنگ سلپ رکھیں اور تیار ہونے پر CRC وصول کریں۔"
+        ],
+        "mistakes": [
+          "نام کے ہجے اسکول یا پیدائشی سرٹیفکیٹ سے مختلف ہونا۔",
+          "میٹرک رجسٹریشن کے ہفتے تک انتظار کرنا جب نادرا سینٹرز پر رش ہوتا ہے۔",
+          "والدین کا اپنا شناختی کارڈ زائد المیعاد ہونا، جس سے درخواست رک جاتی ہے۔"
+        ]
+      }
+    },
+    {
+      "id": "first-passport",
+      "category": "travel",
+      "popular": true,
+      "keywords": ["passport", "dgip", "travel", "study abroad", "پاسپورٹ"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "Directorate General of Immigration & Passports", "url": "https://dgip.gov.pk"},
+        {"name": "Online passport application", "url": "https://onlinemrp.dgip.gov.pk"}
+      ],
+      "en": {
+        "title": "Apply for your first passport",
+        "summary": "Get a Pakistani passport for study, travel or Umrah.",
+        "what": "A passport lets you travel abroad. Students need it for foreign admissions, scholarships, exchange programmes and visa applications.",
+        "who": "Pakistani citizens with a valid CNIC. Under-18s apply with their B-Form and a parent.",
+        "documents": [
+          "Original valid CNIC (or B-Form for under 18)",
+          "For under 18: both parents' CNICs, and parents come to the office",
+          "Old passport, if you ever had one",
+          "Fee payment receipt"
+        ],
+        "fees": "The fee depends on the number of pages, validity (5 or 10 years) and normal, urgent or fast-track processing. Check the current DGIP fee schedule and pay at a listed bank or online.",
+        "time": "Normal processing usually takes a few weeks. Urgent and fast-track are quicker.",
+        "steps": [
+          "Choose pages, validity and processing type, then check the fee on the DGIP website.",
+          "Pay the fee at an authorised bank or online and keep the receipt.",
+          "Visit a Regional Passport Office with your CNIC and receipt. Some offices let you book a slot first.",
+          "Give your photo and fingerprints at the counter. Wear plain clothes with no white background colours.",
+          "Check the data on screen before confirming, especially name spelling and date of birth.",
+          "Keep the token slip and track your passport on the DGIP website.",
+          "Collect the passport from the same office when it is ready."
+        ],
+        "mistakes": [
+          "Name spelling differs from your CNIC or degree, which causes visa trouble later.",
+          "Paying for the wrong fee category.",
+          "Leaving it until a few weeks before an admission or visa deadline."
+        ]
+      },
+      "ur": {
+        "title": "اپنا پہلا پاسپورٹ بنوائیں",
+        "summary": "تعلیم، سفر یا عمرہ کے لیے پاکستانی پاسپورٹ حاصل کریں۔",
+        "what": "پاسپورٹ کے ذریعے آپ بیرون ملک سفر کر سکتے ہیں۔ غیر ملکی داخلوں، اسکالرشپس، ایکسچینج پروگرامز اور ویزا کے لیے طلبہ کو اس کی ضرورت ہوتی ہے۔",
+        "who": "درست شناختی کارڈ رکھنے والے پاکستانی شہری۔ 18 سال سے کم عمر افراد ب فارم اور والدین کے ساتھ درخواست دیتے ہیں۔",
+        "documents": [
+          "اصل درست شناختی کارڈ (18 سال سے کم کے لیے ب فارم)",
+          "18 سال سے کم کے لیے والدین دونوں کے شناختی کارڈ، اور والدین کا دفتر آنا",
+          "پرانا پاسپورٹ، اگر کبھی بنا ہو",
+          "فیس کی ادائیگی کی رسید"
+        ],
+        "fees": "فیس صفحات کی تعداد، مدت (5 یا 10 سال) اور نارمل، ارجنٹ یا فاسٹ ٹریک پر منحصر ہے۔ DGIP کی موجودہ فیس دیکھیں اور مقررہ بینک یا آن لائن ادا کریں۔",
+        "time": "نارمل پاسپورٹ عموماً چند ہفتوں میں بنتا ہے۔ ارجنٹ اور فاسٹ ٹریک جلدی بنتے ہیں۔",
+        "steps": [
+          "صفحات، مدت اور پروسیسنگ کی قسم چنیں، پھر DGIP ویب سائٹ پر فیس دیکھیں۔",
+          "مجاز بینک یا آن لائن فیس ادا کریں اور رسید سنبھال کر رکھیں۔",
+          "شناختی کارڈ اور رسید کے ساتھ ریجنل پاسپورٹ آفس جائیں۔ کچھ دفاتر میں پہلے وقت بک کیا جا سکتا ہے۔",
+          "کاؤنٹر پر تصویر اور انگلیوں کے نشان دیں۔ سادہ لباس پہنیں، سفید رنگ سے پرہیز کریں۔",
+          "تصدیق سے پہلے اسکرین پر نام کے ہجے اور تاریخ پیدائش چیک کریں۔",
+          "ٹوکن سلپ رکھیں اور DGIP ویب سائٹ پر پاسپورٹ ٹریک کریں۔",
+          "تیار ہونے پر اسی دفتر سے پاسپورٹ وصول کریں۔"
+        ],
+        "mistakes": [
+          "نام کے ہجے شناختی کارڈ یا ڈگری سے مختلف ہونا، جس سے بعد میں ویزا میں مسئلہ ہوتا ہے۔",
+          "غلط کیٹیگری کی فیس ادا کرنا۔",
+          "داخلے یا ویزا کی آخری تاریخ سے چند ہفتے پہلے تک انتظار کرنا۔"
+        ]
+      }
+    },
+    {
+      "id": "hec-degree-attestation",
+      "category": "education",
+      "popular": true,
+      "keywords": ["hec", "degree attestation", "transcript", "verification", "ڈگری تصدیق"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "Higher Education Commission", "url": "https://www.hec.gov.pk"},
+        {"name": "HEC e-Services portal", "url": "https://eservices.hec.gov.pk"}
+      ],
+      "en": {
+        "title": "Attest your degree from HEC",
+        "summary": "Get your university degree and transcript attested for jobs or study abroad.",
+        "what": "HEC attestation confirms your degree is genuine and from a recognised institution. Many government jobs, foreign universities and embassies require it.",
+        "who": "Graduates of HEC-recognised universities and degree-awarding institutes in Pakistan.",
+        "documents": [
+          "Original CNIC",
+          "Original degree and transcripts (and photocopies)",
+          "Previous certificates (Matric and Intermediate) as asked for on the portal",
+          "A recent passport-size photo for your profile"
+        ],
+        "fees": "HEC charges a fee per document, paid online on the portal. Check the current amount on the HEC e-Services portal.",
+        "time": "Depends on the option. Walk-in appointments are fastest. Courier takes longer.",
+        "steps": [
+          "Create an account on the HEC e-Services portal using your CNIC and email.",
+          "Fill in your profile and add all your education records, from Matric upward.",
+          "Upload scanned copies of your degree and transcripts when asked.",
+          "Apply for degree attestation and choose walk-in or courier.",
+          "Pay the fee online and download the payment confirmation.",
+          "Walk-in: visit the chosen HEC office on your appointment date with originals. Courier: send the documents as instructed.",
+          "Collect or receive your attested documents and check every stamp."
+        ],
+        "mistakes": [
+          "Profile details not matching the degree, which leads to rejection.",
+          "Applying before the university has issued the final degree.",
+          "Forgetting original documents on the appointment day."
+        ]
+      },
+      "ur": {
+        "title": "ایچ ای سی سے اپنی ڈگری کی تصدیق کروائیں",
+        "summary": "نوکری یا بیرون ملک تعلیم کے لیے یونیورسٹی کی ڈگری اور ٹرانسکرپٹ کی تصدیق۔",
+        "what": "ایچ ای سی کی تصدیق ثابت کرتی ہے کہ آپ کی ڈگری اصلی اور تسلیم شدہ ادارے کی ہے۔ کئی سرکاری نوکریوں، غیر ملکی یونیورسٹیوں اور سفارت خانوں کو اس کی ضرورت ہوتی ہے۔",
+        "who": "پاکستان میں ایچ ای سی سے تسلیم شدہ یونیورسٹیوں اور اداروں کے گریجویٹس۔",
+        "documents": [
+          "اصل شناختی کارڈ",
+          "اصل ڈگری اور ٹرانسکرپٹس (اور فوٹو کاپیاں)",
+          "پورٹل پر مانگی گئی پچھلی اسناد (میٹرک اور انٹرمیڈیٹ)",
+          "پروفائل کے لیے حالیہ پاسپورٹ سائز تصویر"
+        ],
+        "fees": "ایچ ای سی ہر دستاویز کی فیس لیتا ہے جو پورٹل پر آن لائن ادا ہوتی ہے۔ موجودہ رقم ایچ ای سی ای سروسز پورٹل پر دیکھیں۔",
+        "time": "طریقے پر منحصر ہے۔ واک اِن اپائنٹمنٹ سب سے تیز ہے، کوریئر میں زیادہ وقت لگتا ہے۔",
+        "steps": [
+          "اپنے شناختی کارڈ اور ای میل سے ایچ ای سی ای سروسز پورٹل پر اکاؤنٹ بنائیں۔",
+          "اپنی پروفائل مکمل کریں اور میٹرک سے آگے تمام تعلیمی ریکارڈ شامل کریں۔",
+          "مانگے جانے پر ڈگری اور ٹرانسکرپٹس کی اسکین کاپیاں اپلوڈ کریں۔",
+          "ڈگری تصدیق کے لیے درخواست دیں اور واک اِن یا کوریئر چنیں۔",
+          "آن لائن فیس ادا کریں اور ادائیگی کی تصدیق ڈاؤن لوڈ کریں۔",
+          "واک اِن: مقررہ تاریخ پر اصل دستاویزات کے ساتھ ایچ ای سی دفتر جائیں۔ کوریئر: ہدایت کے مطابق دستاویزات بھیجیں۔",
+          "تصدیق شدہ دستاویزات وصول کریں اور ہر مہر چیک کریں۔"
+        ],
+        "mistakes": [
+          "پروفائل کی تفصیلات ڈگری سے مختلف ہونا، جس سے درخواست مسترد ہوتی ہے۔",
+          "یونیورسٹی سے فائنل ڈگری ملنے سے پہلے درخواست دینا۔",
+          "اپائنٹمنٹ کے دن اصل دستاویزات بھول جانا۔"
+        ]
+      }
+    },
+    {
+      "id": "ibcc-equivalence",
+      "category": "education",
+      "popular": false,
+      "keywords": ["ibcc", "equivalence", "o level", "a level", "attestation", "matric", "inter", "مساوی سند"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "Inter Board Committee of Chairmen (IBCC)", "url": "https://www.ibcc.edu.pk"}
+      ],
+      "en": {
+        "title": "Get IBCC equivalence or attestation",
+        "summary": "Convert O/A Level or foreign results to Matric/FSc, or attest board certificates.",
+        "what": "IBCC issues equivalence certificates so O Level, A Level and foreign qualifications are accepted as Matric or Intermediate in Pakistan. It also attests SSC and HSSC certificates for use abroad.",
+        "who": "O/A Level students applying to Pakistani universities, students with foreign school results, and anyone sending Matric or Inter certificates abroad.",
+        "documents": [
+          "CNIC or B-Form",
+          "Original result statements or certificates",
+          "For O/A Levels: statements of entry or final certificates as required",
+          "Passport-size photo"
+        ],
+        "fees": "Fees depend on the service and urgency. Check the IBCC website before paying.",
+        "time": "Online applications usually take a few working days to a few weeks.",
+        "steps": [
+          "Create an account on the IBCC online portal.",
+          "Choose the service: equivalence (for O/A Level or foreign results) or attestation (for Pakistani board certificates).",
+          "Enter your details and upload scans of the documents.",
+          "Pay the fee online and note your application number.",
+          "Send originals by courier or visit an IBCC office if asked.",
+          "Track the application on the portal and collect the certificate."
+        ],
+        "mistakes": [
+          "Applying for university admission without equivalence, which delays enrolment.",
+          "Choosing attestation when you need equivalence, or the other way round.",
+          "Missing subjects that universities require (e.g. Pre-Medical combinations)."
+        ]
+      },
+      "ur": {
+        "title": "آئی بی سی سی سے مساوی سند یا تصدیق",
+        "summary": "او/اے لیول یا غیر ملکی نتائج کو میٹرک/ایف ایس سی کے برابر کروائیں، یا بورڈ کی اسناد کی تصدیق۔",
+        "what": "آئی بی سی سی مساوی سند جاری کرتا ہے تاکہ او لیول، اے لیول اور غیر ملکی تعلیم پاکستان میں میٹرک یا انٹرمیڈیٹ کے برابر مانی جائے۔ یہ بیرون ملک استعمال کے لیے میٹرک اور انٹر کی اسناد کی تصدیق بھی کرتا ہے۔",
+        "who": "پاکستانی یونیورسٹیوں میں داخلہ لینے والے او/اے لیول طلبہ، غیر ملکی اسکول کے طلبہ، اور میٹرک یا انٹر کی اسناد بیرون ملک بھیجنے والے۔",
+        "documents": [
+          "شناختی کارڈ یا ب فارم",
+          "اصل نتیجہ کارڈ یا اسناد",
+          "او/اے لیول کے لیے حسب ضرورت اسٹیٹمنٹ آف انٹری یا فائنل سرٹیفکیٹس",
+          "پاسپورٹ سائز تصویر"
+        ],
+        "fees": "فیس سروس اور ارجنسی پر منحصر ہے۔ ادائیگی سے پہلے آئی بی سی سی ویب سائٹ دیکھیں۔",
+        "time": "آن لائن درخواستیں عموماً چند دنوں سے چند ہفتوں میں مکمل ہوتی ہیں۔",
+        "steps": [
+          "آئی بی سی سی کے آن لائن پورٹل پر اکاؤنٹ بنائیں۔",
+          "سروس چنیں: مساوی سند (او/اے لیول یا غیر ملکی نتائج) یا تصدیق (پاکستانی بورڈ کی اسناد)۔",
+          "اپنی تفصیلات درج کریں اور دستاویزات کی اسکین اپلوڈ کریں۔",
+          "آن لائن فیس ادا کریں اور درخواست نمبر نوٹ کریں۔",
+          "کہا جائے تو اصل دستاویزات کوریئر کریں یا آئی بی سی سی دفتر جائیں۔",
+          "پورٹل پر درخواست ٹریک کریں اور سند وصول کریں۔"
+        ],
+        "mistakes": [
+          "مساوی سند کے بغیر یونیورسٹی داخلے کی درخواست دینا، جس سے داخلہ رک جاتا ہے۔",
+          "مساوی سند کی بجائے تصدیق یا تصدیق کی بجائے مساوی سند کے لیے درخواست دینا۔",
+          "یونیورسٹی کے مطلوبہ مضامین (جیسے پری میڈیکل) کا نہ ہونا۔"
+        ]
+      }
+    },
+    {
+      "id": "mdcat-registration",
+      "category": "education",
+      "popular": true,
+      "keywords": ["mdcat", "pmdc", "medical", "mbbs", "entry test", "ایم ڈی کیٹ"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "Pakistan Medical & Dental Council (PM&DC)", "url": "https://pmdc.pk"}
+      ],
+      "en": {
+        "title": "Register for MDCAT",
+        "summary": "Sign up for the medical and dental college admission test.",
+        "what": "MDCAT is the entry test for MBBS and BDS admission in Pakistan. PM&DC sets the policy, and the test is conducted by designated universities in each province.",
+        "who": "FSc Pre-Medical students (or equivalent) who want to apply for MBBS or BDS.",
+        "documents": [
+          "CNIC or B-Form",
+          "Matric result and FSc result or admit card (if result is pending)",
+          "IBCC equivalence, if you studied O/A Levels",
+          "Recent passport-size photo (digital, for upload)",
+          "Fee payment receipt"
+        ],
+        "fees": "The registration fee is announced each year. Check the official notice from PM&DC or your provincial conducting university.",
+        "time": "Registration usually opens in summer, a few weeks before the test. Dates change every year.",
+        "steps": [
+          "Watch the PM&DC website and your provincial university for the official MDCAT notice.",
+          "Read the eligibility rules, syllabus and test date in the notice.",
+          "Create an account on the official registration portal named in the notice.",
+          "Fill in your details, choose your test centre and upload your photo.",
+          "Pay the fee using the method in the notice and keep the receipt.",
+          "Download your admit card when it is released and check your test centre.",
+          "Take the test, then follow the admissions notice for college applications."
+        ],
+        "mistakes": [
+          "Registering on fake or unofficial websites. Use only the portal linked in the official notice.",
+          "Missing the registration deadline because you waited for FSc results.",
+          "Not getting IBCC equivalence on time if you are an A Level student."
+        ]
+      },
+      "ur": {
+        "title": "ایم ڈی کیٹ کے لیے رجسٹریشن",
+        "summary": "میڈیکل اور ڈینٹل کالج داخلہ ٹیسٹ کے لیے رجسٹر ہوں۔",
+        "what": "ایم ڈی کیٹ پاکستان میں ایم بی بی ایس اور بی ڈی ایس داخلے کا ٹیسٹ ہے۔ پالیسی PM&DC بناتی ہے اور ہر صوبے میں نامزد یونیورسٹیاں ٹیسٹ لیتی ہیں۔",
+        "who": "ایف ایس سی پری میڈیکل (یا مساوی) کے طلبہ جو ایم بی بی ایس یا بی ڈی ایس میں داخلہ چاہتے ہیں۔",
+        "documents": [
+          "شناختی کارڈ یا ب فارم",
+          "میٹرک کا نتیجہ اور ایف ایس سی کا نتیجہ یا رول نمبر سلپ (اگر نتیجہ نہ آیا ہو)",
+          "او/اے لیول کی صورت میں آئی بی سی سی مساوی سند",
+          "حالیہ پاسپورٹ سائز تصویر (اپلوڈ کے لیے ڈیجیٹل)",
+          "فیس کی ادائیگی کی رسید"
+        ],
+        "fees": "رجسٹریشن فیس ہر سال اعلان ہوتی ہے۔ PM&DC یا صوبائی یونیورسٹی کا سرکاری نوٹس دیکھیں۔",
+        "time": "رجسٹریشن عموماً گرمیوں میں ٹیسٹ سے چند ہفتے پہلے کھلتی ہے۔ تاریخیں ہر سال بدلتی ہیں۔",
+        "steps": [
+          "ایم ڈی کیٹ کے سرکاری نوٹس کے لیے PM&DC ویب سائٹ اور اپنی صوبائی یونیورسٹی پر نظر رکھیں۔",
+          "نوٹس میں اہلیت، سلیبس اور ٹیسٹ کی تاریخ پڑھیں۔",
+          "نوٹس میں دیے گئے سرکاری پورٹل پر اکاؤنٹ بنائیں۔",
+          "اپنی تفصیلات بھریں، ٹیسٹ سینٹر چنیں اور تصویر اپلوڈ کریں۔",
+          "نوٹس میں بتائے گئے طریقے سے فیس ادا کریں اور رسید رکھیں۔",
+          "ایڈمٹ کارڈ جاری ہونے پر ڈاؤن لوڈ کریں اور ٹیسٹ سینٹر چیک کریں۔",
+          "ٹیسٹ دیں، پھر کالج کی درخواستوں کے لیے داخلہ نوٹس پر عمل کریں۔"
+        ],
+        "mistakes": [
+          "جعلی یا غیر سرکاری ویب سائٹس پر رجسٹریشن۔ صرف سرکاری نوٹس والا پورٹل استعمال کریں۔",
+          "ایف ایس سی نتیجے کے انتظار میں رجسٹریشن کی آخری تاریخ نکل جانا۔",
+          "اے لیول طلبہ کا وقت پر آئی بی سی سی مساوی سند نہ لینا۔"
+        ]
+      }
+    },
+    {
+      "id": "hec-need-based-scholarship",
+      "category": "education",
+      "popular": true,
+      "keywords": ["scholarship", "need based", "hec", "financial aid", "fee", "وظیفہ", "اسکالرشپ"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "HEC Scholarships", "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx"}
+      ],
+      "en": {
+        "title": "Apply for an HEC need-based scholarship",
+        "summary": "Get tuition and living support at a public university if your family income is low.",
+        "what": "HEC need-based scholarships cover tuition and some living costs for students who cannot afford university. You apply through your own university's financial aid office.",
+        "who": "Undergraduate (and some postgraduate) students at participating public universities who meet the family-income criteria.",
+        "documents": [
+          "Your CNIC or B-Form and your parents' CNICs",
+          "Proof of family income (salary slip, pension slip or income affidavit)",
+          "Recent utility bills (electricity, gas)",
+          "Death certificate of a parent, if applicable",
+          "University admission letter and fee voucher"
+        ],
+        "fees": "Applying is free. Do not pay anyone who offers to get you a scholarship.",
+        "time": "Applications usually open after admissions each year. Selection, including interviews, can take a few months.",
+        "steps": [
+          "Ask your university's financial aid office when the HEC need-based call opens.",
+          "Collect your income proof and utility bills early, as these take time.",
+          "Fill in the application form exactly as instructed by the university.",
+          "Submit the form with copies of all documents before the deadline.",
+          "Attend the interview with original documents. Answer honestly about family income.",
+          "If selected, keep your grades above the required level to keep the scholarship."
+        ],
+        "mistakes": [
+          "Missing the university's internal deadline, which is earlier than people expect.",
+          "Income details that do not match the documents.",
+          "Not checking other options too, such as provincial endowment funds and university scholarships."
+        ]
+      },
+      "ur": {
+        "title": "ایچ ای سی نیڈ بیسڈ اسکالرشپ کے لیے درخواست",
+        "summary": "کم آمدنی والے خاندان کے طلبہ کے لیے سرکاری یونیورسٹی میں فیس اور اخراجات کی مدد۔",
+        "what": "ایچ ای سی نیڈ بیسڈ اسکالرشپ ان طلبہ کی فیس اور کچھ اخراجات پورے کرتی ہے جو یونیورسٹی کا خرچ برداشت نہیں کر سکتے۔ درخواست اپنی یونیورسٹی کے فنانشل ایڈ آفس کے ذریعے دی جاتی ہے۔",
+        "who": "شریک سرکاری یونیورسٹیوں کے انڈرگریجویٹ (اور کچھ پوسٹ گریجویٹ) طلبہ جو خاندانی آمدنی کی شرائط پوری کرتے ہوں۔",
+        "documents": [
+          "اپنا شناختی کارڈ یا ب فارم اور والدین کے شناختی کارڈ",
+          "خاندانی آمدنی کا ثبوت (تنخواہ سلپ، پنشن سلپ یا آمدنی کا حلف نامہ)",
+          "حالیہ یوٹیلیٹی بل (بجلی، گیس)",
+          "اگر لاگو ہو تو والد یا والدہ کا ڈیتھ سرٹیفکیٹ",
+          "یونیورسٹی داخلہ لیٹر اور فیس واؤچر"
+        ],
+        "fees": "درخواست مفت ہے۔ اسکالرشپ دلوانے کا وعدہ کرنے والے کسی شخص کو پیسے نہ دیں۔",
+        "time": "درخواستیں عموماً ہر سال داخلوں کے بعد کھلتی ہیں۔ انٹرویو سمیت انتخاب میں چند ماہ لگ سکتے ہیں۔",
+        "steps": [
+          "اپنی یونیورسٹی کے فنانشل ایڈ آفس سے پوچھیں کہ ایچ ای سی نیڈ بیسڈ درخواستیں کب کھلیں گی۔",
+          "آمدنی کا ثبوت اور یوٹیلیٹی بل پہلے سے جمع کریں کیونکہ ان میں وقت لگتا ہے۔",
+          "یونیورسٹی کی ہدایات کے مطابق درخواست فارم بھریں۔",
+          "آخری تاریخ سے پہلے تمام دستاویزات کی کاپیوں کے ساتھ فارم جمع کروائیں۔",
+          "اصل دستاویزات کے ساتھ انٹرویو دیں اور خاندانی آمدنی کے بارے میں سچ بتائیں۔",
+          "منتخب ہونے پر اسکالرشپ برقرار رکھنے کے لیے مطلوبہ گریڈز برقرار رکھیں۔"
+        ],
+        "mistakes": [
+          "یونیورسٹی کی اندرونی آخری تاریخ نکل جانا جو توقع سے پہلے ہوتی ہے۔",
+          "آمدنی کی تفصیلات کا دستاویزات سے مختلف ہونا۔",
+          "صوبائی انڈوومنٹ فنڈ اور یونیورسٹی اسکالرشپس جیسے دوسرے مواقع نہ دیکھنا۔"
+        ]
+      }
+    },
+    {
+      "id": "ntn-freelancer",
+      "category": "government",
+      "popular": false,
+      "keywords": ["ntn", "fbr", "tax", "freelancer", "iris", "filer", "ٹیکس", "فری لانسر"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "FBR IRIS portal", "url": "https://iris.fbr.gov.pk"},
+        {"name": "Federal Board of Revenue", "url": "https://www.fbr.gov.pk"}
+      ],
+      "en": {
+        "title": "Register for an NTN as a freelancer",
+        "summary": "Become a tax filer with FBR so your freelance income is on record.",
+        "what": "An NTN (National Tax Number) registers you with the Federal Board of Revenue. Filing returns makes you an active taxpayer, which lowers tax deducted on banking and some transactions and helps with visas and loans.",
+        "who": "Students and young people earning from freelancing, part-time jobs or small businesses.",
+        "documents": [
+          "Your CNIC",
+          "A mobile number registered in your own name",
+          "A personal email address",
+          "Bank account details (where you receive payments)"
+        ],
+        "fees": "Registration on IRIS is free.",
+        "time": "Registration can be done online in under an hour once your SIM and email are ready.",
+        "steps": [
+          "Open the FBR IRIS portal and choose Registration for Unregistered Person.",
+          "Enter your CNIC, mobile number (in your name) and email.",
+          "Enter the codes sent to your phone and email to verify them.",
+          "Log in to IRIS and complete the registration form with your address and income source.",
+          "Submit the form. Your CNIC number becomes your NTN.",
+          "File your income tax return each year before the deadline to appear on the Active Taxpayer List."
+        ],
+        "mistakes": [
+          "Using a SIM registered in a parent's name.",
+          "Registering but never filing a return, so you never become an active taxpayer.",
+          "Paying agents for a free online process."
+        ]
+      },
+      "ur": {
+        "title": "فری لانسر کے طور پر این ٹی این رجسٹریشن",
+        "summary": "ایف بی آر میں ٹیکس فائلر بنیں تاکہ آپ کی فری لانس آمدنی ریکارڈ پر ہو۔",
+        "what": "این ٹی این (نیشنل ٹیکس نمبر) آپ کو ایف بی آر میں رجسٹر کرتا ہے۔ گوشوارے جمع کرانے سے آپ فعال ٹیکس دہندہ بنتے ہیں، جس سے بینکنگ اور کچھ لین دین پر ٹیکس کٹوتی کم ہوتی ہے اور ویزا اور قرض میں مدد ملتی ہے۔",
+        "who": "فری لانسنگ، پارٹ ٹائم نوکری یا چھوٹے کاروبار سے کمانے والے طلبہ اور نوجوان۔",
+        "documents": [
+          "آپ کا شناختی کارڈ",
+          "اپنے نام پر رجسٹرڈ موبائل نمبر",
+          "ذاتی ای میل ایڈریس",
+          "بینک اکاؤنٹ کی تفصیلات (جہاں ادائیگی وصول ہوتی ہے)"
+        ],
+        "fees": "IRIS پر رجسٹریشن مفت ہے۔",
+        "time": "سم اور ای میل تیار ہوں تو آن لائن رجسٹریشن ایک گھنٹے سے کم میں ہو سکتی ہے۔",
+        "steps": [
+          "ایف بی آر IRIS پورٹل کھولیں اور Registration for Unregistered Person چنیں۔",
+          "اپنا شناختی کارڈ نمبر، اپنے نام پر موبائل نمبر اور ای میل درج کریں۔",
+          "فون اور ای میل پر آنے والے کوڈ درج کر کے تصدیق کریں۔",
+          "IRIS میں لاگ اِن کریں اور پتہ اور آمدنی کے ذریعے کے ساتھ رجسٹریشن فارم مکمل کریں۔",
+          "فارم جمع کروائیں۔ آپ کا شناختی کارڈ نمبر ہی آپ کا این ٹی این بن جاتا ہے۔",
+          "فعال ٹیکس دہندگان کی فہرست میں آنے کے لیے ہر سال آخری تاریخ سے پہلے گوشوارہ جمع کروائیں۔"
+        ],
+        "mistakes": [
+          "والدین کے نام پر رجسٹرڈ سم استعمال کرنا۔",
+          "رجسٹریشن کے بعد کبھی گوشوارہ جمع نہ کرانا، جس سے آپ فعال ٹیکس دہندہ نہیں بنتے۔",
+          "مفت آن لائن عمل کے لیے ایجنٹوں کو پیسے دینا۔"
+        ]
+      }
+    },
+    {
+      "id": "police-character-certificate",
+      "category": "government",
+      "popular": false,
+      "keywords": ["police", "character certificate", "clearance", "pcc", "پولیس کریکٹر سرٹیفکیٹ"],
+      "lastVerified": null,
+      "sources": [
+        {"name": "Punjab Police (Khidmat Markaz)", "url": "https://punjabpolice.gov.pk"},
+        {"name": "Sindh Police", "url": "https://www.sindhpolice.gov.pk"}
+      ],
+      "en": {
+        "title": "Get a police character certificate",
+        "summary": "Prove you have no criminal record, for jobs, visas or study abroad.",
+        "what": "A police character certificate confirms you have no criminal record in police files. Many employers, embassies and foreign universities ask for it. The process is run by each province's police, so details differ by province.",
+        "who": "Anyone applying for a job, visa, immigration or foreign study that asks for police clearance.",
+        "documents": [
+          "Original CNIC and a copy",
+          "Passport copy (if the certificate is for abroad)",
+          "Passport-size photos",
+          "A letter or requirement from the employer or embassy, if you have one"
+        ],
+        "fees": "A small fee applies and differs by province. Check your provincial police website.",
+        "time": "Usually a few working days, longer if verification is needed at your local police station.",
+        "steps": [
+          "Check your province's police website for the current process and office (for example a Khidmat Markaz in Punjab).",
+          "Apply online where available, or visit the office with your documents.",
+          "Give your fingerprints and photo if asked.",
+          "Pay the fee and keep the receipt and tracking number.",
+          "Wait for verification, then collect the certificate."
+        ],
+        "mistakes": [
+          "Applying in the wrong district or province for your permanent address.",
+          "Not checking how recent the certificate must be for your visa (often within 6 months).",
+          "Name differences between CNIC and passport."
+        ]
+      },
+      "ur": {
+        "title": "پولیس کریکٹر سرٹیفکیٹ حاصل کریں",
+        "summary": "نوکری، ویزا یا بیرون ملک تعلیم کے لیے ثابت کریں کہ آپ کا کوئی مجرمانہ ریکارڈ نہیں۔",
+        "what": "پولیس کریکٹر سرٹیفکیٹ تصدیق کرتا ہے کہ پولیس ریکارڈ میں آپ کا کوئی مجرمانہ ریکارڈ نہیں۔ کئی آجر، سفارت خانے اور غیر ملکی یونیورسٹیاں اسے مانگتی ہیں۔ ہر صوبے کی پولیس یہ عمل چلاتی ہے، اس لیے تفصیلات صوبے کے لحاظ سے مختلف ہیں۔",
+        "who": "کوئی بھی جو ایسی نوکری، ویزا، امیگریشن یا غیر ملکی تعلیم کے لیے درخواست دے رہا ہو جس میں پولیس کلیئرنس مانگی گئی ہو۔",
+        "documents": [
+          "اصل شناختی کارڈ اور کاپی",
+          "پاسپورٹ کی کاپی (اگر سرٹیفکیٹ بیرون ملک کے لیے ہو)",
+          "پاسپورٹ سائز تصاویر",
+          "اگر ہو تو آجر یا سفارت خانے کا خط"
+        ],
+        "fees": "معمولی فیس ہے جو صوبے کے لحاظ سے مختلف ہے۔ اپنی صوبائی پولیس کی ویب سائٹ دیکھیں۔",
+        "time": "عموماً چند دن، اگر مقامی تھانے سے تصدیق درکار ہو تو زیادہ۔",
+        "steps": [
+          "اپنے صوبے کی پولیس ویب سائٹ پر موجودہ طریقہ اور دفتر دیکھیں (مثلاً پنجاب میں خدمت مرکز)۔",
+          "جہاں ممکن ہو آن لائن درخواست دیں یا دستاویزات کے ساتھ دفتر جائیں۔",
+          "کہا جائے تو انگلیوں کے نشان اور تصویر دیں۔",
+          "فیس ادا کریں اور رسید اور ٹریکنگ نمبر سنبھال کر رکھیں۔",
+          "تصدیق کا انتظار کریں، پھر سرٹیفکیٹ وصول کریں۔"
+        ],
+        "mistakes": [
+          "اپنے مستقل پتے کے بجائے غلط ضلع یا صوبے میں درخواست دینا۔",
+          "یہ چیک نہ کرنا کہ ویزا کے لیے سرٹیفکیٹ کتنا نیا ہونا چاہیے (اکثر 6 ماہ کے اندر)۔",
+          "شناختی کارڈ اور پاسپورٹ میں نام کا فرق۔"
+        ]
+      }
+    }
+  ]
+}
