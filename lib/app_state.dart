@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'ask_service.dart';
 import 'guide_repository.dart';
 import 'models.dart';
 import 'strings.dart';
@@ -15,7 +16,10 @@ class AppState extends ChangeNotifier {
   final SharedPreferences prefs;
   final GuideRepository repository;
 
-  AppState({required this.prefs, required this.repository});
+  AppState({required this.prefs, required this.repository, AskService? ask})
+    : ask = ask ?? AskService(prefs: prefs);
+
+  final AskService ask;
 
   List<Guide> guides = [];
   String lang = 'en';

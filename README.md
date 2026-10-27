@@ -17,6 +17,8 @@ and young people. English and Urdu, works offline, no login.
 - About: disclaimer (not affiliated with the government), all helplines,
   privacy, sources
 - 9 student guides in both languages (`assets/guides.json`)
+- Ask ProcessPK: AI answers about the open guide, grounded only in that
+  guide, with sources and a daily limit (see `worker/README.md` to switch it on)
 - AdMob test banners on Home and guide lists (never on checklists)
 - Firebase ready: guides load from Firestore once you connect a project
 

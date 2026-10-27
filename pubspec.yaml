@@ -43,6 +43,7 @@ dependencies:
   google_mobile_ads: ^9.2.0
   flutter_localizations:
     sdk: flutter
+  http: ^1.6.0
 
 dev_dependencies:
   flutter_test:

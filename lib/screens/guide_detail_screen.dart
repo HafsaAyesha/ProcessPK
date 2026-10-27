@@ -8,6 +8,7 @@ import '../links.dart';
 import '../models.dart';
 import '../theme.dart';
 import '../widgets.dart';
+import 'ask_sheet.dart';
 import 'checklist_screen.dart';
 
 class GuideDetailScreen extends StatelessWidget {
@@ -181,18 +182,42 @@ class GuideDetailScreen extends StatelessWidget {
       bottomNavigationBar: SafeArea(
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-          child: FilledButton.icon(
-            icon: Icon(started ? Icons.task_alt : Icons.playlist_add_check),
-            label: Text(started ? s.openChecklist : s.startChecklist),
-            onPressed: () async {
-              await state.startChecklist(guide.id);
-              if (!context.mounted) return;
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (_) => ChecklistScreen(guideId: guide.id),
+          child: Row(
+            children: [
+              if (state.ask.enabled) ...[
+                Expanded(
+                  child: OutlinedButton.icon(
+                    style: OutlinedButton.styleFrom(
+                      minimumSize: const Size.fromHeight(52),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                    icon: const Icon(Icons.auto_awesome),
+                    label: Text(s.askProcessPK),
+                    onPressed: () => AskSheet.show(context, guide),
+                  ),
                 ),
-              );
-            },
+                const SizedBox(width: 10),
+              ],
+              Expanded(
+                child: FilledButton.icon(
+                  icon: Icon(
+                    started ? Icons.task_alt : Icons.playlist_add_check,
+                  ),
+                  label: Text(started ? s.openChecklist : s.startChecklist),
+                  onPressed: () async {
+                    await state.startChecklist(guide.id);
+                    if (!context.mounted) return;
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => ChecklistScreen(guideId: guide.id),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
           ),
         ),
       ),

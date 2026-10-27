@@ -1,0 +1,15 @@
+name = "processpk-ask"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+GEMINI_MODEL = "gemini-2.5-flash"
+
+# At most 10 questions per minute from one IP address.
+[[ratelimits]]
+name = "LIMITER"
+namespace_id = "1001"
+
+  [ratelimits.simple]
+  limit = 10
+  period = 60

@@ -74,6 +74,28 @@ class S {
     'ٹریکنگ نمبر، اپائنٹمنٹ کی تاریخ، دفتر کا پتہ...',
   );
   String get helplines => _t('Helplines', 'ہیلپ لائنز');
+  String get askProcessPK => _t('Ask ProcessPK', 'ProcessPK سے پوچھیں');
+  String get askHint =>
+      _t('Ask a question about this guide', 'اس رہنما کے بارے میں سوال پوچھیں');
+  String get askIntro => _t(
+    'Answers come only from this guide. Always confirm on the official website.',
+    'جوابات صرف اس رہنما سے دیے جاتے ہیں۔ ہمیشہ سرکاری ویب سائٹ پر تصدیق کریں۔',
+  );
+  String questionsLeft(int n) =>
+      _t('$n questions left today', 'آج $n سوال باقی ہیں');
+  String get askLimitReached => _t(
+    'You have used today\'s free questions. Try again tomorrow.',
+    'آج کے مفت سوال ختم ہو گئے۔ کل دوبارہ کوشش کریں۔',
+  );
+  String get askFailed => _t(
+    'Could not get an answer. Check your internet and try again.',
+    'جواب نہیں مل سکا۔ انٹرنیٹ چیک کر کے دوبارہ کوشش کریں۔',
+  );
+  String get askBusy => _t(
+    'Too many questions right now. Wait a minute.',
+    'ابھی بہت سے سوال ہیں۔ ایک منٹ انتظار کریں۔',
+  );
+  String basedOn(String title) => _t('Based on: $title', 'ماخذ: $title');
   String get officialSources => _t('Official sources', 'سرکاری ذرائع');
   String get startChecklist => _t('Start checklist', 'چیک لسٹ شروع کریں');
   String get openChecklist => _t('Open my checklist', 'میری چیک لسٹ کھولیں');
