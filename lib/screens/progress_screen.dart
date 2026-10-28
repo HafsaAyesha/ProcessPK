@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../app_state.dart';
+import '../reminders.dart';
+import '../widgets.dart';
 import '../theme.dart';
 import 'checklist_screen.dart';
 
@@ -12,6 +14,7 @@ class ProgressScreen extends StatelessWidget {
     final state = AppScope.of(context);
     final s = state.s;
     final entries = state.activeChecklists;
+    final reminders = state.upcomingReminders;
     return SafeArea(
       child: ListView(
         padding: const EdgeInsets.all(16),
@@ -20,7 +23,19 @@ class ProgressScreen extends StatelessWidget {
             s.navProgress,
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
           ),
-          const SizedBox(height: 16),
+          SectionTitle(s.reminders),
+          if (reminders.isEmpty)
+            Text(s.noReminders, style: const TextStyle(color: AppColors.muted)),
+          for (final r in reminders) ReminderTile(reminder: r),
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: TextButton.icon(
+              icon: const Icon(Icons.alarm_add),
+              label: Text(s.setReminder),
+              onPressed: () => showReminderDialog(context),
+            ),
+          ),
+          SectionTitle(s.checklists),
           if (entries.isEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 48),

@@ -137,6 +137,56 @@ class S {
   String get viewFullGuide => _t('View full guide', 'مکمل رہنما دیکھیں');
   String get removeChecklist => _t('Remove checklist', 'چیک لسٹ ہٹائیں');
 
+  String get importantDates => _t('Important dates', 'اہم تاریخیں');
+  String get setReminder => _t('Set a reminder', 'یاد دہانی لگائیں');
+  String get reminders => _t('My reminders', 'میری یاد دہانیاں');
+  String get reminderTitle => _t('What to remember', 'کیا یاد رکھنا ہے');
+  String get pickDate => _t('Pick a date', 'تاریخ چنیں');
+  String get save => _t('Save', 'محفوظ کریں');
+  String get reminderSaved => _t(
+    'Reminder saved. Add it to your calendar to get a notification.',
+    'یاد دہانی محفوظ ہو گئی۔ نوٹیفکیشن کے لیے اسے کیلنڈر میں شامل کریں۔',
+  );
+  String get addToCalendar => _t('Add to calendar', 'کیلنڈر میں شامل کریں');
+  String get delete => _t('Delete', 'حذف کریں');
+  String daysLeft(int n) => switch (n) {
+    0 => _t('Today', 'آج'),
+    1 => _t('Tomorrow', 'کل'),
+    _ => _t('In $n days', '$n دن میں'),
+  };
+  String get noReminders => _t(
+    'No reminders yet. Open a guide and tap "Set a reminder".',
+    'ابھی کوئی یاد دہانی نہیں۔ کوئی رہنما کھولیں اور "یاد دہانی لگائیں" دبائیں۔',
+  );
+  String get upcoming => _t('Coming up', 'آنے والی تاریخ');
+  String deadlineFor(String title) =>
+      _t('$title: deadline', '$title: آخری تاریخ');
+
+  String get findOffice => _t('Find nearest office', 'قریبی دفتر تلاش کریں');
+  String get findOffices =>
+      _t('Find an office near you', 'اپنے قریب دفتر تلاش کریں');
+  String get officesIntro => _t(
+    'Opens Google Maps with offices near you. Check timings before you go.',
+    'گوگل میپس پر آپ کے قریب کے دفاتر کھلیں گے۔ جانے سے پہلے اوقات چیک کریں۔',
+  );
+  String get openInMaps => _t('Open in Maps', 'میپس میں کھولیں');
+  String get officialList => _t('Official list', 'سرکاری فہرست');
+  String usedFor(String titles) => _t('For: $titles', 'برائے: $titles');
+
+  String get sharePdf => _t('Share as PDF', 'پی ڈی ایف شیئر کریں');
+  String get shareText => _t('Share as text', 'متن شیئر کریں');
+  String get pdfChecklist => _t('My checklist', 'میری چیک لسٹ');
+  String get pdfFooter => _t(
+    'Made with ProcessPK. Independent app, not affiliated with the Government of Pakistan. Confirm on official websites.',
+    'ProcessPK سے بنایا گیا۔ آزاد ایپ، حکومت پاکستان سے کوئی تعلق نہیں۔ سرکاری ویب سائٹس پر تصدیق کریں۔',
+  );
+  String get contacts => _t('Contacts', 'رابطے');
+
+  String get checklists => _t('My checklists', 'میری چیک لسٹیں');
+  String get savedGuides => _t('Saved guides', 'محفوظ رہنما');
+  String get saveGuide => _t('Save guide', 'رہنما محفوظ کریں');
+  String get unsaveGuide => _t('Remove from saved', 'محفوظ سے ہٹائیں');
+
   String get aboutTitle => _t('About ProcessPK', 'ProcessPK کے بارے میں');
   String get aboutBody => _t(
     'ProcessPK turns scattered official information into clear guides, '

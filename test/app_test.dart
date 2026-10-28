@@ -7,6 +7,7 @@ import 'package:processpk/app_state.dart';
 import 'package:processpk/guide_repository.dart';
 import 'package:processpk/main.dart';
 import 'package:processpk/models.dart';
+import 'package:processpk/pdf_export.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<AppState> makeState([Map<String, Object> prefs = const {}]) async {
@@ -33,6 +34,7 @@ void main() {
       expect(g.ur.documents.length, g.en.documents.length, reason: g.id);
       expect(g.ur.steps.length, g.en.steps.length, reason: g.id);
       expect(g.ur.mistakes.length, g.en.mistakes.length, reason: g.id);
+      expect(g.ur.dates.length, g.en.dates.length, reason: g.id);
       expect(g.sources, isNotEmpty, reason: g.id);
       expect(g.en.problems, isNotEmpty, reason: g.id);
       expect(g.ur.problems.length, g.en.problems.length, reason: g.id);
@@ -71,6 +73,56 @@ void main() {
     expect(p.steps, {1});
     expect(p.notes, 'Tracking 1234');
     expect(restored.activeChecklists.single.key.id, 'first-cnic');
+  });
+
+  test('reminders and saved guides are kept on the phone', () async {
+    final state = await makeState();
+    final soon = DateTime.now().add(const Duration(days: 3));
+    await state.addReminder(
+      title: 'MDCAT',
+      date: soon,
+      guideId: 'mdcat-registration',
+    );
+    await state.addReminder(
+      title: 'Old',
+      date: DateTime.now().subtract(const Duration(days: 2)),
+    );
+    await state.toggleSaved('passport-renewal');
+
+    final restored = await makeState({
+      'reminders_v1': state.prefs.getString('reminders_v1')!,
+      'saved_v1': state.prefs.getStringList('saved_v1')!,
+    });
+    final r = restored.upcomingReminders.single;
+    expect(r.title, 'MDCAT');
+    expect(r.daysLeft(), 3);
+    expect(r.calendarUrl(), contains('action=TEMPLATE'));
+    expect(restored.savedGuides.single.id, 'passport-renewal');
+    await restored.removeReminder(r.id);
+    expect(restored.upcomingReminders, isEmpty);
+  });
+
+  test('offices are grouped and open a Maps search', () async {
+    final state = await makeState();
+    final nadra = state.offices.firstWhere(
+      (e) => e.key.query == 'NADRA registration centre',
+    );
+    expect(nadra.value.map((g) => g.id), containsAll(['first-cnic', 'b-form']));
+    expect(
+      nadra.key.mapsUrl,
+      startsWith('https://www.google.com/maps/search/'),
+    );
+  });
+
+  test('checklist PDF builds in English and Urdu', () async {
+    final state = await makeState();
+    final guide = state.guideById('first-passport')!;
+    final progress = GuideProgress(documents: {0}, notes: 'Token 42');
+    for (final lang in ['en', 'ur']) {
+      final bytes = await buildGuidePdf(guide, lang, progress: progress);
+      expect(String.fromCharCodes(bytes.take(5)), '%PDF-');
+      expect(bytes.length, greaterThan(5000));
+    }
   });
 
   testWidgets('intro, open a guide, start and tick a checklist', (

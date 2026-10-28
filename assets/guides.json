@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "guides": [
     {
       "id": "first-cnic",
@@ -64,6 +64,10 @@
             "problem": "My card was printed with a wrong spelling or date.",
             "solution": "Apply for a modification at a NADRA centre or on Pak-ID with proof such as your Matric certificate. Do this before using the card for a passport or degree."
           }
+        ],
+        "dates": [
+          "You can apply from your 18th birthday.",
+          "A CNIC is usually valid for 10 years. Renew it before it expires, because banks and SIMs get blocked on expired cards."
         ]
       },
       "ur": {
@@ -106,6 +110,10 @@
             "problem": "کارڈ پر نام یا تاریخ غلط چھپ گئی۔",
             "solution": "میٹرک کی سند جیسے ثبوت کے ساتھ نادرا سینٹر یا Pak-ID پر ترمیم کی درخواست دیں۔ پاسپورٹ یا ڈگری میں استعمال سے پہلے یہ کر لیں۔"
           }
+        ],
+        "dates": [
+          "آپ 18ویں سالگرہ سے درخواست دے سکتے ہیں۔",
+          "شناختی کارڈ عموماً 10 سال کے لیے کارآمد ہوتا ہے۔ ختم ہونے سے پہلے تجدید کروائیں کیونکہ میعاد ختم ہونے پر بینک اور سم بند ہو سکتے ہیں۔"
         ]
       },
       "contacts": [
@@ -132,7 +140,156 @@
       ],
       "references": [
         "https://arynews.tv/nadra-announces-new-fee-structure-for-its-services (24 Sep 2026)"
-      ]
+      ],
+      "office": {
+        "query": "NADRA registration centre",
+        "name": "NADRA registration centre",
+        "nameUr": "نادرا رجسٹریشن سینٹر"
+      }
+    },
+    {
+      "id": "lost-cnic",
+      "category": "documents",
+      "popular": false,
+      "keywords": [
+        "lost cnic",
+        "duplicate cnic",
+        "reprint",
+        "damaged id card",
+        "stolen id card",
+        "renew cnic",
+        "cnic renewal",
+        "expired cnic",
+        "گمشدہ شناختی کارڈ",
+        "شناختی کارڈ تجدید"
+      ],
+      "lastVerified": "2026-10-28",
+      "sources": [
+        {
+          "name": "NADRA",
+          "url": "https://www.nadra.gov.pk"
+        },
+        {
+          "name": "Pak-ID online services",
+          "url": "https://id.nadra.gov.pk"
+        }
+      ],
+      "contacts": [
+        {
+          "name": "NADRA helpline (from mobile)",
+          "nameUr": "نادرا ہیلپ لائن (موبائل سے)",
+          "phone": "7000"
+        },
+        {
+          "name": "NADRA helpline (landline / overseas)",
+          "nameUr": "نادرا ہیلپ لائن (لینڈ لائن / بیرون ملک)",
+          "phone": "051-111-786-100"
+        },
+        {
+          "name": "Pakistan Citizen Portal (complaints)",
+          "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
+          "url": "https://citizenportal.gov.pk"
+        }
+      ],
+      "references": [
+        "https://arynews.tv/nadra-easy-way-to-replace-lost-damaged-cnic-from-home (4 Oct 2026)",
+        "https://dailycapital.pk/duplicate-cnic-lost-damaged/ (2026)"
+      ],
+      "en": {
+        "title": "Replace a lost CNIC or renew an expired one",
+        "summary": "Get a reprint of a lost, stolen or damaged ID card, or renew it before it expires.",
+        "what": "If your CNIC is lost, stolen, damaged or expiring, you can get a new copy with the same CNIC number. You can apply from home on the Pak-ID app, or at any NADRA registration centre.",
+        "who": "Anyone whose CNIC is lost, stolen, damaged, expired or about to expire.",
+        "documents": [
+          "Your CNIC number (written down or on a photocopy)",
+          "The damaged or expired card, if you still have it",
+          "Police report (FIR), if the card was stolen. Some centres also ask for one for a lost card",
+          "A smartphone with the Pak-ID app for online applications"
+        ],
+        "fees": "Shown in Pak-ID or at the centre before you pay. Reported 2026 reprint fees: about Rs 750 normal, Rs 1,500 urgent, Rs 2,500 executive.",
+        "time": "Normal can take a few weeks. Urgent and executive are faster. Online applications are delivered by post.",
+        "steps": [
+          "If the card was stolen, file a police report (FIR) and keep the copy.",
+          "Open the Pak-ID app and choose Identity Documents, then CNIC, then Reprint (or Renewal).",
+          "Pick yourself as the applicant and follow the steps: face photo, fingerprints with the phone camera, and details.",
+          "Choose normal, urgent or executive, and pay online.",
+          "Or, if you prefer, visit any NADRA centre with your CNIC number and give biometrics there.",
+          "Keep the tracking ID and check the status in Pak-ID or by SMS.",
+          "Receive the card by post or collect it from the centre."
+        ],
+        "mistakes": [
+          "Letting the card stay expired. Banks, mobile wallets and SIMs can be blocked.",
+          "Not reporting a stolen card. Someone could misuse it for SIMs or loans.",
+          "Paying an agent to \"speed up\" a reprint. Use only the official categories."
+        ],
+        "problems": [
+          {
+            "problem": "Pak-ID fingerprint capture keeps failing.",
+            "solution": "Clean the camera, use bright light, and press fingers flat. If it still fails, visit a NADRA centre for biometrics."
+          },
+          {
+            "problem": "I think someone registered SIMs on my lost card.",
+            "solution": "Send your CNIC number (no dashes) by SMS to 668 to see how many SIMs are on it, and block the unknown ones. See the ProcessPK guide on checking SIMs."
+          },
+          {
+            "problem": "My address has changed.",
+            "solution": "Choose the modification option instead of a simple reprint so your new address is printed, or update it at a NADRA centre."
+          }
+        ],
+        "dates": [
+          "Check the expiry date on your card and set a reminder a month before it."
+        ]
+      },
+      "ur": {
+        "title": "گمشدہ شناختی کارڈ بنوائیں یا میعاد ختم کارڈ کی تجدید کریں",
+        "summary": "گمشدہ، چوری یا خراب شناختی کارڈ کی دوبارہ پرنٹنگ، یا میعاد ختم ہونے سے پہلے تجدید۔",
+        "what": "اگر آپ کا شناختی کارڈ گم، چوری، خراب یا ختم ہونے والا ہے تو آپ اسی نمبر کے ساتھ نیا کارڈ بنوا سکتے ہیں۔ آپ گھر بیٹھے Pak-ID ایپ پر یا کسی بھی نادرا رجسٹریشن سینٹر میں درخواست دے سکتے ہیں۔",
+        "who": "جس کا شناختی کارڈ گم، چوری، خراب، ختم یا ختم ہونے والا ہو۔",
+        "documents": [
+          "آپ کا شناختی کارڈ نمبر (لکھا ہوا یا فوٹو کاپی پر)",
+          "خراب یا میعاد ختم کارڈ، اگر آپ کے پاس ہو",
+          "چوری ہونے کی صورت میں پولیس رپورٹ (ایف آئی آر)۔ کچھ سینٹر گمشدگی پر بھی مانگتے ہیں",
+          "آن لائن درخواست کے لیے Pak-ID ایپ والا اسمارٹ فون"
+        ],
+        "fees": "ادائیگی سے پہلے Pak-ID یا سینٹر میں دکھائی جاتی ہے۔ 2026 میں رپورٹ شدہ فیس: نارمل تقریباً 750، ارجنٹ 1,500، ایگزیکٹو 2,500 روپے۔",
+        "time": "نارمل میں چند ہفتے لگ سکتے ہیں۔ ارجنٹ اور ایگزیکٹو جلدی ہوتے ہیں۔ آن لائن درخواست کا کارڈ ڈاک سے آتا ہے۔",
+        "steps": [
+          "اگر کارڈ چوری ہوا ہے تو پولیس رپورٹ (ایف آئی آر) درج کروائیں اور کاپی رکھیں۔",
+          "Pak-ID ایپ کھولیں، Identity Documents، پھر CNIC، پھر Reprint (یا Renewal) چنیں۔",
+          "درخواست گزار میں خود کو چنیں اور ہدایات پر عمل کریں: چہرے کی تصویر، فون کیمرے سے انگلیوں کے نشان، اور تفصیلات۔",
+          "نارمل، ارجنٹ یا ایگزیکٹو چنیں اور آن لائن ادائیگی کریں۔",
+          "یا چاہیں تو اپنا شناختی کارڈ نمبر لے کر کسی بھی نادرا سینٹر جائیں اور وہاں بائیو میٹرک دیں۔",
+          "ٹریکنگ آئی ڈی رکھیں اور Pak-ID یا SMS سے صورتحال دیکھیں۔",
+          "کارڈ ڈاک سے وصول کریں یا سینٹر سے لیں۔"
+        ],
+        "mistakes": [
+          "کارڈ کی میعاد ختم رہنے دینا۔ بینک، موبائل والٹ اور سم بند ہو سکتے ہیں۔",
+          "چوری شدہ کارڈ کی رپورٹ نہ کرنا۔ کوئی اسے سم یا قرض کے لیے غلط استعمال کر سکتا ہے۔",
+          "دوبارہ پرنٹنگ \"جلدی\" کروانے کے لیے ایجنٹ کو پیسے دینا۔ صرف سرکاری کیٹیگریز استعمال کریں۔"
+        ],
+        "problems": [
+          {
+            "problem": "Pak-ID میں انگلیوں کے نشان بار بار ناکام ہو رہے ہیں۔",
+            "solution": "کیمرہ صاف کریں، روشن جگہ پر رہیں اور انگلیاں سیدھی رکھیں۔ پھر بھی ناکام ہو تو نادرا سینٹر جا کر بائیو میٹرک دیں۔"
+          },
+          {
+            "problem": "مجھے لگتا ہے کسی نے میرے گمشدہ کارڈ پر سم نکلوائی ہے۔",
+            "solution": "اپنا شناختی کارڈ نمبر (بغیر ڈیش) 668 پر SMS کریں تاکہ معلوم ہو کتنی سمیں رجسٹرڈ ہیں، اور نامعلوم سمیں بند کروائیں۔ ProcessPK میں سم چیک کرنے کی رہنمائی دیکھیں۔"
+          },
+          {
+            "problem": "میرا پتہ بدل گیا ہے۔",
+            "solution": "سادہ ری پرنٹ کی بجائے ترمیم (modification) کا آپشن چنیں تاکہ نیا پتہ چھپے، یا نادرا سینٹر سے پتہ تبدیل کروائیں۔"
+          }
+        ],
+        "dates": [
+          "اپنے کارڈ پر میعاد ختم ہونے کی تاریخ دیکھیں اور اس سے ایک ماہ پہلے کی یاد دہانی لگائیں۔"
+        ]
+      },
+      "office": {
+        "query": "NADRA registration centre",
+        "name": "NADRA registration centre",
+        "nameUr": "نادرا رجسٹریشن سینٹر"
+      }
     },
     {
       "id": "b-form",
@@ -196,6 +353,9 @@
             "problem": "A parent is abroad or has passed away.",
             "solution": "The other parent or a legal guardian can apply. Bring the death certificate or guardianship documents if relevant."
           }
+        ],
+        "dates": [
+          "Boards ask for a B-Form at matric registration, usually in class 9. Get it well before then."
         ]
       },
       "ur": {
@@ -237,6 +397,9 @@
             "problem": "والد یا والدہ بیرون ملک ہیں یا وفات پا چکے ہیں۔",
             "solution": "دوسرے والد یا والدہ یا قانونی سرپرست درخواست دے سکتے ہیں۔ ضرورت ہو تو ڈیتھ سرٹیفکیٹ یا سرپرستی کے کاغذات ساتھ لائیں۔"
           }
+        ],
+        "dates": [
+          "میٹرک رجسٹریشن (عموماً نویں جماعت) کے وقت بورڈ ب فارم مانگتا ہے۔ اس سے کافی پہلے بنوا لیں۔"
         ]
       },
       "contacts": [
@@ -263,7 +426,12 @@
       ],
       "references": [
         "https://arynews.tv/nadra-makes-applying-for-b-forms-easier (13 Apr 2026)"
-      ]
+      ],
+      "office": {
+        "query": "NADRA registration centre",
+        "name": "NADRA registration centre",
+        "nameUr": "نادرا رجسٹریشن سینٹر"
+      }
     },
     {
       "id": "first-passport",
@@ -278,7 +446,8 @@
         "e-passport",
         "epassport",
         "ای پاسپورٹ",
-        "mrp"
+        "mrp",
+        "manual passport"
       ],
       "lastVerified": "2026-10-28",
       "sources": [
@@ -331,6 +500,10 @@
             "problem": "Someone offers to get my passport faster for extra money.",
             "solution": "Do not pay agents. Use only the official fee categories. Report fraud on the Pakistan Citizen Portal."
           }
+        ],
+        "dates": [
+          "Since 15 October 2026, only e-passports are issued.",
+          "Apply at least 2 months before any admission, scholarship or visa deadline."
         ]
       },
       "ur": {
@@ -373,6 +546,10 @@
             "problem": "کوئی اضافی پیسوں میں جلد پاسپورٹ دلوانے کی پیشکش کرتا ہے۔",
             "solution": "ایجنٹوں کو پیسے نہ دیں۔ صرف سرکاری فیس کیٹیگری استعمال کریں۔ دھوکے کی اطلاع پاکستان سٹیزن پورٹل پر دیں۔"
           }
+        ],
+        "dates": [
+          "15 اکتوبر 2026 سے صرف ای پاسپورٹ جاری ہوتے ہیں۔",
+          "کسی بھی داخلے، اسکالرشپ یا ویزا کی آخری تاریخ سے کم از کم 2 ماہ پہلے درخواست دیں۔"
         ]
       },
       "contacts": [
@@ -405,7 +582,164 @@
       "references": [
         "https://arynews.tv/pakistan-announces-new-e-passport-fee-schedule (15 Oct 2026)",
         "https://gopunjab.pk/passport-fee-pakistan/ (8 Oct 2026)"
-      ]
+      ],
+      "office": {
+        "query": "passport office",
+        "name": "Passport office",
+        "nameUr": "پاسپورٹ آفس",
+        "locator": "https://dgip.gov.pk/contactus/offices.php"
+      }
+    },
+    {
+      "id": "passport-renewal",
+      "category": "travel",
+      "popular": true,
+      "keywords": [
+        "passport renewal",
+        "renew passport",
+        "old passport",
+        "manual passport",
+        "mrp",
+        "machine readable",
+        "lost passport",
+        "damaged passport",
+        "expired passport",
+        "پاسپورٹ تجدید",
+        "پرانا پاسپورٹ",
+        "گمشدہ پاسپورٹ"
+      ],
+      "lastVerified": "2026-10-28",
+      "sources": [
+        {
+          "name": "Directorate General of Immigration & Passports",
+          "url": "https://dgip.gov.pk"
+        },
+        {
+          "name": "Passport offices list",
+          "url": "https://dgip.gov.pk/contactus/offices.php"
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Passport helpline",
+          "nameUr": "پاسپورٹ ہیلپ لائن",
+          "phone": "051-111-344-777"
+        },
+        {
+          "name": "Application tracking",
+          "nameUr": "درخواست کی ٹریکنگ",
+          "email": "opts@dgip.gov.pk"
+        },
+        {
+          "name": "Pakistan Citizen Portal (complaints)",
+          "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
+          "url": "https://citizenportal.gov.pk"
+        }
+      ],
+      "references": [
+        "https://gulfnews.com/world/asia/pakistan/pakistan-ends-machine-readable-passports-what-changes-from-october-15-1.500690530 (Oct 2026)",
+        "https://dailycapital.pk/replace-lost-damaged-passport/ (2026)"
+      ],
+      "en": {
+        "title": "Renew or replace your old (MRP) passport",
+        "summary": "Your old green machine-readable passport, what still works, and how to renew or replace it.",
+        "what": "The old machine-readable passport (MRP) is the manual-style green passport most people have. Pakistan stopped issuing new MRPs on 15 October 2026. Any MRP issued before that stays valid until its expiry date, so you do not need to replace it early. When you renew it, or if it is lost or damaged, you get an e-passport instead.",
+        "who": "Anyone with an old MRP that is expiring, full, lost, stolen or damaged, or who needs to change their name or details.",
+        "documents": [
+          "Original valid CNIC (or B-Form for under 18)",
+          "Your old passport (even if expired or damaged)",
+          "Lost or stolen passport: a police report (FIR) copy",
+          "Fee paid through a PSID (Passport Fee Asaan app or 1Bill)",
+          "Name change after marriage: nikah nama and updated CNIC"
+        ],
+        "fees": "Same as a new e-passport. 36 pages: Rs 9,000 normal / Rs 15,000 urgent (5 years), Rs 13,500 / Rs 22,500 (10 years). 72 pages costs more. Check the current fee in the Passport Fee Asaan app before paying.",
+        "time": "Renewal takes about the same time as a new passport (a few weeks for normal). Lost passports can take longer because of extra security checks.",
+        "steps": [
+          "Check your MRP expiry date. If it is still valid and has pages left, you can keep using it.",
+          "Renew 6 to 8 months before expiry. Many countries refuse entry if a passport has less than 6 months left.",
+          "If the passport was lost or stolen, file a police report (FIR) first and keep a copy.",
+          "Generate a PSID in the Passport Fee Asaan app and pay through 1Bill in your banking app.",
+          "Visit any passport office or NADRA Mega Centre with your CNIC and old passport.",
+          "Give your photo, fingerprints and signature, and check your details on screen.",
+          "Keep the token slip, track it on the DGIP website, and collect your new e-passport."
+        ],
+        "mistakes": [
+          "Waiting until the passport has less than 6 months left before a trip or visa.",
+          "Using a lost passport after reporting it. Once replaced, the old number is cancelled.",
+          "Not bringing the old passport. Take it even if it is expired or damaged."
+        ],
+        "problems": [
+          {
+            "problem": "I lost my passport while abroad.",
+            "solution": "Report it to the local police, then go to the nearest Pakistani embassy or consulate. They can issue an Emergency Travel Document for a one-way trip home. Apply for a full replacement in Pakistan."
+          },
+          {
+            "problem": "My old passport had a valid visa in it.",
+            "solution": "Carry both the old and the new passport when you travel, or ask the embassy that issued the visa whether it must be transferred."
+          },
+          {
+            "problem": "Someone says MRPs are now invalid and I must pay to replace mine urgently.",
+            "solution": "This is false. MRPs issued before 15 October 2026 stay valid until they expire. Do not pay agents."
+          }
+        ],
+        "dates": [
+          "MRPs issued before 15 October 2026 stay valid until their expiry date.",
+          "Renew 6 to 8 months before expiry. Set a reminder using the date in your passport."
+        ]
+      },
+      "ur": {
+        "title": "اپنا پرانا (ایم آر پی) پاسپورٹ تجدید یا تبدیل کروائیں",
+        "summary": "پرانا سبز مشین ریڈایبل پاسپورٹ: کیا اب بھی کارآمد ہے، اور اسے کیسے تجدید یا تبدیل کریں۔",
+        "what": "پرانا مشین ریڈایبل پاسپورٹ (ایم آر پی) وہ سبز پاسپورٹ ہے جو زیادہ تر لوگوں کے پاس ہے۔ پاکستان نے 15 اکتوبر 2026 سے نئے ایم آر پی جاری کرنا بند کر دیے ہیں۔ اس سے پہلے جاری ہونے والا ہر ایم آر پی اپنی میعاد ختم ہونے تک کارآمد ہے، اس لیے اسے جلدی تبدیل کرنے کی ضرورت نہیں۔ تجدید، گمشدگی یا خرابی کی صورت میں آپ کو ای پاسپورٹ ملے گا۔",
+        "who": "جس کا پرانا ایم آر پی ختم ہو رہا ہو، صفحات بھر گئے ہوں، گم، چوری یا خراب ہو گیا ہو، یا نام اور تفصیلات بدلنی ہوں۔",
+        "documents": [
+          "اصل کارآمد شناختی کارڈ (18 سال سے کم کے لیے ب فارم)",
+          "آپ کا پرانا پاسپورٹ (چاہے میعاد ختم یا خراب ہو)",
+          "گمشدہ یا چوری شدہ پاسپورٹ: پولیس رپورٹ (ایف آئی آر) کی کاپی",
+          "PSID کے ذریعے جمع شدہ فیس (پاسپورٹ فیس آسان ایپ یا 1Bill)",
+          "شادی کے بعد نام کی تبدیلی: نکاح نامہ اور نیا شناختی کارڈ"
+        ],
+        "fees": "نئے ای پاسپورٹ جتنی۔ 36 صفحات: نارمل 9,000 / ارجنٹ 15,000 روپے (5 سال)، 13,500 / 22,500 روپے (10 سال)۔ 72 صفحات مہنگے ہیں۔ ادائیگی سے پہلے پاسپورٹ فیس آسان ایپ میں موجودہ فیس دیکھیں۔",
+        "time": "تجدید میں نئے پاسپورٹ جتنا وقت لگتا ہے (نارمل میں چند ہفتے)۔ گمشدہ پاسپورٹ میں اضافی سیکیورٹی جانچ کی وجہ سے زیادہ وقت لگ سکتا ہے۔",
+        "steps": [
+          "اپنے ایم آر پی کی میعاد دیکھیں۔ اگر کارآمد ہے اور صفحات باقی ہیں تو اسے استعمال کرتے رہیں۔",
+          "میعاد ختم ہونے سے 6 سے 8 ماہ پہلے تجدید کروائیں۔ کئی ممالک 6 ماہ سے کم میعاد والے پاسپورٹ پر داخلہ نہیں دیتے۔",
+          "اگر پاسپورٹ گم یا چوری ہو گیا ہے تو پہلے پولیس رپورٹ (ایف آئی آر) درج کروائیں اور کاپی رکھیں۔",
+          "پاسپورٹ فیس آسان ایپ میں PSID بنائیں اور بینکنگ ایپ میں 1Bill سے ادائیگی کریں۔",
+          "اپنا شناختی کارڈ اور پرانا پاسپورٹ لے کر کسی بھی پاسپورٹ آفس یا نادرا میگا سینٹر جائیں۔",
+          "تصویر، انگلیوں کے نشان اور دستخط دیں، اور اسکرین پر اپنی تفصیلات چیک کریں۔",
+          "ٹوکن سلپ رکھیں، ڈی جی آئی پی ویب سائٹ پر ٹریک کریں، اور نیا ای پاسپورٹ وصول کریں۔"
+        ],
+        "mistakes": [
+          "سفر یا ویزا سے پہلے پاسپورٹ کی میعاد 6 ماہ سے کم رہ جانے تک انتظار کرنا۔",
+          "رپورٹ کرنے کے بعد گمشدہ پاسپورٹ استعمال کرنا۔ نیا بننے پر پرانا نمبر منسوخ ہو جاتا ہے۔",
+          "پرانا پاسپورٹ ساتھ نہ لانا۔ میعاد ختم یا خراب ہو تب بھی ساتھ لے جائیں۔"
+        ],
+        "problems": [
+          {
+            "problem": "میرا پاسپورٹ بیرون ملک گم ہو گیا۔",
+            "solution": "مقامی پولیس کو رپورٹ کریں، پھر قریبی پاکستانی سفارت خانے یا قونصل خانے جائیں۔ وہ وطن واپسی کے لیے ایمرجنسی ٹریول ڈاکومنٹ جاری کر سکتے ہیں۔ مکمل پاسپورٹ پاکستان آ کر بنوائیں۔"
+          },
+          {
+            "problem": "میرے پرانے پاسپورٹ میں کارآمد ویزا لگا ہے۔",
+            "solution": "سفر میں پرانا اور نیا دونوں پاسپورٹ ساتھ رکھیں، یا ویزا جاری کرنے والے سفارت خانے سے پوچھیں کہ کیا اسے منتقل کرنا ضروری ہے۔"
+          },
+          {
+            "problem": "کوئی کہتا ہے کہ ایم آر پی اب ناکارہ ہیں اور فوراً پیسے دے کر بدلوانا ہوگا۔",
+            "solution": "یہ غلط ہے۔ 15 اکتوبر 2026 سے پہلے جاری ہونے والے ایم آر پی میعاد ختم ہونے تک کارآمد ہیں۔ ایجنٹوں کو پیسے نہ دیں۔"
+          }
+        ],
+        "dates": [
+          "15 اکتوبر 2026 سے پہلے جاری ہونے والے ایم آر پی میعاد ختم ہونے تک کارآمد ہیں۔",
+          "میعاد ختم ہونے سے 6 سے 8 ماہ پہلے تجدید کروائیں۔ پاسپورٹ پر لکھی تاریخ سے یاد دہانی لگائیں۔"
+        ]
+      },
+      "office": {
+        "query": "passport office",
+        "name": "Passport office",
+        "nameUr": "پاسپورٹ آفس",
+        "locator": "https://dgip.gov.pk/contactus/offices.php"
+      }
     },
     {
       "id": "hec-degree-attestation",
@@ -469,6 +803,9 @@
             "problem": "I need a stamped paper copy, not a digital certificate.",
             "solution": "The new system issues an e-Attestation certificate you download. Ask the embassy or employer if they accept it; most can verify it online. If they insist on paper, contact the HEC helpline."
           }
+        ],
+        "dates": [
+          "There is no fixed deadline. Apply 4 to 6 weeks before you need it for a job or study abroad."
         ]
       },
       "ur": {
@@ -511,6 +848,9 @@
             "problem": "مجھے ڈیجیٹل نہیں، مہر والی کاغذی کاپی چاہیے۔",
             "solution": "نیا نظام ای اٹیسٹیشن سرٹیفکیٹ دیتا ہے جو ڈاؤن لوڈ ہوتا ہے۔ سفارت خانے یا آجر سے پوچھیں کہ کیا وہ اسے قبول کرتے ہیں؛ زیادہ تر آن لائن تصدیق کر سکتے ہیں۔ اصرار کریں تو ایچ ای سی ہیلپ لائن سے رابطہ کریں۔"
           }
+        ],
+        "dates": [
+          "کوئی مقررہ آخری تاریخ نہیں۔ نوکری یا بیرون ملک تعلیم کے لیے ضرورت سے 4 سے 6 ہفتے پہلے درخواست دیں۔"
         ]
       },
       "contacts": [
@@ -547,7 +887,12 @@
       ],
       "references": [
         "https://propakistani.pk/2026/05/13/how-to-apply-for-hec-online-degree-attestation/ (13 May 2026)"
-      ]
+      ],
+      "office": {
+        "query": "HEC regional centre",
+        "name": "HEC regional centre",
+        "nameUr": "ایچ ای سی ریجنل سینٹر"
+      }
     },
     {
       "id": "ibcc-equivalence",
@@ -609,6 +954,9 @@
             "problem": "I'm not sure whether I need equivalence or attestation.",
             "solution": "Equivalence converts O/A Level or foreign results into Matric/Inter. Attestation stamps Pakistani board certificates for use abroad."
           }
+        ],
+        "dates": [
+          "Get equivalence before university and MDCAT registration open, usually in June and July."
         ]
       },
       "ur": {
@@ -650,6 +998,9 @@
             "problem": "سمجھ نہیں آ رہا مساوی سند چاہیے یا تصدیق۔",
             "solution": "مساوی سند او/اے لیول یا غیر ملکی نتائج کو میٹرک/انٹر کے برابر کرتی ہے۔ تصدیق پاکستانی بورڈ کی اسناد کو بیرون ملک استعمال کے لیے مہر لگاتی ہے۔"
           }
+        ],
+        "dates": [
+          "یونیورسٹی اور ایم ڈی کیٹ رجسٹریشن (عموماً جون اور جولائی) شروع ہونے سے پہلے مساوی سرٹیفکیٹ حاصل کر لیں۔"
         ]
       },
       "contacts": [
@@ -666,7 +1017,12 @@
       ],
       "references": [
         "https://ibcc.edu.pk/faqs/equivalence-faqs/"
-      ]
+      ],
+      "office": {
+        "query": "IBCC office",
+        "name": "IBCC office",
+        "nameUr": "آئی بی سی سی آفس"
+      }
     },
     {
       "id": "mdcat-registration",
@@ -728,6 +1084,10 @@
             "problem": "I saw a 'leaked paper' or a site selling registration.",
             "solution": "These are scams. PM&DC has issued public warnings about fraudulent exams. Only use the portal named in the official notice."
           }
+        ],
+        "dates": [
+          "2026: registration 22 June to 8 July, late fee until 13 July, test on 16 August.",
+          "2027: dates not announced yet. Expect registration around June. Set a reminder for 1 June to start checking."
         ]
       },
       "ur": {
@@ -771,6 +1131,10 @@
             "problem": "میں نے 'لیک پیپر' یا رجسٹریشن بیچنے والی سائٹ دیکھی۔",
             "solution": "یہ دھوکہ ہے۔ PM&DC نے جعلی امتحانات کے بارے میں عوامی انتباہ جاری کیا ہے۔ صرف سرکاری نوٹس والا پورٹل استعمال کریں۔"
           }
+        ],
+        "dates": [
+          "2026: رجسٹریشن 22 جون سے 8 جولائی، لیٹ فیس کے ساتھ 13 جولائی تک، ٹیسٹ 16 اگست۔",
+          "2027: تاریخوں کا ابھی اعلان نہیں ہوا۔ رجسٹریشن جون کے قریب متوقع ہے۔ 1 جون کی یاد دہانی لگا لیں۔"
         ]
       },
       "contacts": [
@@ -855,6 +1219,9 @@
             "problem": "I'm nervous about the interview.",
             "solution": "Bring originals of everything you submitted and answer simply and honestly. The panel checks that your documents match your situation."
           }
+        ],
+        "dates": [
+          "Each university sets its own deadline, usually early in the academic year. Ask your financial aid office in your first weeks."
         ]
       },
       "ur": {
@@ -897,6 +1264,9 @@
             "problem": "انٹرویو سے گھبراہٹ ہو رہی ہے۔",
             "solution": "جمع کروائی گئی ہر چیز کی اصل ساتھ لائیں اور سادگی اور سچائی سے جواب دیں۔ پینل دیکھتا ہے کہ دستاویزات آپ کے حالات سے میل کھاتی ہیں۔"
           }
+        ],
+        "dates": [
+          "ہر یونیورسٹی اپنی آخری تاریخ خود طے کرتی ہے، عموماً تعلیمی سال کے شروع میں۔ پہلے ہفتوں میں ہی فنانشل ایڈ آفس سے پوچھیں۔"
         ]
       },
       "contacts": [
@@ -987,6 +1357,9 @@
             "problem": "I registered but I am still not on the Active Taxpayer List.",
             "solution": "Registration alone is not enough. You must file your annual return. The list updates after the filing deadline."
           }
+        ],
+        "dates": [
+          "The tax year ends on 30 June. Income tax returns are normally due by 30 September (FBR sometimes extends it)."
         ]
       },
       "ur": {
@@ -1028,6 +1401,9 @@
             "problem": "رجسٹریشن کے باوجود فعال ٹیکس دہندگان کی فہرست میں نام نہیں۔",
             "solution": "صرف رجسٹریشن کافی نہیں۔ سالانہ گوشوارہ جمع کروانا ضروری ہے۔ فہرست فائلنگ کی آخری تاریخ کے بعد اپڈیٹ ہوتی ہے۔"
           }
+        ],
+        "dates": [
+          "ٹیکس سال 30 جون کو ختم ہوتا ہے۔ انکم ٹیکس ریٹرن عموماً 30 ستمبر تک جمع ہوتی ہے (ایف بی آر کبھی کبھی تاریخ بڑھا دیتا ہے)۔"
         ]
       },
       "contacts": [
@@ -1044,7 +1420,12 @@
       ],
       "references": [
         "https://www.ict.edu.pk/blogs/iris-registration-fbr-guide-2026 (29 Jul 2026)"
-      ]
+      ],
+      "office": {
+        "query": "FBR tax facilitation centre",
+        "name": "FBR facilitation centre",
+        "nameUr": "ایف بی آر سہولت مرکز"
+      }
     },
     {
       "id": "police-character-certificate",
@@ -1106,6 +1487,9 @@
             "problem": "The embassy says my certificate is too old.",
             "solution": "Most embassies want it issued within the last 6 months. Apply close to your visa submission date."
           }
+        ],
+        "dates": [
+          "Apply 2 to 3 weeks before a job or visa deadline. Many embassies want a certificate less than 3 to 6 months old."
         ]
       },
       "ur": {
@@ -1146,6 +1530,9 @@
             "problem": "سفارت خانہ کہتا ہے سرٹیفکیٹ پرانا ہے۔",
             "solution": "زیادہ تر سفارت خانے پچھلے 6 ماہ کے اندر جاری سرٹیفکیٹ مانگتے ہیں۔ ویزا جمع کروانے کی تاریخ کے قریب درخواست دیں۔"
           }
+        ],
+        "dates": [
+          "نوکری یا ویزا کی آخری تاریخ سے 2 سے 3 ہفتے پہلے درخواست دیں۔ کئی سفارت خانے 3 سے 6 ماہ سے کم پرانا سرٹیفکیٹ مانگتے ہیں۔"
         ]
       },
       "contacts": [
@@ -1167,7 +1554,12 @@
       ],
       "references": [
         "https://lahorepolice.punjab.gov.pk/police-character-certificate"
-      ]
+      ],
+      "office": {
+        "query": "Police Khidmat Markaz",
+        "name": "Police Khidmat Markaz",
+        "nameUr": "پولیس خدمت مرکز"
+      }
     },
     {
       "id": "learner-driving-licence",
@@ -1249,6 +1641,10 @@
             "problem": "I live outside Punjab.",
             "solution": "Each province runs its own system. Check your provincial traffic police or excise website for the learner permit process."
           }
+        ],
+        "dates": [
+          "Wait at least 42 days after getting the learner permit before the driving test.",
+          "The learner permit expires after 6 months. Set a reminder so you take the test in time."
         ]
       },
       "ur": {
@@ -1290,7 +1686,16 @@
             "problem": "میں پنجاب سے باہر رہتا/رہتی ہوں۔",
             "solution": "ہر صوبے کا اپنا نظام ہے۔ لرنر پرمٹ کے لیے اپنی صوبائی ٹریفک پولیس یا ایکسائز کی ویب سائٹ دیکھیں۔"
           }
+        ],
+        "dates": [
+          "لرنر پرمٹ ملنے کے بعد ڈرائیونگ ٹیسٹ کے لیے کم از کم 42 دن انتظار کریں۔",
+          "لرنر پرمٹ 6 ماہ بعد ختم ہو جاتا ہے۔ یاد دہانی لگائیں تاکہ وقت پر ٹیسٹ دے سکیں۔"
         ]
+      },
+      "office": {
+        "query": "driving licence centre",
+        "name": "Driving licence centre",
+        "nameUr": "ڈرائیونگ لائسنس سینٹر"
       }
     },
     {
@@ -1366,6 +1771,9 @@
             "problem": "I live outside Punjab.",
             "solution": "Each province issues domiciles through its own district offices. Check your Deputy or Assistant Commissioner office or provincial portal."
           }
+        ],
+        "dates": [
+          "Universities and jobs with provincial quotas ask for it, so apply before admission season, usually in summer."
         ]
       },
       "ur": {
@@ -1408,7 +1816,15 @@
             "problem": "میں پنجاب سے باہر رہتا/رہتی ہوں۔",
             "solution": "ہر صوبہ اپنے ضلعی دفاتر کے ذریعے ڈومیسائل جاری کرتا ہے۔ اپنے ڈپٹی یا اسسٹنٹ کمشنر آفس یا صوبائی پورٹل سے معلوم کریں۔"
           }
+        ],
+        "dates": [
+          "صوبائی کوٹہ والی یونیورسٹیاں اور نوکریاں یہ مانگتی ہیں، اس لیے داخلوں کے موسم (عموماً گرمیوں) سے پہلے درخواست دیں۔"
         ]
+      },
+      "office": {
+        "query": "e-Khidmat Markaz",
+        "name": "e-Khidmat Markaz / DC office",
+        "nameUr": "ای خدمت مرکز / ڈی سی آفس"
       }
     },
     {
@@ -1489,6 +1905,9 @@
             "problem": "Renewal asks for a tax return I never filed.",
             "solution": "File your yearly return on IRIS first, then renew. A tax consultant can help if your income is complex."
           }
+        ],
+        "dates": [
+          "Registration lasts one year. Renew it every year before it expires."
         ]
       },
       "ur": {
@@ -1530,6 +1949,9 @@
             "problem": "تجدید میں وہ گوشوارہ مانگا جا رہا ہے جو میں نے جمع نہیں کرایا۔",
             "solution": "پہلے IRIS پر سالانہ گوشوارہ جمع کروائیں، پھر تجدید کریں۔ آمدنی پیچیدہ ہو تو ٹیکس کنسلٹنٹ سے مدد لیں۔"
           }
+        ],
+        "dates": [
+          "رجسٹریشن ایک سال کے لیے ہوتی ہے۔ ہر سال میعاد ختم ہونے سے پہلے تجدید کروائیں۔"
         ]
       }
     },
@@ -1606,6 +2028,9 @@
             "problem": "Someone called asking for my OTP.",
             "solution": "Never share it. Banks never ask for your OTP or PIN. Hang up and call your bank's official helpline."
           }
+        ],
+        "dates": [
+          "Open the account before your scholarship, stipend or first freelancing payment is due."
         ]
       },
       "ur": {
@@ -1646,7 +2071,148 @@
             "problem": "کسی نے کال کر کے میرا OTP مانگا۔",
             "solution": "کبھی نہ بتائیں۔ بینک کبھی OTP یا PIN نہیں مانگتے۔ کال کاٹیں اور بینک کی سرکاری ہیلپ لائن پر رابطہ کریں۔"
           }
+        ],
+        "dates": [
+          "اسکالرشپ، وظیفے یا فری لانسنگ کی پہلی ادائیگی سے پہلے اکاؤنٹ کھول لیں۔"
         ]
+      },
+      "office": {
+        "query": "bank branch",
+        "name": "Bank branch",
+        "nameUr": "بینک برانچ"
+      }
+    },
+    {
+      "id": "sims-on-cnic",
+      "category": "government",
+      "popular": false,
+      "keywords": [
+        "sim",
+        "sims",
+        "668",
+        "pta",
+        "mobile number",
+        "sim check",
+        "block sim",
+        "jazz",
+        "telenor",
+        "zong",
+        "ufone",
+        "سم",
+        "موبائل سم"
+      ],
+      "lastVerified": "2026-10-28",
+      "sources": [
+        {
+          "name": "Pakistan Telecommunication Authority",
+          "url": "https://www.pta.gov.pk"
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Check SIMs by SMS",
+          "nameUr": "SMS سے سم چیک کریں",
+          "phone": "668",
+          "note": "Send your CNIC number without dashes.",
+          "noteUr": "اپنا شناختی کارڈ نمبر بغیر ڈیش کے بھیجیں۔"
+        },
+        {
+          "name": "PTA complaints",
+          "nameUr": "پی ٹی اے شکایات",
+          "url": "https://complaint.pta.gov.pk"
+        }
+      ],
+      "references": [
+        "https://www.arynews.tv/pta-urges-citizens-to-check-sims-registered-against-their-cnics (5 Jun 2026)"
+      ],
+      "en": {
+        "title": "Check and block SIMs on your CNIC",
+        "summary": "See how many mobile SIMs are registered in your name and block the ones you do not use.",
+        "what": "Every SIM in Pakistan is registered against a CNIC. If someone uses a SIM on your CNIC for fraud, it can be traced back to you. PTA advises everyone to check their SIMs regularly and block unknown ones.",
+        "who": "Every CNIC holder, especially if your card was ever lost, or you gave your thumbprint to someone else for a SIM.",
+        "documents": [
+          "Your CNIC number",
+          "Original CNIC, when you visit a franchise to block a SIM"
+        ],
+        "fees": "Checking by SMS to 668 is free. Blocking a SIM at a franchise is free.",
+        "time": "The 668 reply comes in a few minutes. Blocking at a franchise takes a few minutes with biometric verification.",
+        "steps": [
+          "Send an SMS with your CNIC number, without dashes, to 668.",
+          "Read the reply. It shows how many SIMs each network has on your CNIC.",
+          "Compare it with the SIMs you actually use.",
+          "If there is a SIM you do not know, go to that network's franchise or customer service centre with your original CNIC.",
+          "Verify your thumbprint and ask them to block the unknown SIM.",
+          "Check again with 668 after a few days to confirm it is gone."
+        ],
+        "mistakes": [
+          "Giving your thumbprint to a street SIM seller for someone else.",
+          "Ignoring an unknown SIM on your CNIC. You may be questioned if it is used for crime.",
+          "Sharing OTP codes from your SIM with callers claiming to be from a bank or PTA."
+        ],
+        "problems": [
+          {
+            "problem": "668 shows more SIMs than I have.",
+            "solution": "Visit the franchise of that network with your CNIC and block the extra SIM after biometric verification."
+          },
+          {
+            "problem": "I lost my phone and want to keep my number.",
+            "solution": "Block the SIM straight away by calling your network, then get a replacement SIM with the same number at a franchise after biometric verification."
+          },
+          {
+            "problem": "Someone called saying my SIM will be blocked unless I share a code.",
+            "solution": "This is a scam. PTA and networks never ask for codes by phone. Hang up and report it on the PTA complaint portal."
+          }
+        ],
+        "dates": [
+          "Check your SIMs every few months, and straight away if your CNIC is lost."
+        ]
+      },
+      "ur": {
+        "title": "اپنے شناختی کارڈ پر سمیں چیک اور بند کریں",
+        "summary": "دیکھیں آپ کے نام پر کتنی موبائل سمیں رجسٹرڈ ہیں اور جو استعمال نہیں کرتے وہ بند کروائیں۔",
+        "what": "پاکستان میں ہر سم کسی شناختی کارڈ پر رجسٹرڈ ہوتی ہے۔ اگر کوئی آپ کے شناختی کارڈ والی سم سے فراڈ کرے تو اس کا سراغ آپ تک آ سکتا ہے۔ پی ٹی اے سب کو مشورہ دیتا ہے کہ اپنی سمیں باقاعدگی سے چیک کریں اور نامعلوم سمیں بند کروائیں۔",
+        "who": "ہر شناختی کارڈ رکھنے والا، خاص طور پر اگر آپ کا کارڈ کبھی گم ہوا ہو یا آپ نے کسی اور کی سم کے لیے انگوٹھا لگایا ہو۔",
+        "documents": [
+          "آپ کا شناختی کارڈ نمبر",
+          "سم بند کروانے کے لیے فرنچائز جاتے وقت اصل شناختی کارڈ"
+        ],
+        "fees": "668 پر SMS سے چیک کرنا مفت ہے۔ فرنچائز پر سم بند کروانا مفت ہے۔",
+        "time": "668 کا جواب چند منٹ میں آتا ہے۔ فرنچائز پر بائیو میٹرک تصدیق کے ساتھ سم بند کرنے میں چند منٹ لگتے ہیں۔",
+        "steps": [
+          "اپنا شناختی کارڈ نمبر بغیر ڈیش کے 668 پر SMS کریں۔",
+          "جواب پڑھیں۔ اس میں ہر کمپنی کی سموں کی تعداد ہوتی ہے۔",
+          "اسے اپنی استعمال ہونے والی سموں سے ملائیں۔",
+          "اگر کوئی نامعلوم سم ہو تو اصل شناختی کارڈ لے کر اس کمپنی کی فرنچائز یا کسٹمر سروس سینٹر جائیں۔",
+          "انگوٹھے سے تصدیق کریں اور نامعلوم سم بند کرنے کا کہیں۔",
+          "چند دن بعد دوبارہ 668 سے چیک کریں کہ سم ختم ہو گئی ہے۔"
+        ],
+        "mistakes": [
+          "سڑک پر سم بیچنے والے کو کسی اور کے لیے انگوٹھا دینا۔",
+          "اپنے شناختی کارڈ پر نامعلوم سم کو نظر انداز کرنا۔ جرم میں استعمال ہونے پر آپ سے پوچھ گچھ ہو سکتی ہے۔",
+          "بینک یا پی ٹی اے کے نام پر کال کرنے والوں کو اپنی سم کا او ٹی پی کوڈ بتانا۔"
+        ],
+        "problems": [
+          {
+            "problem": "668 میری سموں سے زیادہ سمیں دکھا رہا ہے۔",
+            "solution": "اپنا شناختی کارڈ لے کر اس کمپنی کی فرنچائز جائیں اور بائیو میٹرک تصدیق کے بعد اضافی سم بند کروائیں۔"
+          },
+          {
+            "problem": "میرا فون گم ہو گیا اور میں اپنا نمبر رکھنا چاہتا ہوں۔",
+            "solution": "فوراً اپنی کمپنی کو کال کر کے سم بند کروائیں، پھر فرنچائز سے بائیو میٹرک تصدیق کے بعد اسی نمبر کی نئی سم لیں۔"
+          },
+          {
+            "problem": "کسی نے کال کی کہ کوڈ نہ بتایا تو سم بند ہو جائے گی۔",
+            "solution": "یہ فراڈ ہے۔ پی ٹی اے اور کمپنیاں کبھی فون پر کوڈ نہیں مانگتیں۔ کال کاٹ دیں اور پی ٹی اے کے شکایت پورٹل پر رپورٹ کریں۔"
+          }
+        ],
+        "dates": [
+          "ہر چند ماہ بعد اپنی سمیں چیک کریں، اور شناختی کارڈ گم ہونے پر فوراً۔"
+        ]
+      },
+      "office": {
+        "query": "mobile franchise customer service centre",
+        "name": "Mobile network franchise",
+        "nameUr": "موبائل کمپنی فرنچائز"
       }
     }
   ]

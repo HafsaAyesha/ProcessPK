@@ -16,9 +16,16 @@ and young people. English and Urdu, works offline, no login.
   appointment date), all saved on the phone
 - About: disclaimer (not affiliated with the government), all helplines,
   privacy, sources
-- 9 student guides in both languages (`assets/guides.json`)
-- Ask ProcessPK: AI answers about the open guide, grounded only in that
-  guide, with sources and a daily limit (see `worker/README.md` to switch it on)
+- 16 guides in both languages (`assets/guides.json`), including e-passport,
+  old (MRP) passport renewal, lost CNIC and checking SIMs on your CNIC
+- Important dates on each guide, plus personal reminders with days left and
+  "Add to calendar" (the phone's calendar sends the notification)
+- Share a guide or your ticked checklist as a PDF (English or Urdu)
+- Find the nearest office: opens Google Maps, no location permission needed
+- Saved (bookmarked) guides on Home
+- Ask ProcessPK: AI chat about the open guide, grounded only in that guide,
+  with follow-up questions, suggested questions, sources and a daily limit
+  (see `worker/README.md` to switch it on)
 - AdMob test banners on Home and guide lists (never on checklists)
 - Firebase ready: guides load from Firestore once you connect a project
 

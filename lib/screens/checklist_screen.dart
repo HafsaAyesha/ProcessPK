@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../app_state.dart';
+import '../pdf_export.dart';
+import '../reminders.dart';
 import '../theme.dart';
 import '../widgets.dart';
 
@@ -28,6 +30,17 @@ class ChecklistScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(s.navProgress),
         actions: [
+          IconButton(
+            tooltip: s.sharePdf,
+            icon: const Icon(Icons.picture_as_pdf_outlined),
+            onPressed: () =>
+                shareGuidePdf(guide, state.lang, progress: progress),
+          ),
+          IconButton(
+            tooltip: s.setReminder,
+            icon: const Icon(Icons.alarm_add),
+            onPressed: () => showReminderDialog(context, guide: guide),
+          ),
           PopupMenuButton<String>(
             onSelected: (_) async {
               await state.removeChecklist(guideId);

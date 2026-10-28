@@ -12,6 +12,8 @@ class AppState extends ChangeNotifier {
   static const _langKey = 'lang';
   static const _introKey = 'intro_seen';
   static const _progressKey = 'progress_v1';
+  static const _remindersKey = 'reminders_v1';
+  static const _savedKey = 'saved_v1';
 
   final SharedPreferences prefs;
   final GuideRepository repository;
@@ -25,6 +27,8 @@ class AppState extends ChangeNotifier {
   String lang = 'en';
   bool introSeen = false;
   final Map<String, GuideProgress> progress = {};
+  final List<Reminder> reminders = [];
+  final Set<String> saved = {};
 
   S get s => S(lang);
 
@@ -38,6 +42,16 @@ class AppState extends ChangeNotifier {
         progress[id] = GuideProgress.fromJson(Map<String, dynamic>.from(value));
       });
     }
+    final rawReminders = prefs.getString(_remindersKey);
+    if (rawReminders != null) {
+      reminders.addAll(
+        (jsonDecode(rawReminders) as List).map(
+          (e) => Reminder.fromJson(Map<String, dynamic>.from(e)),
+        ),
+      );
+      _sortReminders();
+    }
+    saved.addAll(prefs.getStringList(_savedKey) ?? const []);
     guides = await repository.loadLocal(prefs);
     notifyListeners();
     // Refresh from Firestore in the background without blocking startup.
@@ -74,6 +88,65 @@ class AppState extends ChangeNotifier {
     });
     entries.sort((a, b) => b.value.updatedAt.compareTo(a.value.updatedAt));
     return entries;
+  }
+
+  List<Guide> get savedGuides =>
+      guides.where((g) => saved.contains(g.id)).toList();
+
+  bool isSaved(String guideId) => saved.contains(guideId);
+
+  Future<void> toggleSaved(String guideId) async {
+    saved.contains(guideId) ? saved.remove(guideId) : saved.add(guideId);
+    notifyListeners();
+    await prefs.setStringList(_savedKey, saved.toList());
+  }
+
+  /// Reminders that are today or later, soonest first.
+  List<Reminder> get upcomingReminders =>
+      reminders.where((r) => r.daysLeft() >= 0).toList();
+
+  Future<Reminder> addReminder({
+    required String title,
+    required DateTime date,
+    String? guideId,
+  }) async {
+    final r = Reminder(
+      id: DateTime.now().microsecondsSinceEpoch.toString(),
+      title: title,
+      date: DateTime(date.year, date.month, date.day),
+      guideId: guideId,
+    );
+    reminders.add(r);
+    _sortReminders();
+    await _saveReminders();
+    return r;
+  }
+
+  Future<void> removeReminder(String id) async {
+    reminders.removeWhere((r) => r.id == id);
+    await _saveReminders();
+  }
+
+  void _sortReminders() => reminders.sort((a, b) => a.date.compareTo(b.date));
+
+  Future<void> _saveReminders() async {
+    notifyListeners();
+    await prefs.setString(
+      _remindersKey,
+      jsonEncode(reminders.map((r) => r.toJson()).toList()),
+    );
+  }
+
+  /// Every distinct kind of office across the guides, with the guides that
+  /// need it.
+  List<MapEntry<GuideOffice, List<Guide>>> get offices {
+    final byQuery = <String, MapEntry<GuideOffice, List<Guide>>>{};
+    for (final g in guides) {
+      final o = g.office;
+      if (o == null) continue;
+      byQuery.putIfAbsent(o.query, () => MapEntry(o, [])).value.add(g);
+    }
+    return byQuery.values.toList();
   }
 
   Future<void> setLang(String value) async {

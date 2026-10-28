@@ -82,6 +82,9 @@ class GuideText {
   final List<String> mistakes;
   final List<GuideProblem> problems;
 
+  /// Key dates and deadlines, written as short lines.
+  final List<String> dates;
+
   const GuideText({
     required this.title,
     required this.summary,
@@ -93,6 +96,7 @@ class GuideText {
     required this.steps,
     required this.mistakes,
     this.problems = const [],
+    this.dates = const [],
   });
 
   factory GuideText.fromJson(Map<String, dynamic> json) {
@@ -111,6 +115,7 @@ class GuideText {
       problems: (json['problems'] as List? ?? const [])
           .map((e) => GuideProblem.fromJson(Map<String, dynamic>.from(e)))
           .toList(),
+      dates: list('dates'),
     );
   }
 
@@ -125,6 +130,44 @@ class GuideText {
     'steps': steps,
     'mistakes': mistakes,
     'problems': problems.map((p) => p.toJson()).toList(),
+    'dates': dates,
+  };
+}
+
+/// The kind of office people visit for a guide, used to search Maps for the
+/// nearest one.
+class GuideOffice {
+  final String query;
+  final String name;
+  final String nameUr;
+  final String? locator;
+
+  const GuideOffice({
+    required this.query,
+    required this.name,
+    required this.nameUr,
+    this.locator,
+  });
+
+  String label(String lang) => lang == 'ur' ? nameUr : name;
+
+  String get mapsUrl => Uri.https('www.google.com', '/maps/search/', {
+    'api': '1',
+    'query': '$query near me',
+  }).toString();
+
+  factory GuideOffice.fromJson(Map<String, dynamic> json) => GuideOffice(
+    query: json['query'] as String,
+    name: json['name'] as String,
+    nameUr: json['nameUr'] as String? ?? json['name'] as String,
+    locator: json['locator'] as String?,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'query': query,
+    'name': name,
+    'nameUr': nameUr,
+    if (locator != null) 'locator': locator,
   };
 }
 
@@ -139,6 +182,7 @@ class Guide {
   final String? lastVerified;
   final List<GuideSource> sources;
   final List<GuideContact> contacts;
+  final GuideOffice? office;
   final GuideText en;
   final GuideText ur;
 
@@ -150,6 +194,7 @@ class Guide {
     required this.lastVerified,
     required this.sources,
     this.contacts = const [],
+    this.office,
     required this.en,
     required this.ur,
   });
@@ -170,6 +215,9 @@ class Guide {
     contacts: (json['contacts'] as List? ?? const [])
         .map((e) => GuideContact.fromJson(Map<String, dynamic>.from(e)))
         .toList(),
+    office: json['office'] == null
+        ? null
+        : GuideOffice.fromJson(Map<String, dynamic>.from(json['office'])),
     en: GuideText.fromJson(Map<String, dynamic>.from(json['en'])),
     ur: GuideText.fromJson(Map<String, dynamic>.from(json['ur'])),
   );
@@ -182,6 +230,7 @@ class Guide {
     'lastVerified': lastVerified,
     'sources': sources.map((s) => s.toJson()).toList(),
     'contacts': contacts.map((c) => c.toJson()).toList(),
+    if (office != null) 'office': office!.toJson(),
     'en': en.toJson(),
     'ur': ur.toJson(),
   };
@@ -240,5 +289,56 @@ class GuideProgress {
     'steps': steps.toList(),
     'notes': notes,
     'updatedAt': updatedAt.toIso8601String(),
+  };
+}
+
+/// A date the user wants to remember, such as a deadline or appointment.
+/// Stored on the device only.
+class Reminder {
+  final String id;
+  final String title;
+  final DateTime date;
+  final String? guideId;
+
+  const Reminder({
+    required this.id,
+    required this.title,
+    required this.date,
+    this.guideId,
+  });
+
+  /// Whole days from [today] until the reminder; negative once it has passed.
+  int daysLeft([DateTime? today]) {
+    final now = today ?? DateTime.now();
+    final start = DateTime(now.year, now.month, now.day);
+    return DateTime(date.year, date.month, date.day).difference(start).inDays;
+  }
+
+  /// A Google Calendar link that creates an all-day event, so the phone's
+  /// calendar sends the actual notification.
+  String calendarUrl({String details = ''}) {
+    String fmt(DateTime d) =>
+        '${d.year.toString().padLeft(4, '0')}${d.month.toString().padLeft(2, '0')}${d.day.toString().padLeft(2, '0')}';
+    final end = date.add(const Duration(days: 1));
+    return Uri.https('calendar.google.com', '/calendar/render', {
+      'action': 'TEMPLATE',
+      'text': title,
+      'dates': '${fmt(date)}/${fmt(end)}',
+      'details': details,
+    }).toString();
+  }
+
+  factory Reminder.fromJson(Map<String, dynamic> json) => Reminder(
+    id: json['id'] as String,
+    title: json['title'] as String,
+    date: DateTime.parse(json['date'] as String),
+    guideId: json['guideId'] as String?,
+  );
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'title': title,
+    'date': date.toIso8601String(),
+    if (guideId != null) 'guideId': guideId,
   };
 }

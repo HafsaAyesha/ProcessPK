@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../ads.dart';
 import '../app_state.dart';
+import '../reminders.dart';
 import '../theme.dart';
 import '../widgets.dart';
 import 'guide_list_screen.dart';
+import 'offices_screen.dart';
 import 'shell.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,6 +17,7 @@ class HomeScreen extends StatelessWidget {
     final state = AppScope.of(context);
     final s = state.s;
     final active = state.activeChecklists;
+    final upcoming = state.upcomingReminders;
     return SafeArea(
       child: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
@@ -47,6 +50,10 @@ class HomeScreen extends StatelessWidget {
               );
             },
           ),
+          if (upcoming.isNotEmpty) ...[
+            SectionTitle(s.upcoming),
+            ReminderTile(reminder: upcoming.first),
+          ],
           if (active.isNotEmpty) ...[
             SectionTitle(s.continueWhereLeft),
             _ContinueCard(),
@@ -91,6 +98,28 @@ class HomeScreen extends StatelessWidget {
                 ),
             ],
           ),
+          const SizedBox(height: 12),
+          Card(
+            color: AppColors.mint,
+            child: ListTile(
+              leading: const Icon(Icons.place, color: AppColors.primary),
+              title: Text(
+                s.findOffices,
+                style: const TextStyle(fontWeight: FontWeight.w600),
+              ),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(
+                context,
+              ).push(MaterialPageRoute(builder: (_) => const OfficesScreen())),
+            ),
+          ),
+          if (state.savedGuides.isNotEmpty) ...[
+            SectionTitle(s.savedGuides),
+            for (final g in state.savedGuides) ...[
+              GuideCard(guide: g),
+              const SizedBox(height: 10),
+            ],
+          ],
           const SizedBox(height: 16),
           const Center(child: BannerAdBox()),
           SectionTitle(s.popular),

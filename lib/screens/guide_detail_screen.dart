@@ -6,6 +6,8 @@ import '../app_state.dart';
 import '../config.dart';
 import '../links.dart';
 import '../models.dart';
+import '../pdf_export.dart';
+import '../reminders.dart';
 import '../theme.dart';
 import '../widgets.dart';
 import 'ask_sheet.dart';
@@ -35,9 +37,22 @@ class GuideDetailScreen extends StatelessWidget {
         title: Text(s.category(guide.category)),
         actions: [
           IconButton(
+            tooltip: state.isSaved(guide.id) ? s.unsaveGuide : s.saveGuide,
+            icon: Icon(
+              state.isSaved(guide.id) ? Icons.bookmark : Icons.bookmark_border,
+            ),
+            onPressed: () => state.toggleSaved(guide.id),
+          ),
+          PopupMenuButton<String>(
             tooltip: s.share,
             icon: const Icon(Icons.share_outlined),
-            onPressed: () => _share(guide, t),
+            onSelected: (v) => v == 'pdf'
+                ? shareGuidePdf(guide, state.lang)
+                : _share(guide, t),
+            itemBuilder: (_) => [
+              PopupMenuItem(value: 'text', child: Text(s.shareText)),
+              PopupMenuItem(value: 'pdf', child: Text(s.sharePdf)),
+            ],
           ),
           IconButton(
             tooltip: s.reportError,
@@ -87,6 +102,19 @@ class GuideDetailScreen extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          if (t.dates.isNotEmpty) ...[
+            SectionTitle(s.importantDates),
+            for (final d in t.dates)
+              _Bullet(icon: Icons.event_outlined, text: d),
+          ],
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: TextButton.icon(
+              icon: const Icon(Icons.alarm_add),
+              label: Text(s.setReminder),
+              onPressed: () => showReminderDialog(context, guide: guide),
+            ),
           ),
           SectionTitle(s.steps),
           for (var i = 0; i < t.steps.length; i++)
@@ -157,8 +185,20 @@ class GuideDetailScreen extends StatelessWidget {
                 ),
               ),
           ],
-          if (guide.contacts.isNotEmpty) ...[
+          if (guide.contacts.isNotEmpty || guide.office != null) ...[
             SectionTitle(s.contactsAndHelp),
+            if (guide.office != null)
+              Card(
+                color: AppColors.mint,
+                margin: const EdgeInsets.only(bottom: 10),
+                child: ListTile(
+                  leading: const Icon(Icons.place, color: AppColors.primary),
+                  title: Text(s.findOffice),
+                  subtitle: Text(guide.office!.label(state.lang)),
+                  trailing: const Icon(Icons.map_outlined),
+                  onTap: () => openLink(context, guide.office!.mapsUrl),
+                ),
+              ),
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: Text(

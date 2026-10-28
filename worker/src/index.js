@@ -34,6 +34,8 @@ export function guideToContext(guide, lang) {
     `Estimated time: ${t.time}`,
     'Steps:',
     ...t.steps.map((s, i) => `${i + 1}. ${s}`),
+    'Important dates:',
+    ...(t.dates ?? []).map((d) => `- ${d}`),
     'Common mistakes:',
     ...t.mistakes.map((m) => `- ${m}`),
     'Problems people face and fixes:',
@@ -41,6 +43,7 @@ export function guideToContext(guide, lang) {
     'Contacts:',
     ...(guide.contacts ?? []).map((c) =>
       `- ${c.name}: ${[c.phone, c.email, c.url, c.note].filter(Boolean).join(', ')}`),
+    ...(guide.office ? [`Office to visit: ${guide.office.name} (the app has a "Find nearest office" button that opens Google Maps)`] : []),
     'Official sources:',
     ...guide.sources.map((s) => `- ${s.name}: ${s.url}`),
     `Last verified: ${guide.lastVerified ?? 'not yet verified'}`,
