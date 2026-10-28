@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "guides": [
     {
       "id": "first-cnic",
@@ -13,11 +13,11 @@
         "18",
         "شناختی کارڈ"
       ],
-      "lastVerified": null,
+      "lastVerified": "2026-10-28",
       "sources": [
         {
-          "name": "NADRA",
-          "url": "https://www.nadra.gov.pk"
+          "name": "NADRA fee structure",
+          "url": "https://www.nadra.gov.pk/feeStructure"
         },
         {
           "name": "Pak-ID (NADRA online)",
@@ -35,8 +35,8 @@
           "A blood relative with a CNIC to verify you at the centre, if your parent cannot come",
           "Matric certificate (helpful as proof of date of birth)"
         ],
-        "fees": "The first normal CNIC has usually been free. Urgent and executive options cost extra. Check the current NADRA fee table before you go.",
-        "time": "Normal delivery usually takes around 2 to 4 weeks. Urgent and executive are faster.",
+        "fees": "First-time card, normal: free. Urgent: Rs 1,150. Executive: Rs 2,150 (NADRA fees reported Sep 2026). Renewals and smart-card replacements cost more.",
+        "time": "Normal usually takes 2 to 4 weeks. Urgent is about 15 days or less. Executive is fastest.",
         "steps": [
           "Check that your B-Form is on the NADRA record. Your parent can confirm this at any NADRA centre.",
           "Choose how to apply: at a NADRA Registration Centre, or online through the Pak-ID app or website.",
@@ -77,8 +77,8 @@
           "اگر والدین نہ آ سکیں تو تصدیق کے لیے کوئی خونی رشتہ دار جس کا شناختی کارڈ ہو",
           "میٹرک کی سند (تاریخ پیدائش کے ثبوت کے لیے مددگار)"
         ],
-        "fees": "پہلا نارمل شناختی کارڈ عام طور پر مفت رہا ہے۔ ارجنٹ اور ایگزیکٹو کی فیس الگ ہے۔ جانے سے پہلے نادرا کی موجودہ فیس دیکھ لیں۔",
-        "time": "نارمل کارڈ عموماً 2 سے 4 ہفتوں میں ملتا ہے۔ ارجنٹ اور ایگزیکٹو جلدی ملتے ہیں۔",
+        "fees": "پہلا کارڈ، نارمل: مفت۔ ارجنٹ: 1,150 روپے۔ ایگزیکٹو: 2,150 روپے (ستمبر 2026 کی نادرا فیس)۔ تجدید اور اسمارٹ کارڈ کی فیس زیادہ ہے۔",
+        "time": "نارمل عموماً 2 سے 4 ہفتے۔ ارجنٹ تقریباً 15 دن یا کم۔ ایگزیکٹو سب سے تیز۔",
         "steps": [
           "تسلی کر لیں کہ آپ کا ب فارم نادرا کے ریکارڈ میں موجود ہے۔ والدین کسی بھی نادرا سینٹر سے یہ معلوم کر سکتے ہیں۔",
           "درخواست کا طریقہ چنیں: نادرا رجسٹریشن سینٹر یا Pak-ID ایپ/ویب سائٹ کے ذریعے آن لائن۔",
@@ -129,6 +129,9 @@
           "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
           "url": "https://citizenportal.gov.pk"
         }
+      ],
+      "references": [
+        "https://arynews.tv/nadra-announces-new-fee-structure-for-its-services (24 Sep 2026)"
       ]
     },
     {
@@ -143,7 +146,7 @@
         "nadra",
         "ب فارم"
       ],
-      "lastVerified": null,
+      "lastVerified": "2026-10-28",
       "sources": [
         {
           "name": "NADRA",
@@ -160,18 +163,20 @@
         "what": "The B-Form, now called the Child Registration Certificate (CRC), is the NADRA record for anyone under 18. Boards ask for it at Matric registration, and it is needed for a child's passport and later for the first CNIC.",
         "who": "Pakistani children under 18. A parent or legal guardian applies on their behalf.",
         "documents": [
-          "Birth certificate from the Union Council (computerised)",
+          "Computerised birth certificate from the Union Council",
           "Original CNIC of the parent who applies",
-          "For children aged 10 to 18: the child must come for photo and fingerprints"
+          "Child's photo if the child is 3 or older (no photo needed under 3)",
+          "Children aged 10 to 18 must come for fingerprints and iris scan"
         ],
-        "fees": "Normal processing has a small fee. Urgent and executive cost more. Check the NADRA fee table.",
-        "time": "Normal processing usually takes a few weeks.",
+        "fees": "Normal: Rs 50 (about 7 days). Executive: Rs 500 (1 day). You can also apply on the Pak-ID app.",
+        "time": "About 7 days for normal, 1 day for executive.",
         "steps": [
           "Get the child's computerised birth certificate from your Union Council if you do not have one.",
-          "Visit a NADRA centre with the parent's CNIC, or apply through Pak-ID.",
-          "Give the child's details. Children aged 10 or older give a photo and fingerprints.",
-          "Check the printed form carefully, especially the spelling of the child's name.",
-          "Pay the fee, keep the tracking slip and collect the CRC when it is ready."
+          "Apply on the Pak-ID app at home, or visit a NADRA centre with the parent's CNIC.",
+          "Add the child's details. Upload or take a photo if the child is 3 or older.",
+          "For children aged 10 to 18, complete fingerprints and iris scan at a NADRA centre.",
+          "Check the child's name spelling carefully, pay the fee and keep the tracking ID.",
+          "Download or collect the CRC when it is ready."
         ],
         "mistakes": [
           "Name spelling different from the school or birth certificate.",
@@ -201,16 +206,18 @@
         "documents": [
           "یونین کونسل سے کمپیوٹرائزڈ پیدائشی سرٹیفکیٹ",
           "درخواست دینے والے والد یا والدہ کا اصل شناختی کارڈ",
-          "10 سے 18 سال کے بچوں کو تصویر اور انگلیوں کے نشان کے لیے ساتھ آنا ہوگا"
+          "3 سال یا زیادہ عمر کے بچے کی تصویر (3 سال سے کم کے لیے تصویر ضروری نہیں)",
+          "10 سے 18 سال کے بچوں کو انگلیوں کے نشان اور آنکھ (آئرس) اسکین کے لیے آنا ہوگا"
         ],
-        "fees": "نارمل کی معمولی فیس ہے۔ ارجنٹ اور ایگزیکٹو کی فیس زیادہ ہے۔ نادرا کی فیس لسٹ دیکھیں۔",
-        "time": "نارمل درخواست عموماً چند ہفتوں میں مکمل ہوتی ہے۔",
+        "fees": "نارمل: 50 روپے (تقریباً 7 دن)۔ ایگزیکٹو: 500 روپے (1 دن)۔ Pak-ID ایپ سے بھی درخواست دی جا سکتی ہے۔",
+        "time": "نارمل تقریباً 7 دن، ایگزیکٹو 1 دن۔",
         "steps": [
-          "اگر پیدائشی سرٹیفکیٹ نہیں ہے تو یونین کونسل سے کمپیوٹرائزڈ سرٹیفکیٹ بنوائیں۔",
-          "والدین کے شناختی کارڈ کے ساتھ نادرا سینٹر جائیں یا Pak-ID سے درخواست دیں۔",
-          "بچے کی تفصیلات دیں۔ 10 سال یا زیادہ عمر کے بچے تصویر اور انگلیوں کے نشان دیں۔",
-          "پرنٹ شدہ فارم، خاص طور پر بچے کے نام کے ہجے، غور سے چیک کریں۔",
-          "فیس ادا کریں، ٹریکنگ سلپ رکھیں اور تیار ہونے پر CRC وصول کریں۔"
+          "اگر کمپیوٹرائزڈ پیدائشی سرٹیفکیٹ نہیں ہے تو یونین کونسل سے بنوائیں۔",
+          "گھر بیٹھے Pak-ID ایپ پر درخواست دیں، یا والدین کے شناختی کارڈ کے ساتھ نادرا سینٹر جائیں۔",
+          "بچے کی تفصیلات درج کریں۔ 3 سال یا زیادہ عمر ہو تو تصویر اپلوڈ کریں یا کھینچیں۔",
+          "10 سے 18 سال کے بچوں کے لیے نادرا سینٹر پر انگلیوں کے نشان اور آئرس اسکین کروائیں۔",
+          "بچے کے نام کے ہجے غور سے چیک کریں، فیس ادا کریں اور ٹریکنگ آئی ڈی سنبھالیں۔",
+          "تیار ہونے پر CRC ڈاؤن لوڈ یا وصول کریں۔"
         ],
         "mistakes": [
           "نام کے ہجے اسکول یا پیدائشی سرٹیفکیٹ سے مختلف ہونا۔",
@@ -253,6 +260,9 @@
           "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
           "url": "https://citizenportal.gov.pk"
         }
+      ],
+      "references": [
+        "https://arynews.tv/nadra-makes-applying-for-b-forms-easier (13 Apr 2026)"
       ]
     },
     {
@@ -264,40 +274,44 @@
         "dgip",
         "travel",
         "study abroad",
-        "پاسپورٹ"
+        "پاسپورٹ",
+        "e-passport",
+        "epassport",
+        "ای پاسپورٹ",
+        "mrp"
       ],
-      "lastVerified": null,
+      "lastVerified": "2026-10-28",
       "sources": [
         {
           "name": "Directorate General of Immigration & Passports",
           "url": "https://dgip.gov.pk"
         },
         {
-          "name": "Online passport application",
-          "url": "https://onlinemrp.dgip.gov.pk"
+          "name": "Passport offices list",
+          "url": "https://dgip.gov.pk/contactus/offices.php"
         }
       ],
       "en": {
-        "title": "Apply for your first passport",
-        "summary": "Get a Pakistani passport for study, travel or Umrah.",
-        "what": "A passport lets you travel abroad. Students need it for foreign admissions, scholarships, exchange programmes and visa applications.",
+        "title": "Apply for your first e-passport",
+        "summary": "Pakistan now issues only e-passports. Here is how to get yours for study or travel.",
+        "what": "Since 15 October 2026, Pakistan issues only e-passports (with a chip) instead of the old machine-readable passport (MRP). Old MRPs stay valid until they expire. Students need a passport for foreign admissions, scholarships, exchanges and visas.",
         "who": "Pakistani citizens with a valid CNIC. Under-18s apply with their B-Form and a parent.",
         "documents": [
-          "Original valid CNIC (or B-Form for under 18)",
-          "For under 18: both parents' CNICs, and parents come to the office",
+          "Original valid CNIC (or B-Form/CRC for under 18)",
+          "For under 18: both parents' CNICs, and a parent comes with you",
           "Old passport, if you ever had one",
-          "Fee payment receipt"
+          "Fee paid through a PSID (Passport Fee Asaan app or 1Bill) or by QR at the office"
         ],
-        "fees": "The fee depends on the number of pages, validity (5 or 10 years) and normal, urgent or fast-track processing. Check the current DGIP fee schedule and pay at a listed bank or online.",
-        "time": "Normal processing usually takes a few weeks. Urgent and fast-track are quicker.",
+        "fees": "36 pages: Rs 9,000 normal / Rs 15,000 urgent (5 years), Rs 13,500 / Rs 22,500 (10 years). 72 pages: Rs 16,500 / Rs 27,000 (5 years), Rs 24,750 / Rs 40,500 (10 years). No fast-track for e-passports (fees announced 15 Oct 2026).",
+        "time": "Normal takes a few weeks; urgent is faster. Track with your tracking ID on the DGIP website.",
         "steps": [
-          "Choose pages, validity and processing type, then check the fee on the DGIP website.",
-          "Pay the fee at an authorised bank or online and keep the receipt.",
-          "Visit a Regional Passport Office with your CNIC and receipt. Some offices let you book a slot first.",
-          "Give your photo and fingerprints at the counter. Wear plain clothes with no white background colours.",
-          "Check the data on screen before confirming, especially name spelling and date of birth.",
-          "Keep the token slip and track your passport on the DGIP website.",
-          "Collect the passport from the same office when it is ready."
+          "Choose 36 or 72 pages, 5 or 10 years, and normal or urgent. Most students choose 36 pages, 5 or 10 years, normal.",
+          "Generate a PSID in the Passport Fee Asaan app or web portal and pay it through 1Bill in your banking app. You can also pay by QR code at the office.",
+          "Visit any passport office or NADRA Mega Centre with your CNIC. Your CNIC address does not matter.",
+          "Give your photo, fingerprints and signature at the counter. Wear plain, dark clothes.",
+          "Check your name spelling and date of birth on screen before you confirm.",
+          "Keep your token slip and track the passport on the DGIP website.",
+          "Collect your e-passport from the same office when it is ready."
         ],
         "mistakes": [
           "Name spelling differs from your CNIC or degree, which causes visa trouble later.",
@@ -311,7 +325,7 @@
           },
           {
             "problem": "Very long queues at the passport office.",
-            "solution": "Arrive early, or use the online application where available so you only visit for biometrics. Avoid the weeks before Hajj and admission seasons."
+            "solution": "Pay the fee online with a PSID before you go so you skip the bank queue, arrive early, and try a NADRA Mega Centre, which often has shorter queues. You can apply at any office."
           },
           {
             "problem": "Someone offers to get my passport faster for extra money.",
@@ -320,26 +334,26 @@
         ]
       },
       "ur": {
-        "title": "اپنا پہلا پاسپورٹ بنوائیں",
-        "summary": "تعلیم، سفر یا عمرہ کے لیے پاکستانی پاسپورٹ حاصل کریں۔",
-        "what": "پاسپورٹ کے ذریعے آپ بیرون ملک سفر کر سکتے ہیں۔ غیر ملکی داخلوں، اسکالرشپس، ایکسچینج پروگرامز اور ویزا کے لیے طلبہ کو اس کی ضرورت ہوتی ہے۔",
+        "title": "اپنا پہلا ای پاسپورٹ بنوائیں",
+        "summary": "پاکستان اب صرف ای پاسپورٹ جاری کرتا ہے۔ تعلیم یا سفر کے لیے اپنا پاسپورٹ ایسے بنوائیں۔",
+        "what": "15 اکتوبر 2026 سے پاکستان پرانے مشین ریڈ ایبل پاسپورٹ (MRP) کی بجائے صرف چِپ والا ای پاسپورٹ جاری کرتا ہے۔ پرانے MRP اپنی میعاد تک درست رہیں گے۔ غیر ملکی داخلوں، اسکالرشپس، ایکسچینج اور ویزا کے لیے طلبہ کو پاسپورٹ چاہیے۔",
         "who": "درست شناختی کارڈ رکھنے والے پاکستانی شہری۔ 18 سال سے کم عمر افراد ب فارم اور والدین کے ساتھ درخواست دیتے ہیں۔",
         "documents": [
-          "اصل درست شناختی کارڈ (18 سال سے کم کے لیے ب فارم)",
-          "18 سال سے کم کے لیے والدین دونوں کے شناختی کارڈ، اور والدین کا دفتر آنا",
+          "اصل درست شناختی کارڈ (18 سال سے کم کے لیے ب فارم/CRC)",
+          "18 سال سے کم کے لیے والدین دونوں کے شناختی کارڈ، اور والدین میں سے کوئی ساتھ آئے",
           "پرانا پاسپورٹ، اگر کبھی بنا ہو",
-          "فیس کی ادائیگی کی رسید"
+          "PSID (Passport Fee Asaan ایپ یا 1Bill) یا دفتر میں QR کے ذریعے ادا شدہ فیس"
         ],
-        "fees": "فیس صفحات کی تعداد، مدت (5 یا 10 سال) اور نارمل، ارجنٹ یا فاسٹ ٹریک پر منحصر ہے۔ DGIP کی موجودہ فیس دیکھیں اور مقررہ بینک یا آن لائن ادا کریں۔",
-        "time": "نارمل پاسپورٹ عموماً چند ہفتوں میں بنتا ہے۔ ارجنٹ اور فاسٹ ٹریک جلدی بنتے ہیں۔",
+        "fees": "36 صفحات: نارمل 9,000 / ارجنٹ 15,000 روپے (5 سال)، 13,500 / 22,500 روپے (10 سال)۔ 72 صفحات: 16,500 / 27,000 روپے (5 سال)، 24,750 / 40,500 روپے (10 سال)۔ ای پاسپورٹ کے لیے فاسٹ ٹریک نہیں (فیس کا اعلان 15 اکتوبر 2026)۔",
+        "time": "نارمل میں چند ہفتے لگتے ہیں، ارجنٹ جلدی بنتا ہے۔ DGIP ویب سائٹ پر ٹریکنگ آئی ڈی سے چیک کریں۔",
         "steps": [
-          "صفحات، مدت اور پروسیسنگ کی قسم چنیں، پھر DGIP ویب سائٹ پر فیس دیکھیں۔",
-          "مجاز بینک یا آن لائن فیس ادا کریں اور رسید سنبھال کر رکھیں۔",
-          "شناختی کارڈ اور رسید کے ساتھ ریجنل پاسپورٹ آفس جائیں۔ کچھ دفاتر میں پہلے وقت بک کیا جا سکتا ہے۔",
-          "کاؤنٹر پر تصویر اور انگلیوں کے نشان دیں۔ سادہ لباس پہنیں، سفید رنگ سے پرہیز کریں۔",
+          "36 یا 72 صفحات، 5 یا 10 سال، اور نارمل یا ارجنٹ چنیں۔ زیادہ تر طلبہ 36 صفحات اور نارمل چنتے ہیں۔",
+          "Passport Fee Asaan ایپ یا ویب پورٹل سے PSID بنائیں اور بینکنگ ایپ میں 1Bill سے ادا کریں۔ دفتر میں QR کوڈ سے بھی ادائیگی ہو سکتی ہے۔",
+          "شناختی کارڈ کے ساتھ کسی بھی پاسپورٹ آفس یا نادرا میگا سینٹر جائیں۔ شناختی کارڈ کے پتے سے فرق نہیں پڑتا۔",
+          "کاؤنٹر پر تصویر، انگلیوں کے نشان اور دستخط دیں۔ سادہ گہرے رنگ کے کپڑے پہنیں۔",
           "تصدیق سے پہلے اسکرین پر نام کے ہجے اور تاریخ پیدائش چیک کریں۔",
           "ٹوکن سلپ رکھیں اور DGIP ویب سائٹ پر پاسپورٹ ٹریک کریں۔",
-          "تیار ہونے پر اسی دفتر سے پاسپورٹ وصول کریں۔"
+          "تیار ہونے پر اسی دفتر سے ای پاسپورٹ وصول کریں۔"
         ],
         "mistakes": [
           "نام کے ہجے شناختی کارڈ یا ڈگری سے مختلف ہونا، جس سے بعد میں ویزا میں مسئلہ ہوتا ہے۔",
@@ -353,7 +367,7 @@
           },
           {
             "problem": "پاسپورٹ آفس میں بہت لمبی قطاریں۔",
-            "solution": "جلدی پہنچیں یا جہاں ممکن ہو آن لائن درخواست دیں تاکہ صرف بائیومیٹرک کے لیے جانا پڑے۔ حج اور داخلوں کے موسم سے پہلے کے ہفتوں سے بچیں۔"
+            "solution": "جانے سے پہلے PSID سے آن لائن فیس ادا کریں تاکہ بینک کی قطار سے بچیں، جلدی پہنچیں، اور نادرا میگا سینٹر آزمائیں جہاں اکثر کم رش ہوتا ہے۔ آپ کسی بھی دفتر میں درخواست دے سکتے ہیں۔"
           },
           {
             "problem": "کوئی اضافی پیسوں میں جلد پاسپورٹ دلوانے کی پیشکش کرتا ہے۔",
@@ -387,6 +401,10 @@
           "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
           "url": "https://citizenportal.gov.pk"
         }
+      ],
+      "references": [
+        "https://arynews.tv/pakistan-announces-new-e-passport-fee-schedule (15 Oct 2026)",
+        "https://gopunjab.pk/passport-fee-pakistan/ (8 Oct 2026)"
       ]
     },
     {
@@ -400,7 +418,7 @@
         "verification",
         "ڈگری تصدیق"
       ],
-      "lastVerified": null,
+      "lastVerified": "2026-10-28",
       "sources": [
         {
           "name": "Higher Education Commission",
@@ -413,30 +431,30 @@
       ],
       "en": {
         "title": "Attest your degree from HEC",
-        "summary": "Get your university degree and transcript attested for jobs or study abroad.",
+        "summary": "HEC attestation is now fully online: no visit, no originals, and you download an e-Attestation certificate.",
         "what": "HEC attestation confirms your degree is genuine and from a recognised institution. Many government jobs, foreign universities and embassies require it.",
         "who": "Graduates of HEC-recognised universities and degree-awarding institutes in Pakistan.",
         "documents": [
-          "Original CNIC",
-          "Original degree and transcripts (and photocopies)",
-          "Previous certificates (Matric and Intermediate) as asked for on the portal",
-          "A recent passport-size photo for your profile"
+          "Scans of your CNIC (front and back)",
+          "Scans of your degree, transcript or result card, and provisional certificate if needed",
+          "Scans of earlier certificates (Matric and Intermediate)",
+          "Personal details exactly as on your CNIC and documents"
         ],
-        "fees": "HEC charges a fee per document, paid online on the portal. Check the current amount on the HEC e-Services portal.",
-        "time": "Depends on the option. Walk-in appointments are fastest. Courier takes longer.",
+        "fees": "Rs 3,000 per document (degree, transcript, provisional certificate or equivalence letter). Paid through 1Link 1Bill after the portal gives you a consumer number.",
+        "time": "Depends on how fast HEC can verify with NADRA and your university. You get SMS and email updates.",
         "steps": [
-          "Create an account on the HEC e-Services portal using your CNIC and email.",
-          "Fill in your profile and add all your education records, from Matric upward.",
-          "Upload scanned copies of your degree and transcripts when asked.",
-          "Apply for degree attestation and choose walk-in or courier.",
-          "Pay the fee online and download the payment confirmation.",
-          "Walk-in: visit the chosen HEC office on your appointment date with originals. Courier: send the documents as instructed.",
-          "Collect or receive your attested documents and check every stamp."
+          "Create an account on the HEC e-Services portal, or log in.",
+          "Enter your personal details exactly as on your CNIC.",
+          "Add your full education history from Matric upward.",
+          "Choose the documents to attest. The portal calculates the fee.",
+          "Upload clear scans of your CNIC and all certificates and transcripts.",
+          "Pay through 1Link 1Bill using the consumer number.",
+          "HEC verifies with NADRA and your university. When you get the SMS/email, download your e-Attestation certificate."
         ],
         "mistakes": [
-          "Profile details not matching the degree, which leads to rejection.",
-          "Applying before the university has issued the final degree.",
-          "Forgetting original documents on the appointment day."
+          "Profile details that do not exactly match your CNIC or degree.",
+          "Blurry or cropped scans, which lead to rejection.",
+          "Paying an agent for a process you can do online yourself."
         ],
         "problems": [
           {
@@ -448,37 +466,37 @@
             "solution": "HEC checks with your university. Contact your university's examination or verification office and ask them to respond to HEC."
           },
           {
-            "problem": "No walk-in slots are available.",
-            "solution": "Check the portal again early in the morning when new slots open, or choose the courier option."
+            "problem": "I need a stamped paper copy, not a digital certificate.",
+            "solution": "The new system issues an e-Attestation certificate you download. Ask the embassy or employer if they accept it; most can verify it online. If they insist on paper, contact the HEC helpline."
           }
         ]
       },
       "ur": {
         "title": "ایچ ای سی سے اپنی ڈگری کی تصدیق کروائیں",
-        "summary": "نوکری یا بیرون ملک تعلیم کے لیے یونیورسٹی کی ڈگری اور ٹرانسکرپٹ کی تصدیق۔",
+        "summary": "ایچ ای سی تصدیق اب مکمل آن لائن ہے: نہ دفتر جانا، نہ اصل دستاویزات، اور ای اٹیسٹیشن سرٹیفکیٹ ڈاؤن لوڈ کریں۔",
         "what": "ایچ ای سی کی تصدیق ثابت کرتی ہے کہ آپ کی ڈگری اصلی اور تسلیم شدہ ادارے کی ہے۔ کئی سرکاری نوکریوں، غیر ملکی یونیورسٹیوں اور سفارت خانوں کو اس کی ضرورت ہوتی ہے۔",
         "who": "پاکستان میں ایچ ای سی سے تسلیم شدہ یونیورسٹیوں اور اداروں کے گریجویٹس۔",
         "documents": [
-          "اصل شناختی کارڈ",
-          "اصل ڈگری اور ٹرانسکرپٹس (اور فوٹو کاپیاں)",
-          "پورٹل پر مانگی گئی پچھلی اسناد (میٹرک اور انٹرمیڈیٹ)",
-          "پروفائل کے لیے حالیہ پاسپورٹ سائز تصویر"
+          "شناختی کارڈ کی اسکین (آگے اور پیچھے)",
+          "ڈگری، ٹرانسکرپٹ یا رزلٹ کارڈ، اور ضرورت ہو تو پروویژنل سرٹیفکیٹ کی اسکین",
+          "پچھلی اسناد (میٹرک اور انٹرمیڈیٹ) کی اسکین",
+          "ذاتی تفصیلات بالکل شناختی کارڈ اور دستاویزات کے مطابق"
         ],
-        "fees": "ایچ ای سی ہر دستاویز کی فیس لیتا ہے جو پورٹل پر آن لائن ادا ہوتی ہے۔ موجودہ رقم ایچ ای سی ای سروسز پورٹل پر دیکھیں۔",
-        "time": "طریقے پر منحصر ہے۔ واک اِن اپائنٹمنٹ سب سے تیز ہے، کوریئر میں زیادہ وقت لگتا ہے۔",
+        "fees": "فی دستاویز 3,000 روپے (ڈگری، ٹرانسکرپٹ، پروویژنل سرٹیفکیٹ یا مساوی سند)۔ پورٹل سے کنزیومر نمبر ملنے کے بعد 1Link 1Bill سے ادائیگی۔",
+        "time": "اس پر منحصر ہے کہ ایچ ای سی نادرا اور یونیورسٹی سے کتنی جلدی تصدیق کرتا ہے۔ SMS اور ای میل سے اطلاع ملتی ہے۔",
         "steps": [
-          "اپنے شناختی کارڈ اور ای میل سے ایچ ای سی ای سروسز پورٹل پر اکاؤنٹ بنائیں۔",
-          "اپنی پروفائل مکمل کریں اور میٹرک سے آگے تمام تعلیمی ریکارڈ شامل کریں۔",
-          "مانگے جانے پر ڈگری اور ٹرانسکرپٹس کی اسکین کاپیاں اپلوڈ کریں۔",
-          "ڈگری تصدیق کے لیے درخواست دیں اور واک اِن یا کوریئر چنیں۔",
-          "آن لائن فیس ادا کریں اور ادائیگی کی تصدیق ڈاؤن لوڈ کریں۔",
-          "واک اِن: مقررہ تاریخ پر اصل دستاویزات کے ساتھ ایچ ای سی دفتر جائیں۔ کوریئر: ہدایت کے مطابق دستاویزات بھیجیں۔",
-          "تصدیق شدہ دستاویزات وصول کریں اور ہر مہر چیک کریں۔"
+          "ایچ ای سی ای سروسز پورٹل پر اکاؤنٹ بنائیں یا لاگ اِن کریں۔",
+          "ذاتی تفصیلات بالکل شناختی کارڈ کے مطابق درج کریں۔",
+          "میٹرک سے آگے مکمل تعلیمی ریکارڈ شامل کریں۔",
+          "تصدیق کے لیے دستاویزات چنیں۔ پورٹل فیس خود حساب کرتا ہے۔",
+          "شناختی کارڈ اور تمام اسناد اور ٹرانسکرپٹس کی صاف اسکین اپلوڈ کریں۔",
+          "کنزیومر نمبر سے 1Link 1Bill کے ذریعے ادائیگی کریں۔",
+          "ایچ ای سی نادرا اور یونیورسٹی سے تصدیق کرتا ہے۔ SMS/ای میل ملنے پر ای اٹیسٹیشن سرٹیفکیٹ ڈاؤن لوڈ کریں۔"
         ],
         "mistakes": [
-          "پروفائل کی تفصیلات ڈگری سے مختلف ہونا، جس سے درخواست مسترد ہوتی ہے۔",
-          "یونیورسٹی سے فائنل ڈگری ملنے سے پہلے درخواست دینا۔",
-          "اپائنٹمنٹ کے دن اصل دستاویزات بھول جانا۔"
+          "پروفائل کی تفصیلات کا شناختی کارڈ یا ڈگری سے بالکل نہ ملنا۔",
+          "دھندلی یا کٹی ہوئی اسکین، جس سے درخواست مسترد ہوتی ہے۔",
+          "جو کام خود آن لائن ہو سکتا ہے اس کے لیے ایجنٹ کو پیسے دینا۔"
         ],
         "problems": [
           {
@@ -490,8 +508,8 @@
             "solution": "ایچ ای سی آپ کی یونیورسٹی سے تصدیق کرتا ہے۔ یونیورسٹی کے امتحانی یا تصدیقی دفتر سے رابطہ کر کے ایچ ای سی کو جواب دینے کا کہیں۔"
           },
           {
-            "problem": "واک اِن کے لیے کوئی وقت دستیاب نہیں۔",
-            "solution": "صبح سویرے پورٹل دوبارہ دیکھیں جب نئے وقت کھلتے ہیں، یا کوریئر کا طریقہ چنیں۔"
+            "problem": "مجھے ڈیجیٹل نہیں، مہر والی کاغذی کاپی چاہیے۔",
+            "solution": "نیا نظام ای اٹیسٹیشن سرٹیفکیٹ دیتا ہے جو ڈاؤن لوڈ ہوتا ہے۔ سفارت خانے یا آجر سے پوچھیں کہ کیا وہ اسے قبول کرتے ہیں؛ زیادہ تر آن لائن تصدیق کر سکتے ہیں۔ اصرار کریں تو ایچ ای سی ہیلپ لائن سے رابطہ کریں۔"
           }
         ]
       },
@@ -526,6 +544,9 @@
           "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
           "url": "https://citizenportal.gov.pk"
         }
+      ],
+      "references": [
+        "https://propakistani.pk/2026/05/13/how-to-apply-for-hec-online-degree-attestation/ (13 May 2026)"
       ]
     },
     {
@@ -542,7 +563,7 @@
         "inter",
         "مساوی سند"
       ],
-      "lastVerified": null,
+      "lastVerified": "2026-10-28",
       "sources": [
         {
           "name": "Inter Board Committee of Chairmen (IBCC)",
@@ -560,8 +581,8 @@
           "For O/A Levels: statements of entry or final certificates as required",
           "Passport-size photo"
         ],
-        "fees": "Fees depend on the service and urgency. Check the IBCC website before paying.",
-        "time": "Online applications usually take a few working days to a few weeks.",
+        "fees": "Per certificate: local qualifications Rs 4,000, foreign qualifications Rs 6,000, urgent O/A Level service Rs 12,000 (IBCC FAQs). Fees are non-refundable.",
+        "time": "15 to 20 working days for a complete equivalence. A provisional certificate can be issued while verification is pending.",
         "steps": [
           "Create an account on the IBCC online portal.",
           "Choose the service: equivalence (for O/A Level or foreign results) or attestation (for Pakistani board certificates).",
@@ -601,8 +622,8 @@
           "او/اے لیول کے لیے حسب ضرورت اسٹیٹمنٹ آف انٹری یا فائنل سرٹیفکیٹس",
           "پاسپورٹ سائز تصویر"
         ],
-        "fees": "فیس سروس اور ارجنسی پر منحصر ہے۔ ادائیگی سے پہلے آئی بی سی سی ویب سائٹ دیکھیں۔",
-        "time": "آن لائن درخواستیں عموماً چند دنوں سے چند ہفتوں میں مکمل ہوتی ہیں۔",
+        "fees": "فی سند: مقامی تعلیم 4,000 روپے، غیر ملکی تعلیم 6,000 روپے، او/اے لیول ارجنٹ سروس 12,000 روپے (آئی بی سی سی FAQs)۔ فیس ناقابل واپسی ہے۔",
+        "time": "مکمل مساوی سند کے لیے 15 سے 20 کاروباری دن۔ تصدیق مکمل ہونے تک عارضی سند جاری ہو سکتی ہے۔",
         "steps": [
           "آئی بی سی سی کے آن لائن پورٹل پر اکاؤنٹ بنائیں۔",
           "سروس چنیں: مساوی سند (او/اے لیول یا غیر ملکی نتائج) یا تصدیق (پاکستانی بورڈ کی اسناد)۔",
@@ -642,6 +663,9 @@
           "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
           "url": "https://citizenportal.gov.pk"
         }
+      ],
+      "references": [
+        "https://ibcc.edu.pk/faqs/equivalence-faqs/"
       ]
     },
     {
@@ -656,7 +680,7 @@
         "entry test",
         "ایم ڈی کیٹ"
       ],
-      "lastVerified": null,
+      "lastVerified": "2026-10-28",
       "sources": [
         {
           "name": "Pakistan Medical & Dental Council (PM&DC)",
@@ -666,7 +690,7 @@
       "en": {
         "title": "Register for MDCAT",
         "summary": "Sign up for the medical and dental college admission test.",
-        "what": "MDCAT is the entry test for MBBS and BDS admission in Pakistan. PM&DC sets the policy, and the test is conducted by designated universities in each province.",
+        "what": "MDCAT is the entry test for MBBS and BDS admission in Pakistan. PM&DC sets the policy and designated universities conduct it: UHS Lahore (Punjab), Sukkur IBA (Sindh), KMU Peshawar (KP), BUMHS Quetta (Balochistan) and SZABMU Islamabad (Islamabad, AJK, GB). MDCAT 2026 was held on 16 August 2026, so the next test is expected around mid-2027.",
         "who": "FSc Pre-Medical students (or equivalent) who want to apply for MBBS or BDS.",
         "documents": [
           "CNIC or B-Form",
@@ -675,8 +699,8 @@
           "Recent passport-size photo (digital, for upload)",
           "Fee payment receipt"
         ],
-        "fees": "The registration fee is announced each year. Check the official notice from PM&DC or your provincial conducting university.",
-        "time": "Registration usually opens in summer, a few weeks before the test. Dates change every year.",
+        "fees": "In 2026 the fee was Rs 9,000 (normal) and Rs 13,000 (late), non-refundable. The 2027 fee will be in the new official notice.",
+        "time": "In 2026, registration ran 22 June to 8 July (late until 13 July) and the test was on 16 August. Expect a similar schedule in 2027.",
         "steps": [
           "Watch the PM&DC website and your provincial university for the official MDCAT notice.",
           "Read the eligibility rules, syllabus and test date in the notice.",
@@ -709,7 +733,7 @@
       "ur": {
         "title": "ایم ڈی کیٹ کے لیے رجسٹریشن",
         "summary": "میڈیکل اور ڈینٹل کالج داخلہ ٹیسٹ کے لیے رجسٹر ہوں۔",
-        "what": "ایم ڈی کیٹ پاکستان میں ایم بی بی ایس اور بی ڈی ایس داخلے کا ٹیسٹ ہے۔ پالیسی PM&DC بناتی ہے اور ہر صوبے میں نامزد یونیورسٹیاں ٹیسٹ لیتی ہیں۔",
+        "what": "ایم ڈی کیٹ پاکستان میں ایم بی بی ایس اور بی ڈی ایس داخلے کا ٹیسٹ ہے۔ پالیسی PM&DC بناتی ہے اور نامزد یونیورسٹیاں ٹیسٹ لیتی ہیں: UHS لاہور (پنجاب)، سکھر IBA (سندھ)، KMU پشاور (خیبر پختونخوا)، BUMHS کوئٹہ (بلوچستان) اور SZABMU اسلام آباد (اسلام آباد، آزاد کشمیر، گلگت بلتستان)۔ ایم ڈی کیٹ 2026 کا ٹیسٹ 16 اگست 2026 کو ہوا، اگلا ٹیسٹ 2027 کے وسط میں متوقع ہے۔",
         "who": "ایف ایس سی پری میڈیکل (یا مساوی) کے طلبہ جو ایم بی بی ایس یا بی ڈی ایس میں داخلہ چاہتے ہیں۔",
         "documents": [
           "شناختی کارڈ یا ب فارم",
@@ -718,8 +742,8 @@
           "حالیہ پاسپورٹ سائز تصویر (اپلوڈ کے لیے ڈیجیٹل)",
           "فیس کی ادائیگی کی رسید"
         ],
-        "fees": "رجسٹریشن فیس ہر سال اعلان ہوتی ہے۔ PM&DC یا صوبائی یونیورسٹی کا سرکاری نوٹس دیکھیں۔",
-        "time": "رجسٹریشن عموماً گرمیوں میں ٹیسٹ سے چند ہفتے پہلے کھلتی ہے۔ تاریخیں ہر سال بدلتی ہیں۔",
+        "fees": "2026 میں فیس 9,000 روپے (نارمل) اور 13,000 روپے (لیٹ) تھی، ناقابل واپسی۔ 2027 کی فیس نئے سرکاری نوٹس میں ہوگی۔",
+        "time": "2026 میں رجسٹریشن 22 جون سے 8 جولائی (لیٹ 13 جولائی تک) رہی اور ٹیسٹ 16 اگست کو ہوا۔ 2027 میں بھی ایسا ہی شیڈول متوقع ہے۔",
         "steps": [
           "ایم ڈی کیٹ کے سرکاری نوٹس کے لیے PM&DC ویب سائٹ اور اپنی صوبائی یونیورسٹی پر نظر رکھیں۔",
           "نوٹس میں اہلیت، سلیبس اور ٹیسٹ کی تاریخ پڑھیں۔",
@@ -766,6 +790,9 @@
           "note": "Named in the official MDCAT notice",
           "noteUr": "سرکاری ایم ڈی کیٹ نوٹس میں درج"
         }
+      ],
+      "references": [
+        "https://propakistani.pk/2026/06/19/mdcat-2026-date-registration-fees-and-test-centers-announced/ (19 Jun 2026)"
       ]
     },
     {
@@ -910,7 +937,7 @@
         "ٹیکس",
         "فری لانسر"
       ],
-      "lastVerified": null,
+      "lastVerified": "2026-10-28",
       "sources": [
         {
           "name": "FBR IRIS portal",
@@ -935,12 +962,12 @@
         "fees": "Registration on IRIS is free.",
         "time": "Registration can be done online in under an hour once your SIM and email are ready.",
         "steps": [
-          "Open the FBR IRIS portal and choose Registration for Unregistered Person.",
-          "Enter your CNIC, mobile number (in your name) and email.",
-          "Enter the codes sent to your phone and email to verify them.",
-          "Log in to IRIS and complete the registration form with your address and income source.",
-          "Submit the form. Your CNIC number becomes your NTN.",
-          "File your income tax return each year before the deadline to appear on the Active Taxpayer List."
+          "Open the official FBR IRIS portal (iris.fbr.gov.pk) and choose Registration for Unregistered Person. Beware of fake look-alike sites.",
+          "Enter your details exactly as on your CNIC, plus a mobile number in your name and your email.",
+          "Enter the codes sent by SMS and email.",
+          "Add your income source (freelancing/business) and your bank IBAN.",
+          "Submit. Your CNIC number becomes your NTN. Download your registration certificate.",
+          "File your income tax return every year before the deadline to appear on the Active Taxpayer List."
         ],
         "mistakes": [
           "Using a SIM registered in a parent's name.",
@@ -976,11 +1003,11 @@
         "fees": "IRIS پر رجسٹریشن مفت ہے۔",
         "time": "سم اور ای میل تیار ہوں تو آن لائن رجسٹریشن ایک گھنٹے سے کم میں ہو سکتی ہے۔",
         "steps": [
-          "ایف بی آر IRIS پورٹل کھولیں اور Registration for Unregistered Person چنیں۔",
-          "اپنا شناختی کارڈ نمبر، اپنے نام پر موبائل نمبر اور ای میل درج کریں۔",
-          "فون اور ای میل پر آنے والے کوڈ درج کر کے تصدیق کریں۔",
-          "IRIS میں لاگ اِن کریں اور پتہ اور آمدنی کے ذریعے کے ساتھ رجسٹریشن فارم مکمل کریں۔",
-          "فارم جمع کروائیں۔ آپ کا شناختی کارڈ نمبر ہی آپ کا این ٹی این بن جاتا ہے۔",
+          "سرکاری ایف بی آر IRIS پورٹل (iris.fbr.gov.pk) کھولیں اور Registration for Unregistered Person چنیں۔ جعلی ملتی جلتی ویب سائٹس سے بچیں۔",
+          "اپنی تفصیلات بالکل شناختی کارڈ کے مطابق، اپنے نام کا موبائل نمبر اور ای میل درج کریں۔",
+          "SMS اور ای میل پر آنے والے کوڈ درج کریں۔",
+          "آمدنی کا ذریعہ (فری لانسنگ/کاروبار) اور اپنا بینک IBAN شامل کریں۔",
+          "جمع کروائیں۔ شناختی کارڈ نمبر ہی آپ کا این ٹی این بن جاتا ہے۔ رجسٹریشن سرٹیفکیٹ ڈاؤن لوڈ کریں۔",
           "فعال ٹیکس دہندگان کی فہرست میں آنے کے لیے ہر سال آخری تاریخ سے پہلے گوشوارہ جمع کروائیں۔"
         ],
         "mistakes": [
@@ -1014,6 +1041,9 @@
           "nameUr": "ایف بی آر IRIS پورٹل",
           "url": "https://iris.fbr.gov.pk"
         }
+      ],
+      "references": [
+        "https://www.ict.edu.pk/blogs/iris-registration-fbr-guide-2026 (29 Jul 2026)"
       ]
     },
     {
@@ -1027,11 +1057,11 @@
         "pcc",
         "پولیس کریکٹر سرٹیفکیٹ"
       ],
-      "lastVerified": null,
+      "lastVerified": "2026-10-28",
       "sources": [
         {
-          "name": "Punjab Police (Khidmat Markaz)",
-          "url": "https://punjabpolice.gov.pk"
+          "name": "Lahore Police: character certificate",
+          "url": "https://lahorepolice.punjab.gov.pk/police-character-certificate"
         },
         {
           "name": "Sindh Police",
@@ -1044,19 +1074,19 @@
         "what": "A police character certificate confirms you have no criminal record in police files. Many employers, embassies and foreign universities ask for it. The process is run by each province's police, so details differ by province.",
         "who": "Anyone applying for a job, visa, immigration or foreign study that asks for police clearance.",
         "documents": [
-          "Original CNIC and a copy",
-          "Passport copy (if the certificate is for abroad)",
-          "Passport-size photos",
-          "A letter or requirement from the employer or embassy, if you have one"
+          "Original CNIC or B-Form and a photocopy",
+          "Original passport and a copy",
+          "An affidavit",
+          "If you are abroad: an authority letter (embassy-stamped or attested by two people who know you), and a blood relative applies for you"
         ],
-        "fees": "A small fee applies and differs by province. Check your provincial police website.",
-        "time": "Usually a few working days, longer if verification is needed at your local police station.",
+        "fees": "Punjab: Rs 350, paid at the Police Khidmat Markaz counter. Other provinces differ.",
+        "time": "Punjab: about 3 working days, delivered by courier.",
         "steps": [
-          "Check your province's police website for the current process and office (for example a Khidmat Markaz in Punjab).",
-          "Apply online where available, or visit the office with your documents.",
+          "In Punjab, go to any Police Khidmat Markaz (PKM). You can apply at any centre in Punjab. In other provinces, check your provincial police website.",
+          "Fill in the form and submit your CNIC, passport and affidavit.",
           "Give your fingerprints and photo if asked.",
-          "Pay the fee and keep the receipt and tracking number.",
-          "Wait for verification, then collect the certificate."
+          "Pay the fee at the counter and keep the receipt and tracking number.",
+          "The certificate is delivered to you by courier."
         ],
         "mistakes": [
           "Applying in the wrong district or province for your permanent address.",
@@ -1070,7 +1100,7 @@
           },
           {
             "problem": "I live in a different city from my CNIC address.",
-            "solution": "Most provinces issue the certificate based on your CNIC address. Check if your province lets you apply online to avoid travelling."
+            "solution": "In Punjab you can apply at any Police Khidmat Markaz in the province. In other provinces, check whether your provincial police allow online or out-of-district applications."
           },
           {
             "problem": "The embassy says my certificate is too old.",
@@ -1084,19 +1114,19 @@
         "what": "پولیس کریکٹر سرٹیفکیٹ تصدیق کرتا ہے کہ پولیس ریکارڈ میں آپ کا کوئی مجرمانہ ریکارڈ نہیں۔ کئی آجر، سفارت خانے اور غیر ملکی یونیورسٹیاں اسے مانگتی ہیں۔ ہر صوبے کی پولیس یہ عمل چلاتی ہے، اس لیے تفصیلات صوبے کے لحاظ سے مختلف ہیں۔",
         "who": "کوئی بھی جو ایسی نوکری، ویزا، امیگریشن یا غیر ملکی تعلیم کے لیے درخواست دے رہا ہو جس میں پولیس کلیئرنس مانگی گئی ہو۔",
         "documents": [
-          "اصل شناختی کارڈ اور کاپی",
-          "پاسپورٹ کی کاپی (اگر سرٹیفکیٹ بیرون ملک کے لیے ہو)",
-          "پاسپورٹ سائز تصاویر",
-          "اگر ہو تو آجر یا سفارت خانے کا خط"
+          "اصل شناختی کارڈ یا ب فارم اور فوٹو کاپی",
+          "اصل پاسپورٹ اور کاپی",
+          "حلف نامہ",
+          "اگر آپ بیرون ملک ہیں: اتھارٹی لیٹر (سفارت خانے کی مہر یا دو جاننے والوں کی تصدیق کے ساتھ)، اور کوئی خونی رشتہ دار درخواست دے"
         ],
-        "fees": "معمولی فیس ہے جو صوبے کے لحاظ سے مختلف ہے۔ اپنی صوبائی پولیس کی ویب سائٹ دیکھیں۔",
-        "time": "عموماً چند دن، اگر مقامی تھانے سے تصدیق درکار ہو تو زیادہ۔",
+        "fees": "پنجاب: 350 روپے، پولیس خدمت مرکز کے کاؤنٹر پر۔ دوسرے صوبوں میں فیس مختلف ہے۔",
+        "time": "پنجاب: تقریباً 3 کاروباری دن، کوریئر کے ذریعے ترسیل۔",
         "steps": [
-          "اپنے صوبے کی پولیس ویب سائٹ پر موجودہ طریقہ اور دفتر دیکھیں (مثلاً پنجاب میں خدمت مرکز)۔",
-          "جہاں ممکن ہو آن لائن درخواست دیں یا دستاویزات کے ساتھ دفتر جائیں۔",
+          "پنجاب میں کسی بھی پولیس خدمت مرکز جائیں۔ پنجاب کے کسی بھی مرکز سے درخواست دی جا سکتی ہے۔ دوسرے صوبوں میں اپنی صوبائی پولیس ویب سائٹ دیکھیں۔",
+          "فارم بھریں اور شناختی کارڈ، پاسپورٹ اور حلف نامہ جمع کروائیں۔",
           "کہا جائے تو انگلیوں کے نشان اور تصویر دیں۔",
-          "فیس ادا کریں اور رسید اور ٹریکنگ نمبر سنبھال کر رکھیں۔",
-          "تصدیق کا انتظار کریں، پھر سرٹیفکیٹ وصول کریں۔"
+          "کاؤنٹر پر فیس ادا کریں اور رسید اور ٹریکنگ نمبر سنبھالیں۔",
+          "سرٹیفکیٹ کوریئر کے ذریعے آپ تک پہنچتا ہے۔"
         ],
         "mistakes": [
           "اپنے مستقل پتے کے بجائے غلط ضلع یا صوبے میں درخواست دینا۔",
@@ -1110,7 +1140,7 @@
           },
           {
             "problem": "میں شناختی کارڈ کے پتے سے مختلف شہر میں رہتا/رہتی ہوں۔",
-            "solution": "زیادہ تر صوبے شناختی کارڈ کے پتے کی بنیاد پر سرٹیفکیٹ دیتے ہیں۔ دیکھیں کہ کیا آپ کا صوبہ آن لائن درخواست کی سہولت دیتا ہے۔"
+            "solution": "پنجاب میں صوبے کے کسی بھی پولیس خدمت مرکز سے درخواست دی جا سکتی ہے۔ دوسرے صوبوں میں دیکھیں کہ کیا آپ کی صوبائی پولیس آن لائن یا دوسرے ضلع سے درخواست کی اجازت دیتی ہے۔"
           },
           {
             "problem": "سفارت خانہ کہتا ہے سرٹیفکیٹ پرانا ہے۔",
@@ -1134,7 +1164,490 @@
           "nameUr": "پاکستان سٹیزن پورٹل (شکایات)",
           "url": "https://citizenportal.gov.pk"
         }
+      ],
+      "references": [
+        "https://lahorepolice.punjab.gov.pk/police-character-certificate"
       ]
+    },
+    {
+      "id": "learner-driving-licence",
+      "category": "government",
+      "popular": true,
+      "keywords": [
+        "driving licence",
+        "driving license",
+        "learner",
+        "dlims",
+        "dastak",
+        "bike",
+        "car",
+        "لائسنس",
+        "لرنر"
+      ],
+      "lastVerified": "2026-10-28",
+      "references": [
+        "https://gopunjab.pk/driving-license-online-punjab/ (updated 11 Oct 2026)"
+      ],
+      "sources": [
+        {
+          "name": "Dastak (Punjab online services)",
+          "url": "https://dastak.punjab.gov.pk"
+        },
+        {
+          "name": "Punjab Traffic Police licensing offices",
+          "url": "https://trafficpolice.punjab.gov.pk"
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Dastak / Punjab helpline",
+          "nameUr": "دستک / پنجاب ہیلپ لائن",
+          "phone": "1202"
+        },
+        {
+          "name": "Punjab Traffic Police",
+          "nameUr": "پنجاب ٹریفک پولیس",
+          "url": "https://trafficpolice.punjab.gov.pk"
+        }
+      ],
+      "en": {
+        "title": "Get a learner driving licence (Punjab)",
+        "summary": "Apply online for a learner permit for a bike or car, then take the test for your full licence.",
+        "what": "A learner permit lets you practise driving legally. After holding it for at least 42 days, you can take the test for a permanent licence. In Punjab you apply online through Dastak. Other provinces have their own systems.",
+        "who": "Anyone 18 or older for a motorcycle or car. Ages 16 to 18 can get a juvenile permit for bikes up to 125cc with parental consent.",
+        "documents": [
+          "Original CNIC (and scans of front and back)",
+          "A live face photo on a white background",
+          "Medical certificate if you are 50 or older or applying for LTV"
+        ],
+        "fees": "Learner permit: Rs 500 per category. Permanent licence (1 year): motorcycle about Rs 980 and car about Rs 1,980 including test and courier fees.",
+        "time": "Learner permit in about 2 working days. You must wait at least 42 days before the driving test. The learner permit is valid for 6 months.",
+        "steps": [
+          "Install the Dastak app or open dastak.punjab.gov.pk and register with your mobile number and CNIC.",
+          "Open DLIMS services and choose Learner Driving License.",
+          "Upload your CNIC scans and photo, and choose the category (motorcycle, car or both).",
+          "Generate a PSID and pay it through your banking app, ATM or mobile wallet.",
+          "Download your learner permit and practise with it for at least 42 days.",
+          "Visit a traffic police licensing centre for biometrics, the sign test and the road test.",
+          "After passing, pay the licence and courier fee. The card is posted to you and you can download an e-licence."
+        ],
+        "mistakes": [
+          "Taking the road test before 42 days have passed.",
+          "Letting the 6-month learner permit expire before the test.",
+          "Paying touts at the licensing centre for a process you can do online."
+        ],
+        "problems": [
+          {
+            "problem": "I failed the sign or road test.",
+            "solution": "You can usually try again after about two weeks. Practise the traffic signs in the official sign book before your next attempt."
+          },
+          {
+            "problem": "My learner permit is about to expire.",
+            "solution": "Apply for a new learner permit online through Dastak, then wait the required time again before the test."
+          },
+          {
+            "problem": "I live outside Punjab.",
+            "solution": "Each province runs its own system. Check your provincial traffic police or excise website for the learner permit process."
+          }
+        ]
+      },
+      "ur": {
+        "title": "لرنر ڈرائیونگ لائسنس بنوائیں (پنجاب)",
+        "summary": "بائیک یا گاڑی کے لیے آن لائن لرنر پرمٹ لیں، پھر مستقل لائسنس کا ٹیسٹ دیں۔",
+        "what": "لرنر پرمٹ آپ کو قانونی طور پر ڈرائیونگ سیکھنے کی اجازت دیتا ہے۔ کم از کم 42 دن بعد آپ مستقل لائسنس کا ٹیسٹ دے سکتے ہیں۔ پنجاب میں درخواست دستک کے ذریعے آن لائن ہوتی ہے۔ دوسرے صوبوں کا اپنا نظام ہے۔",
+        "who": "موٹر سائیکل یا گاڑی کے لیے 18 سال یا زیادہ عمر کا کوئی بھی شخص۔ 16 سے 18 سال کے نوجوان والدین کی اجازت سے 125cc تک بائیک کا جووینائل پرمٹ لے سکتے ہیں۔",
+        "documents": [
+          "اصل شناختی کارڈ (اور آگے پیچھے کی اسکین)",
+          "سفید پس منظر پر چہرے کی تازہ تصویر",
+          "50 سال یا زیادہ عمر یا LTV کے لیے میڈیکل سرٹیفکیٹ"
+        ],
+        "fees": "لرنر پرمٹ: فی کیٹیگری 500 روپے۔ مستقل لائسنس (1 سال): موٹر سائیکل تقریباً 980 روپے اور گاڑی تقریباً 1,980 روپے، ٹیسٹ اور کوریئر فیس سمیت۔",
+        "time": "لرنر پرمٹ تقریباً 2 کاروباری دنوں میں۔ ٹیسٹ سے پہلے کم از کم 42 دن انتظار ضروری ہے۔ لرنر پرمٹ 6 ماہ کے لیے درست ہے۔",
+        "steps": [
+          "دستک ایپ انسٹال کریں یا dastak.punjab.gov.pk کھولیں اور موبائل نمبر اور شناختی کارڈ سے رجسٹر ہوں۔",
+          "DLIMS سروسز کھولیں اور Learner Driving License چنیں۔",
+          "شناختی کارڈ کی اسکین اور تصویر اپلوڈ کریں اور کیٹیگری (موٹر سائیکل، گاڑی یا دونوں) چنیں۔",
+          "PSID بنائیں اور بینکنگ ایپ، اے ٹی ایم یا موبائل والٹ سے ادا کریں۔",
+          "لرنر پرمٹ ڈاؤن لوڈ کریں اور کم از کم 42 دن مشق کریں۔",
+          "بائیومیٹرک، سائن ٹیسٹ اور روڈ ٹیسٹ کے لیے ٹریفک پولیس لائسنسنگ سینٹر جائیں۔",
+          "پاس ہونے کے بعد لائسنس اور کوریئر فیس ادا کریں۔ کارڈ ڈاک سے آتا ہے اور ای لائسنس ڈاؤن لوڈ ہو سکتا ہے۔"
+        ],
+        "mistakes": [
+          "42 دن پورے ہونے سے پہلے روڈ ٹیسٹ دینا۔",
+          "ٹیسٹ سے پہلے 6 ماہ کا لرنر پرمٹ ختم ہو جانا۔",
+          "جو کام آن لائن ہو سکتا ہے اس کے لیے لائسنسنگ سینٹر پر ایجنٹوں کو پیسے دینا۔"
+        ],
+        "problems": [
+          {
+            "problem": "میں سائن یا روڈ ٹیسٹ میں فیل ہو گیا/گئی۔",
+            "solution": "عموماً تقریباً دو ہفتے بعد دوبارہ ٹیسٹ دیا جا سکتا ہے۔ اگلی کوشش سے پہلے سرکاری سائن بک سے ٹریفک نشانات کی مشق کریں۔"
+          },
+          {
+            "problem": "میرا لرنر پرمٹ ختم ہونے والا ہے۔",
+            "solution": "دستک سے نیا لرنر پرمٹ آن لائن بنوائیں، پھر ٹیسٹ سے پہلے مقررہ مدت دوبارہ انتظار کریں۔"
+          },
+          {
+            "problem": "میں پنجاب سے باہر رہتا/رہتی ہوں۔",
+            "solution": "ہر صوبے کا اپنا نظام ہے۔ لرنر پرمٹ کے لیے اپنی صوبائی ٹریفک پولیس یا ایکسائز کی ویب سائٹ دیکھیں۔"
+          }
+        ]
+      }
+    },
+    {
+      "id": "domicile-certificate",
+      "category": "documents",
+      "popular": false,
+      "keywords": [
+        "domicile",
+        "ڈومیسائل",
+        "district",
+        "quota",
+        "e-khidmat"
+      ],
+      "lastVerified": "2026-10-28",
+      "references": [
+        "https://gopunjab.pk/punjab-domicile-online/ (updated 15 Sep 2026)"
+      ],
+      "sources": [
+        {
+          "name": "Punjab e-Khidmat portal",
+          "url": "https://ekhidmat.punjab.gov.pk"
+        }
+      ],
+      "contacts": [
+        {
+          "name": "e-Khidmat tracking (toll-free)",
+          "nameUr": "ای خدمت ٹریکنگ (ٹول فری)",
+          "phone": "0800-09100"
+        },
+        {
+          "name": "Dastak doorstep service",
+          "nameUr": "دستک گھر کی دہلیز پر سروس",
+          "phone": "1202"
+        }
+      ],
+      "en": {
+        "title": "Get a domicile certificate (Punjab)",
+        "summary": "Prove which district you belong to, needed for university quotas and government jobs.",
+        "what": "A domicile certificate shows which district you belong to. Universities use it for district and provincial quotas, and many government jobs ask for it. In Punjab it is issued by your district's Assistant Commissioner, and you can apply online.",
+        "who": "Students applying on quota seats, and anyone applying for government jobs that ask for a domicile.",
+        "documents": [
+          "Your CNIC, or B-Form/birth certificate if under 18",
+          "Father's, mother's or spouse's CNIC",
+          "Affidavit on Rs 300 stamp paper (not needed in some districts)",
+          "Two recent passport-size photos",
+          "Proof of residence: property papers, utility bill, education document or voter list"
+        ],
+        "fees": "Rs 200 service charge in most of Punjab (Rs 300 in Faisalabad), paid online. Dastak doorstep visits cost extra.",
+        "time": "Up to 16 working days.",
+        "steps": [
+          "Apply online on ekhidmat.punjab.gov.pk or the GoPb app, or visit an e-Khidmat Markaz. Dastak can also send someone to your home.",
+          "Choose the district you actually belong to. Apply in only one district.",
+          "Fill in the AC verification form and Form P, and upload your documents and photos.",
+          "Pay the service charge online.",
+          "Track your application with your tracking ID or the toll-free number.",
+          "Collect or receive your domicile certificate."
+        ],
+        "mistakes": [
+          "Applying in more than one district, which is not allowed.",
+          "Residence proof that does not match the district you chose.",
+          "Waiting until the week of a university deadline."
+        ],
+        "problems": [
+          {
+            "problem": "My family moved and our documents show different districts.",
+            "solution": "Apply in the district where you have the strongest residence proof (property, long-term utility bills, schooling). Ask the e-Khidmat Markaz staff which proof they accept."
+          },
+          {
+            "problem": "My application is taking longer than 16 days.",
+            "solution": "Check the status with your tracking ID on the e-Khidmat website or call 0800-09100."
+          },
+          {
+            "problem": "I live outside Punjab.",
+            "solution": "Each province issues domiciles through its own district offices. Check your Deputy or Assistant Commissioner office or provincial portal."
+          }
+        ]
+      },
+      "ur": {
+        "title": "ڈومیسائل سرٹیفکیٹ بنوائیں (پنجاب)",
+        "summary": "ثابت کریں کہ آپ کس ضلع سے ہیں، یونیورسٹی کوٹے اور سرکاری نوکریوں کے لیے ضروری۔",
+        "what": "ڈومیسائل سرٹیفکیٹ بتاتا ہے کہ آپ کس ضلع سے تعلق رکھتے ہیں۔ یونیورسٹیاں اسے ضلعی اور صوبائی کوٹے کے لیے استعمال کرتی ہیں اور کئی سرکاری نوکریاں اسے مانگتی ہیں۔ پنجاب میں یہ آپ کے ضلع کا اسسٹنٹ کمشنر جاری کرتا ہے اور درخواست آن لائن دی جا سکتی ہے۔",
+        "who": "کوٹے کی نشستوں پر داخلہ لینے والے طلبہ اور ڈومیسائل مانگنے والی سرکاری نوکریوں کے امیدوار۔",
+        "documents": [
+          "آپ کا شناختی کارڈ، یا 18 سال سے کم ہو تو ب فارم/پیدائشی سرٹیفکیٹ",
+          "والد، والدہ یا شریک حیات کا شناختی کارڈ",
+          "300 روپے کے اسٹامپ پیپر پر حلف نامہ (کچھ اضلاع میں ضروری نہیں)",
+          "دو حالیہ پاسپورٹ سائز تصاویر",
+          "رہائش کا ثبوت: جائیداد کے کاغذات، یوٹیلیٹی بل، تعلیمی دستاویز یا ووٹر لسٹ"
+        ],
+        "fees": "پنجاب کے زیادہ تر اضلاع میں 200 روپے سروس چارج (فیصل آباد میں 300 روپے)، آن لائن ادائیگی۔ دستک کی گھر پر سروس کے الگ چارجز ہیں۔",
+        "time": "زیادہ سے زیادہ 16 کاروباری دن۔",
+        "steps": [
+          "ekhidmat.punjab.gov.pk یا GoPb ایپ پر آن لائن درخواست دیں، یا ای خدمت مرکز جائیں۔ دستک گھر پر بھی کسی کو بھیج سکتا ہے۔",
+          "وہ ضلع چنیں جس سے آپ واقعی تعلق رکھتے ہیں۔ صرف ایک ضلع میں درخواست دیں۔",
+          "AC ویریفکیشن فارم اور فارم P بھریں، اور دستاویزات اور تصاویر اپلوڈ کریں۔",
+          "سروس چارج آن لائن ادا کریں۔",
+          "ٹریکنگ آئی ڈی یا ٹول فری نمبر سے درخواست ٹریک کریں۔",
+          "ڈومیسائل سرٹیفکیٹ وصول کریں۔"
+        ],
+        "mistakes": [
+          "ایک سے زیادہ اضلاع میں درخواست دینا، جس کی اجازت نہیں۔",
+          "رہائش کا ثبوت چنے گئے ضلع سے میل نہ کھانا۔",
+          "یونیورسٹی کی آخری تاریخ کے ہفتے تک انتظار کرنا۔"
+        ],
+        "problems": [
+          {
+            "problem": "ہمارا خاندان منتقل ہوا اور دستاویزات میں مختلف اضلاع ہیں۔",
+            "solution": "اس ضلع میں درخواست دیں جہاں رہائش کا سب سے مضبوط ثبوت ہو (جائیداد، طویل عرصے کے بل، اسکول)۔ ای خدمت مرکز کے عملے سے پوچھیں کہ کون سا ثبوت قبول ہے۔"
+          },
+          {
+            "problem": "میری درخواست 16 دن سے زیادہ لے رہی ہے۔",
+            "solution": "ای خدمت ویب سائٹ پر ٹریکنگ آئی ڈی سے صورتحال دیکھیں یا 0800-09100 پر کال کریں۔"
+          },
+          {
+            "problem": "میں پنجاب سے باہر رہتا/رہتی ہوں۔",
+            "solution": "ہر صوبہ اپنے ضلعی دفاتر کے ذریعے ڈومیسائل جاری کرتا ہے۔ اپنے ڈپٹی یا اسسٹنٹ کمشنر آفس یا صوبائی پورٹل سے معلوم کریں۔"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pseb-freelancer",
+      "category": "government",
+      "popular": true,
+      "keywords": [
+        "pseb",
+        "freelancer",
+        "freelancing",
+        "tax",
+        "0.25",
+        "payoneer",
+        "فری لانسر"
+      ],
+      "lastVerified": "2026-10-28",
+      "references": [
+        "https://psta.com.pk/blog/pseb-registration-for-freelancers (12 Oct 2026)"
+      ],
+      "sources": [
+        {
+          "name": "PSEB registration portal (Tech Destination)",
+          "url": "https://portal.techdestination.com"
+        },
+        {
+          "name": "FBR IRIS portal",
+          "url": "https://iris.fbr.gov.pk"
+        }
+      ],
+      "contacts": [
+        {
+          "name": "PSEB / Tech Destination portal",
+          "nameUr": "PSEB / ٹیک ڈیسٹینیشن پورٹل",
+          "url": "https://portal.techdestination.com"
+        },
+        {
+          "name": "FBR helpline",
+          "nameUr": "ایف بی آر ہیلپ لائن",
+          "phone": "051-111-772-772"
+        }
+      ],
+      "en": {
+        "title": "Register as a freelancer with PSEB",
+        "summary": "Pay 0.25% tax on foreign freelance income instead of 1% by registering with PSEB.",
+        "what": "The Pakistan Software Export Board (PSEB) registers IT freelancers who earn from foreign clients. With a PSEB certificate, tax on IT export income is 0.25% instead of 1% for unregistered exporters. Registration is optional but worth it if you freelance regularly.",
+        "who": "Students and young people earning from foreign clients for IT work (development, design, writing, digital services) into a Pakistani bank account, directly or through Payoneer or Wise.",
+        "documents": [
+          "CNIC",
+          "Personal NTN (your CNIC becomes your NTN after IRIS registration)",
+          "Bank account maintenance or opening certificate"
+        ],
+        "fees": "Rs 1,000 for a new registration and Rs 2,000 for each yearly renewal.",
+        "time": "Up to about one working day after you submit, per PSEB.",
+        "steps": [
+          "Register on FBR IRIS first (see the NTN guide) and note your NTN.",
+          "Get a bank account maintenance certificate from your bank and scan it.",
+          "Create an account on the PSEB portal (portal.techdestination.com).",
+          "Choose New Registration and the freelancer category.",
+          "Upload your CNIC, NTN and bank certificate.",
+          "Pay Rs 1,000 by card and download your certificate.",
+          "Give your bank a copy and ask them to use purpose code 9186 on your foreign payments so the 0.25% rate applies."
+        ],
+        "mistakes": [
+          "Skipping IRIS registration, so you have no NTN to register with.",
+          "Not telling your bank about the certificate, so 1% is still deducted.",
+          "Forgetting the yearly renewal, which needs your latest tax return."
+        ],
+        "problems": [
+          {
+            "problem": "My bank still deducts 1% tax.",
+            "solution": "Give your bank the PSEB certificate and ask them to mark your foreign receipts with purpose code 9186."
+          },
+          {
+            "problem": "I get paid through Payoneer or Wise.",
+            "solution": "That is fine as long as the money reaches your Pakistani bank account through banking channels. Keep your withdrawal records."
+          },
+          {
+            "problem": "Renewal asks for a tax return I never filed.",
+            "solution": "File your yearly return on IRIS first, then renew. A tax consultant can help if your income is complex."
+          }
+        ]
+      },
+      "ur": {
+        "title": "PSEB کے ساتھ فری لانسر رجسٹریشن",
+        "summary": "PSEB رجسٹریشن سے غیر ملکی فری لانس آمدنی پر 1% کی بجائے 0.25% ٹیکس دیں۔",
+        "what": "پاکستان سافٹ ویئر ایکسپورٹ بورڈ (PSEB) غیر ملکی کلائنٹس سے کمانے والے آئی ٹی فری لانسرز کو رجسٹر کرتا ہے۔ PSEB سرٹیفکیٹ کے ساتھ آئی ٹی برآمدی آمدنی پر ٹیکس 0.25% ہے جبکہ غیر رجسٹرڈ کے لیے 1%۔ رجسٹریشن لازمی نہیں لیکن باقاعدہ فری لانسنگ کرنے والوں کے لیے فائدہ مند ہے۔",
+        "who": "آئی ٹی کام (ڈیولپمنٹ، ڈیزائن، رائٹنگ، ڈیجیٹل سروسز) پر غیر ملکی کلائنٹس سے پاکستانی بینک اکاؤنٹ میں، براہ راست یا Payoneer یا Wise کے ذریعے، کمانے والے طلبہ اور نوجوان۔",
+        "documents": [
+          "شناختی کارڈ",
+          "ذاتی این ٹی این (IRIS رجسٹریشن کے بعد شناختی کارڈ نمبر ہی این ٹی این ہے)",
+          "بینک اکاؤنٹ مینٹیننس یا اوپننگ سرٹیفکیٹ"
+        ],
+        "fees": "نئی رجسٹریشن 1,000 روپے اور ہر سالانہ تجدید 2,000 روپے۔",
+        "time": "PSEB کے مطابق جمع کروانے کے بعد تقریباً ایک کاروباری دن تک۔",
+        "steps": [
+          "پہلے ایف بی آر IRIS پر رجسٹر ہوں (این ٹی این گائیڈ دیکھیں) اور اپنا این ٹی این نوٹ کریں۔",
+          "اپنے بینک سے اکاؤنٹ مینٹیننس سرٹیفکیٹ لیں اور اسکین کریں۔",
+          "PSEB پورٹل (portal.techdestination.com) پر اکاؤنٹ بنائیں۔",
+          "New Registration اور فری لانسر کیٹیگری چنیں۔",
+          "شناختی کارڈ، این ٹی این اور بینک سرٹیفکیٹ اپلوڈ کریں۔",
+          "کارڈ سے 1,000 روپے ادا کریں اور سرٹیفکیٹ ڈاؤن لوڈ کریں۔",
+          "بینک کو کاپی دیں اور کہیں کہ غیر ملکی ادائیگیوں پر پرپز کوڈ 9186 لگائیں تاکہ 0.25% شرح لاگو ہو۔"
+        ],
+        "mistakes": [
+          "IRIS رجسٹریشن چھوڑ دینا، جس سے رجسٹریشن کے لیے این ٹی این نہیں ہوتا۔",
+          "بینک کو سرٹیفکیٹ نہ دینا، جس سے 1% کٹوتی جاری رہتی ہے۔",
+          "سالانہ تجدید بھول جانا، جس کے لیے تازہ گوشوارہ ضروری ہے۔"
+        ],
+        "problems": [
+          {
+            "problem": "بینک اب بھی 1% ٹیکس کاٹ رہا ہے۔",
+            "solution": "بینک کو PSEB سرٹیفکیٹ دیں اور کہیں کہ غیر ملکی رقوم پر پرپز کوڈ 9186 لگائیں۔"
+          },
+          {
+            "problem": "مجھے Payoneer یا Wise سے ادائیگی ملتی ہے۔",
+            "solution": "یہ ٹھیک ہے جب تک رقم بینکنگ چینلز سے آپ کے پاکستانی اکاؤنٹ میں آئے۔ رقم نکلوانے کا ریکارڈ رکھیں۔"
+          },
+          {
+            "problem": "تجدید میں وہ گوشوارہ مانگا جا رہا ہے جو میں نے جمع نہیں کرایا۔",
+            "solution": "پہلے IRIS پر سالانہ گوشوارہ جمع کروائیں، پھر تجدید کریں۔ آمدنی پیچیدہ ہو تو ٹیکس کنسلٹنٹ سے مدد لیں۔"
+          }
+        ]
+      }
+    },
+    {
+      "id": "first-bank-account",
+      "category": "documents",
+      "popular": true,
+      "keywords": [
+        "bank account",
+        "asaan",
+        "digital account",
+        "student account",
+        "atm",
+        "بینک اکاؤنٹ"
+      ],
+      "lastVerified": "2026-10-28",
+      "references": [
+        "https://new.bankalhabib.com/account-detail/asaan-digital-current-account"
+      ],
+      "sources": [
+        {
+          "name": "State Bank of Pakistan",
+          "url": "https://www.sbp.org.pk"
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Your bank's helpline (on the back of your card or the bank's website)",
+          "nameUr": "آپ کے بینک کی ہیلپ لائن (کارڈ کی پشت یا بینک کی ویب سائٹ پر)",
+          "note": "Use only official numbers",
+          "noteUr": "صرف سرکاری نمبر استعمال کریں"
+        },
+        {
+          "name": "SBP Banking Mohtasib (complaints)",
+          "nameUr": "بینکنگ محتسب (شکایات)",
+          "url": "https://www.bankingmohtasib.gov.pk"
+        }
+      ],
+      "en": {
+        "title": "Open your first bank account online",
+        "summary": "Open an Asaan Digital Account from your phone with just your CNIC. Needed for scholarships, freelancing and stipends.",
+        "what": "Most Pakistani banks offer an Asaan Digital Account you can open from their app or website with only your CNIC. You need a bank account to receive scholarships, freelance payments and stipends, and to get a debit card.",
+        "who": "Pakistani residents with a CNIC. Some banks also offer special student accounts.",
+        "documents": [
+          "Valid CNIC or Smart CNIC",
+          "A mobile SIM registered in your own name",
+          "Self-declaration of your source of funds (for example: pocket money, stipend, freelancing)"
+        ],
+        "fees": "Usually no fee to open or close and no minimum balance. Debit card charges depend on the bank.",
+        "time": "The application takes 10 to 15 minutes. The account is usually active after biometric verification, often within a day or two.",
+        "steps": [
+          "Pick a bank and install its official app or open its website.",
+          "Choose Asaan Digital Account (or Student Account) and enter your CNIC and mobile number.",
+          "Fill in your details and declare your source of funds.",
+          "Complete biometric verification in the bank's app or at a branch.",
+          "Activate your account and order a debit card if you want one.",
+          "Note your IBAN; you will need it for scholarships, PSEB and freelancing platforms."
+        ],
+        "mistakes": [
+          "Using a SIM registered in a parent's name.",
+          "Downloading a fake look-alike app. Install only from the bank's official website link.",
+          "Sharing your OTP or PIN with anyone, even someone claiming to be from the bank."
+        ],
+        "problems": [
+          {
+            "problem": "Biometric verification keeps failing in the app.",
+            "solution": "Clean your fingers and the phone camera, try in good light, or visit any branch of the bank to verify in person."
+          },
+          {
+            "problem": "I am under 18.",
+            "solution": "Most digital accounts need a CNIC. Ask banks about minor or student accounts opened with a parent as guardian."
+          },
+          {
+            "problem": "Someone called asking for my OTP.",
+            "solution": "Never share it. Banks never ask for your OTP or PIN. Hang up and call your bank's official helpline."
+          }
+        ]
+      },
+      "ur": {
+        "title": "اپنا پہلا بینک اکاؤنٹ آن لائن کھولیں",
+        "summary": "صرف شناختی کارڈ سے فون پر آسان ڈیجیٹل اکاؤنٹ کھولیں۔ اسکالرشپ، فری لانسنگ اور وظیفے کے لیے ضروری۔",
+        "what": "زیادہ تر پاکستانی بینک آسان ڈیجیٹل اکاؤنٹ دیتے ہیں جو صرف شناختی کارڈ سے ان کی ایپ یا ویب سائٹ پر کھولا جا سکتا ہے۔ اسکالرشپ، فری لانس ادائیگیاں اور وظیفہ وصول کرنے اور ڈیبٹ کارڈ کے لیے بینک اکاؤنٹ چاہیے۔",
+        "who": "شناختی کارڈ رکھنے والے پاکستانی۔ کچھ بینک طلبہ کے لیے خاص اکاؤنٹ بھی دیتے ہیں۔",
+        "documents": [
+          "درست شناختی کارڈ یا اسمارٹ شناختی کارڈ",
+          "اپنے نام پر رجسٹرڈ موبائل سم",
+          "رقم کے ذریعے کا خود اقرار (مثلاً جیب خرچ، وظیفہ، فری لانسنگ)"
+        ],
+        "fees": "عموماً کھولنے یا بند کرنے کی کوئی فیس نہیں اور کم از کم بیلنس ضروری نہیں۔ ڈیبٹ کارڈ کی فیس بینک پر منحصر ہے۔",
+        "time": "درخواست میں 10 سے 15 منٹ لگتے ہیں۔ بائیومیٹرک تصدیق کے بعد اکاؤنٹ عموماً ایک دو دن میں فعال ہو جاتا ہے۔",
+        "steps": [
+          "بینک چنیں اور اس کی سرکاری ایپ انسٹال کریں یا ویب سائٹ کھولیں۔",
+          "آسان ڈیجیٹل اکاؤنٹ (یا اسٹوڈنٹ اکاؤنٹ) چنیں اور شناختی کارڈ اور موبائل نمبر درج کریں۔",
+          "اپنی تفصیلات بھریں اور رقم کا ذریعہ بتائیں۔",
+          "بینک کی ایپ میں یا برانچ پر بائیومیٹرک تصدیق مکمل کریں۔",
+          "اکاؤنٹ فعال کریں اور چاہیں تو ڈیبٹ کارڈ منگوائیں۔",
+          "اپنا IBAN نوٹ کریں؛ اسکالرشپ، PSEB اور فری لانسنگ پلیٹ فارمز کے لیے چاہیے ہوگا۔"
+        ],
+        "mistakes": [
+          "والدین کے نام پر رجسٹرڈ سم استعمال کرنا۔",
+          "جعلی ملتی جلتی ایپ ڈاؤن لوڈ کرنا۔ صرف بینک کی سرکاری ویب سائٹ کے لنک سے انسٹال کریں۔",
+          "کسی کو بھی OTP یا PIN بتانا، چاہے وہ خود کو بینک کا نمائندہ کہے۔"
+        ],
+        "problems": [
+          {
+            "problem": "ایپ میں بائیومیٹرک تصدیق بار بار ناکام ہو رہی ہے۔",
+            "solution": "انگلیاں اور فون کا کیمرہ صاف کریں، اچھی روشنی میں کوشش کریں، یا بینک کی کسی بھی برانچ پر جا کر تصدیق کروائیں۔"
+          },
+          {
+            "problem": "میری عمر 18 سال سے کم ہے۔",
+            "solution": "زیادہ تر ڈیجیٹل اکاؤنٹس کے لیے شناختی کارڈ چاہیے۔ بینکوں سے والدین کی سرپرستی میں کھلنے والے مائنر یا اسٹوڈنٹ اکاؤنٹ کے بارے میں پوچھیں۔"
+          },
+          {
+            "problem": "کسی نے کال کر کے میرا OTP مانگا۔",
+            "solution": "کبھی نہ بتائیں۔ بینک کبھی OTP یا PIN نہیں مانگتے۔ کال کاٹیں اور بینک کی سرکاری ہیلپ لائن پر رابطہ کریں۔"
+          }
+        ]
+      }
     }
   ]
 }

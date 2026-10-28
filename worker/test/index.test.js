@@ -28,9 +28,10 @@ test('answers using only the chosen guide', async () => {
   assert.ok(out.sources.length > 0);
   assert.match(sent.url, /gemini-test:generateContent/);
   assert.equal(sent.init.headers['x-goog-api-key'], 'test-key');
-  const prompt = sent.body.contents[0].parts[0].text;
+  const prompt = sent.body.systemInstruction.parts[0].text;
   assert.match(prompt, /051-111-786-100/);
-  assert.doesNotMatch(prompt, /dgip/i);
+  assert.doesNotMatch(prompt, /dgip\.gov/i);
+  assert.equal(sent.body.contents.at(-1).parts[0].text, 'Helpline?');
 });
 
 test('Urdu questions get the Urdu guide and an Urdu reply instruction', async () => {
@@ -42,7 +43,7 @@ test('Urdu questions get the Urdu guide and an Urdu reply instruction', async ()
   const res = await worker.fetch(ask({ guideId: 'first-cnic', question: 'فیس؟', lang: 'ur' }), env);
   assert.equal(res.status, 200);
   assert.match(body.systemInstruction.parts[0].text, /Urdu/);
-  assert.match(body.contents[0].parts[0].text, /شناختی کارڈ/);
+  assert.match(body.systemInstruction.parts[0].text, /شناختی کارڈ/);
 });
 
 test('rejects unknown guides, empty questions and missing key', async () => {
@@ -60,4 +61,21 @@ test('reports AI failures as 502 and respects the rate limiter', async () => {
   console.error = orig;
   const limited = { ...env, LIMITER: { limit: async () => ({ success: false }) } };
   assert.equal((await worker.fetch(ask({ guideId: 'first-cnic', question: 'hi' }), limited)).status, 429);
+});
+
+test('sends recent follow-up history and strips markdown from answers', async () => {
+  let body;
+  globalThis.fetch = async (_u, init) => {
+    body = JSON.parse(init.body);
+    return new Response(JSON.stringify({ candidates: [{ content: { parts: [
+      { text: 'thinking', thought: true },
+      { text: '**Fee:** free\n* bring B-Form' },
+    ] } }] }));
+  };
+  const history = [{ q: 'What docs?', a: 'B-Form.' }, { bad: true }];
+  const res = await worker.fetch(ask({ guideId: 'first-cnic', question: 'And fee?', lang: 'en', history }), env);
+  const out = await res.json();
+  assert.equal(out.answer, 'Fee: free\n- bring B-Form');
+  assert.deepEqual(body.contents.map((c) => c.role), ['user', 'model', 'user']);
+  assert.equal(body.contents[1].parts[0].text, 'B-Form.');
 });

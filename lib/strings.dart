@@ -95,6 +95,24 @@ class S {
     'Too many questions right now. Wait a minute.',
     'ابھی بہت سے سوال ہیں۔ ایک منٹ انتظار کریں۔',
   );
+  String get suggestedQuestions => _t('Try asking', 'یہ پوچھ کر دیکھیں');
+  List<String> get askSuggestions => isUrdu
+      ? const [
+          'کون سے کاغذات چاہییں؟',
+          'فیس کتنی ہے اور کیسے جمع ہوگی؟',
+          'کتنا وقت لگے گا؟',
+          'اگر درخواست مسترد ہو جائے تو کیا کروں؟',
+        ]
+      : const [
+          'Which documents do I need?',
+          'How much is the fee and how do I pay?',
+          'How long will it take?',
+          'What if my application is rejected?',
+        ];
+  String get askFollowUpHint =>
+      _t('Ask a follow-up question', 'مزید سوال پوچھیں');
+  String get copied => _t('Copied', 'کاپی ہو گیا');
+  String get newChat => _t('New chat', 'نئی گفتگو');
   String basedOn(String title) => _t('Based on: $title', 'ماخذ: $title');
   String get officialSources => _t('Official sources', 'سرکاری ذرائع');
   String get startChecklist => _t('Start checklist', 'چیک لسٹ شروع کریں');

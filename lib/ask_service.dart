@@ -20,6 +20,16 @@ class AskResult {
   });
 }
 
+/// One earlier question and answer, sent so follow-ups make sense.
+class AskTurn {
+  final String question;
+  final String answer;
+
+  const AskTurn(this.question, this.answer);
+
+  Map<String, String> toJson() => {'q': question, 'a': answer};
+}
+
 enum AskError { limitReached, busy, failed }
 
 class AskException implements Exception {
@@ -56,6 +66,7 @@ class AskService {
     required String guideId,
     required String question,
     required String lang,
+    List<AskTurn> history = const [],
   }) async {
     if (remainingToday <= 0) throw const AskException(AskError.limitReached);
     final http.Response res;
@@ -68,6 +79,8 @@ class AskService {
               'guideId': guideId,
               'question': question,
               'lang': lang,
+              if (history.isNotEmpty)
+                'history': [for (final t in history) t.toJson()],
             }),
           )
           .timeout(const Duration(seconds: 30));

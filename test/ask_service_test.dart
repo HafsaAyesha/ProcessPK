@@ -52,7 +52,15 @@ void main() {
       expect(r.sources.single.name, 'NADRA');
       expect(service.remainingToday, 1);
 
-      await service.ask(guideId: 'first-cnic', question: 'again', lang: 'en');
+      await service.ask(
+        guideId: 'first-cnic',
+        question: 'again',
+        lang: 'en',
+        history: const [AskTurn('fee?', 'فیس مفت ہے')],
+      );
+      expect(sent['history'], [
+        {'q': 'fee?', 'a': 'فیس مفت ہے'},
+      ]);
       expect(
         () => service.ask(guideId: 'first-cnic', question: 'x', lang: 'en'),
         throwsA(

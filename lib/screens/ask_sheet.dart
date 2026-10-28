@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../app_state.dart';
 import '../ask_service.dart';
@@ -7,7 +8,8 @@ import '../models.dart';
 import '../theme.dart';
 import '../widgets.dart';
 
-/// Bottom sheet for asking questions about the guide that is open.
+/// Bottom sheet for chatting about the guide that is open. Earlier turns are
+/// sent along so follow-up questions ("and the fee?") make sense.
 class AskSheet extends StatefulWidget {
   final Guide guide;
 
@@ -27,33 +29,45 @@ class AskSheet extends StatefulWidget {
 
 class _AskSheetState extends State<AskSheet> {
   final _controller = TextEditingController();
+  final _scroll = ScrollController();
+  final _turns = <AskTurn>[];
   bool _loading = false;
-  AskResult? _result;
+  String? _pending;
   String? _error;
+  AskResult? _last;
 
   @override
   void dispose() {
     _controller.dispose();
+    _scroll.dispose();
     super.dispose();
   }
 
-  Future<void> _send() async {
+  Future<void> _send([String? preset]) async {
     final state = AppScope.of(context);
     final s = state.s;
-    final question = _controller.text.trim();
+    final question = (preset ?? _controller.text).trim();
     if (question.isEmpty || _loading) return;
+    _controller.clear();
     setState(() {
       _loading = true;
       _error = null;
-      _result = null;
+      _pending = question;
     });
+    _scrollToEnd();
     try {
       final result = await state.ask.ask(
         guideId: widget.guide.id,
         question: question,
         lang: state.lang,
+        history: List.of(_turns),
       );
-      if (mounted) setState(() => _result = result);
+      if (mounted) {
+        setState(() {
+          _turns.add(AskTurn(question, result.answer));
+          _last = result;
+        });
+      }
     } on AskException catch (e) {
       if (mounted) {
         setState(
@@ -65,8 +79,26 @@ class _AskSheetState extends State<AskSheet> {
         );
       }
     } finally {
-      if (mounted) setState(() => _loading = false);
+      if (mounted) {
+        setState(() {
+          _loading = false;
+          _pending = null;
+        });
+        _scrollToEnd();
+      }
     }
+  }
+
+  void _scrollToEnd() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_scroll.hasClients) {
+        _scroll.animateTo(
+          _scroll.position.maxScrollExtent,
+          duration: const Duration(milliseconds: 250),
+          curve: Curves.easeOut,
+        );
+      }
+    });
   }
 
   @override
@@ -81,91 +113,200 @@ class _AskSheetState extends State<AskSheet> {
         constraints: BoxConstraints(
           maxHeight: MediaQuery.of(context).size.height * 0.85,
         ),
-        child: ListView(
-          shrinkWrap: true,
-          padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            Row(
-              children: [
-                const Icon(Icons.auto_awesome, color: AppColors.primary),
-                const SizedBox(width: 8),
-                Text(
-                  s.askProcessPK,
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w700,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  const Icon(Icons.auto_awesome, color: AppColors.primary),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      s.askProcessPK,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 6),
-            Text(
-              s.askIntro,
-              style: const TextStyle(fontSize: 13, color: AppColors.muted),
-            ),
-            const SizedBox(height: 14),
-            TextField(
-              controller: _controller,
-              minLines: 1,
-              maxLines: 4,
-              maxLength: 500,
-              textInputAction: TextInputAction.send,
-              onSubmitted: (_) => _send(),
-              decoration: InputDecoration(
-                hintText: s.askHint,
-                filled: true,
-                fillColor: Colors.white,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                suffixIcon: IconButton(
-                  icon: const Icon(Icons.send, color: AppColors.primary),
-                  onPressed: _send,
-                ),
+                  if (_turns.isNotEmpty)
+                    TextButton(
+                      onPressed: _loading
+                          ? null
+                          : () => setState(() {
+                              _turns.clear();
+                              _last = null;
+                              _error = null;
+                            }),
+                      child: Text(s.newChat),
+                    ),
+                ],
               ),
             ),
-            Text(
-              s.questionsLeft(state.ask.remainingToday),
-              style: const TextStyle(fontSize: 12, color: AppColors.muted),
+            Flexible(
+              child: ListView(
+                controller: _scroll,
+                shrinkWrap: true,
+                padding: const EdgeInsets.fromLTRB(16, 6, 16, 8),
+                children: [
+                  Text(
+                    s.askIntro,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: AppColors.muted,
+                    ),
+                  ),
+                  if (_turns.isEmpty && !_loading) ...[
+                    const SizedBox(height: 14),
+                    Text(
+                      s.suggestedQuestions,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                    const SizedBox(height: 6),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        for (final q in s.askSuggestions)
+                          ActionChip(label: Text(q), onPressed: () => _send(q)),
+                      ],
+                    ),
+                  ],
+                  for (final t in _turns) ...[
+                    _Bubble(text: t.question, mine: true),
+                    _Bubble(text: t.answer, mine: false),
+                  ],
+                  if (_pending != null) _Bubble(text: _pending!, mine: true),
+                  if (_loading)
+                    const Padding(
+                      padding: EdgeInsets.all(12),
+                      child: Center(child: CircularProgressIndicator()),
+                    ),
+                  if (_error != null)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8),
+                      child: Text(
+                        _error!,
+                        style: const TextStyle(color: Color(0xFFB42318)),
+                      ),
+                    ),
+                  if (_last != null && !_loading) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      s.basedOn(_last!.guideTitle),
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    VerifiedLabel(date: _last!.lastVerified),
+                    for (final src in _last!.sources)
+                      TextButton.icon(
+                        style: TextButton.styleFrom(
+                          alignment: AlignmentDirectional.centerStart,
+                        ),
+                        icon: const Icon(Icons.open_in_new, size: 16),
+                        label: Text(src.name),
+                        onPressed: () => openLink(context, src.url),
+                      ),
+                  ],
+                ],
+              ),
             ),
-            const SizedBox(height: 12),
-            if (_loading) const Center(child: CircularProgressIndicator()),
-            if (_error != null)
-              Text(_error!, style: const TextStyle(color: Color(0xFFB42318))),
-            if (_result != null) ...[
-              Container(
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: AppColors.mint,
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                child: Text(
-                  _result!.answer,
-                  style: TextStyle(
-                    fontSize: 15,
-                    height: bodyLineHeight(context),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TextField(
+                    controller: _controller,
+                    minLines: 1,
+                    maxLines: 4,
+                    maxLength: 500,
+                    textInputAction: TextInputAction.send,
+                    onSubmitted: (_) => _send(),
+                    decoration: InputDecoration(
+                      hintText: _turns.isEmpty ? s.askHint : s.askFollowUpHint,
+                      filled: true,
+                      fillColor: Colors.white,
+                      counterText: '',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                      suffixIcon: IconButton(
+                        icon: const Icon(Icons.send, color: AppColors.primary),
+                        onPressed: _send,
+                      ),
+                    ),
                   ),
+                  const SizedBox(height: 4),
+                  Text(
+                    s.questionsLeft(state.ask.remainingToday),
+                    style: const TextStyle(
+                      fontSize: 12,
+                      color: AppColors.muted,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _Bubble extends StatelessWidget {
+  final String text;
+  final bool mine;
+
+  const _Bubble({required this.text, required this.mine});
+
+  @override
+  Widget build(BuildContext context) {
+    final s = AppScope.of(context).s;
+    return Align(
+      alignment: mine
+          ? AlignmentDirectional.centerEnd
+          : AlignmentDirectional.centerStart,
+      child: Container(
+        margin: const EdgeInsets.only(top: 10),
+        constraints: BoxConstraints(
+          maxWidth: MediaQuery.of(context).size.width * (mine ? 0.75 : 0.9),
+        ),
+        padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
+        decoration: BoxDecoration(
+          color: mine ? AppColors.primary : AppColors.mint,
+          borderRadius: BorderRadius.circular(14),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SelectableText(
+              text,
+              style: TextStyle(
+                fontSize: 15,
+                height: bodyLineHeight(context),
+                color: mine ? Colors.white : null,
+              ),
+            ),
+            if (!mine)
+              Align(
+                alignment: AlignmentDirectional.centerEnd,
+                child: IconButton(
+                  visualDensity: VisualDensity.compact,
+                  tooltip: s.copied,
+                  icon: const Icon(Icons.copy, size: 16),
+                  onPressed: () {
+                    Clipboard.setData(ClipboardData(text: text));
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(SnackBar(content: Text(s.copied)));
+                  },
                 ),
               ),
-              const SizedBox(height: 8),
-              Text(
-                s.basedOn(_result!.guideTitle),
-                style: const TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              VerifiedLabel(date: _result!.lastVerified),
-              for (final src in _result!.sources)
-                TextButton.icon(
-                  style: TextButton.styleFrom(
-                    alignment: AlignmentDirectional.centerStart,
-                  ),
-                  icon: const Icon(Icons.open_in_new, size: 16),
-                  label: Text(src.name),
-                  onPressed: () => openLink(context, src.url),
-                ),
-            ],
           ],
         ),
       ),
